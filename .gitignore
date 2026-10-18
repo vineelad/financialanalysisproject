@@ -7,8 +7,7 @@ pineconekey
 *key.pem
 .streamlit/secrets.toml
 .streamlit/credentials.toml
-# External reference documents are not project-authored deliverables.
-docs/Week 2 Project Handout*.docx
+docs/
 Investor Relations Assistant.docx
 .venv/
 __pycache__/

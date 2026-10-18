@@ -86,7 +86,7 @@ All four configurations reached 100% audited evidence recall on those 18 cases. 
 
 Separate narrow answer checks passed 20/20 with audited labels, the automated test suite passed 100 tests, and a final hosted explanation smoke check passed. These are development checks, not an independent accuracy benchmark. General faithfulness, answer relevance and production latency have not been established. The final table-heavy set also showed no recall advantage for semantic chunking or reranking.
 
-For the evidence and limitations, see the [retrieval report](reports/five-bank-retrieval/REPORT.md) and [answer-check results](reports/five-bank-answer-validation.json). The [analyst coverage checklist](docs/ANALYST_COVERAGE.md) shows what still needs work; the metric registry is broader than the implemented calculations.
+For the evidence and limitations, see the [retrieval report](reports/five-bank-retrieval/REPORT.md) and [answer-check results](reports/five-bank-answer-validation.json). The metric registry is broader than the implemented calculations; a listed metric does not mean the app can answer every question about it.
 
 ## Tests and command-line use
 
@@ -109,11 +109,5 @@ To rerun the four retrieval configurations without hosted generation:
 ```powershell
 .\.venv\Scripts\python.exe -m ir_assistant evaluate --questions eval/five_bank_questions.audited.jsonl
 ```
-
-## More detail
-
-- [Solution kit](docs/IR_ASSISTANT_SOLUTION_KIT.md): architecture, component details and design decisions.
-- [Metric registry](docs/METRIC_REGISTRY.md): definitions, supported facts and validation rules.
-- [Project handoff](docs/WEEK_2_HANDOFF.md): reproduction steps and submission materials.
 
 API keys belong in your local `.env`, which Git ignores. The committed `.env.example` is a blank setup template. LangSmith tracing is optional and disabled by default.
