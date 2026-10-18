@@ -1,0 +1,565 @@
+{
+  "strategy": "semantic",
+  "reranking": false,
+  "scope": {
+    "banks": [
+      "COF"
+    ],
+    "periods": [
+      "2025Q2"
+    ],
+    "clarification": null,
+    "unsupported": null
+  },
+  "retrieval_policy": "v6-source-segment-alias-coverage",
+  "retrieval_budget": {
+    "candidate_k": 20,
+    "final_k": 5,
+    "context_tokens": 2200
+  },
+  "answer_policy": "v6-selected-base-all-supported-peers",
+  "metric_registry": {
+    "version": "1.0",
+    "sha256": "144e38de3e22143e67f8949babbe6068bc87cc09baca096dea8c7e6d654ba710"
+  },
+  "base_bank": null,
+  "retrieval_queries": [
+    "What was Capital One consumer banking noninterest expense in Q2 2025?"
+  ],
+  "framework": "LangChain + LangGraph",
+  "prompt_hash": "daea8e8a5c1687975d416a5a6c3c87da7058afe71f42dedd2fba8049aae46617",
+  "calculations": [],
+  "candidate_hits": [
+    {
+      "chunk": {
+        "chunk_id": "b86e5116a76601fc05d5",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 13: c1=Non-interest expense | c4=1,713 | c8=1,581 | c12=1,545 | c16=1,331 | c20=1,250 | c23=8 | c26=37 | c30=3,294 | c34=2,496 | c37=32",
+        "location": "HTML table 19, row 13",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r13"
+        ],
+        "token_count": 310
+      },
+      "score": 0.03278688524590164
+    },
+    {
+      "chunk": {
+        "chunk_id": "2633defc4cb7b0496d31",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 17: c1=Selected performance metrics:",
+        "location": "HTML table 19, row 17",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r17"
+        ],
+        "token_count": 243
+      },
+      "score": 0.028790389395194696
+    },
+    {
+      "chunk": {
+        "chunk_id": "76ca32af6e09e74ebe8e",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 10: c1=Non-interest income | c4=394 | c8=183 | c12=182 | c16=182 | c20=172 | c23=115 | c26=129 | c30=577 | c34=331 | c37=74",
+        "location": "HTML table 19, row 10",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r10"
+        ],
+        "token_count": 294
+      },
+      "score": 0.02871794871794872
+    },
+    {
+      "chunk": {
+        "chunk_id": "2652f2c886c77b73ecc7",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 15: c1=Income tax provision | c4=141 | c8=58 | c12=63 | c16=125 | c20=146 | c23=143 | c26=(3 | c27=) | c30=199 | c34=263 | c37=(24 | c38=)",
+        "location": "HTML table 19, row 15",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r15"
+        ],
+        "token_count": 303
+      },
+      "score": 0.02844551282051282
+    },
+    {
+      "chunk": {
+        "chunk_id": "7b6d654613c0d779f0c3",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 33: c1=621 - 660 | c4=19 | c8=19 | c12=19 | c16=20 | c20=20 | c23=\u2014 | c26=(1 | c27=) | c30=19 | c34=20 | c37=(1 | c38=)",
+        "location": "HTML table 19, row 33",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r33"
+        ],
+        "token_count": 304
+      },
+      "score": 0.027984344422700584
+    },
+    {
+      "chunk": {
+        "chunk_id": "e4744f243b40286ae19f",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 8: c1=Earnings:",
+        "location": "HTML table 19, row 8",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r8"
+        ],
+        "token_count": 240
+      },
+      "score": 0.027205882352941177
+    },
+    {
+      "chunk": {
+        "chunk_id": "2dd6b8ec4d11e38e225a",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 11: c1=Total net revenue | c4=2,556 | c8=2,126 | c12=2,141 | c16=2,210 | c20=2,197 | c23=20 | c26=16 | c30=4,682 | c34=4,367 | c37=7",
+        "location": "HTML table 19, row 11",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r11"
+        ],
+        "token_count": 308
+      },
+      "score": 0.0259915611814346
+    },
+    {
+      "chunk": {
+        "chunk_id": "8031ba1641e309977e7a",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 23: c1=Average deposits | c4=365,359 | c8=319,950 | c12=313,992 | c16=306,121 | c20=300,794 | c23=14 | c26=21 | c30=342,780 | c34=297,621 | c37=15",
+        "location": "HTML table 19, row 23",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r23"
+        ],
+        "token_count": 309
+      },
+      "score": 0.025807525807525808
+    },
+    {
+      "chunk": {
+        "chunk_id": "479b56472ae1d20e5a9d",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 2: c1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)",
+        "location": "HTML table 19, row 2",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r2"
+        ],
+        "token_count": 248
+      },
+      "score": 0.016129032258064516
+    },
+    {
+      "chunk": {
+        "chunk_id": "b2a338f5d349c8128c92",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 14: c1=Income from continuing operations before income taxes | c4=591 | c8=244 | c12=268 | c16=528 | c20=617 | c23=142 | c26=(4 | c27=) | c30=835 | c34=1,115 | c37=(25 | c38=)",
+        "location": "HTML table 19, row 14",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r14"
+        ],
+        "token_count": 313
+      },
+      "score": 0.016129032258064516
+    },
+    {
+      "chunk": {
+        "chunk_id": "a5b70b1f900ec689f53b",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 25: c1=Net charge-off rate | c4=1.30 | c8=1.60 | c12=2.38 | c16=2.11 | c20=1.87 | c23=(30 | c24=) | c26=(57 | c27=) | c30=1.45 | c34=1.95 | c37=(50 | c38=)",
+        "location": "HTML table 19, row 25",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r25"
+        ],
+        "token_count": 325
+      },
+      "score": 0.015873015873015872
+    },
+    {
+      "chunk": {
+        "chunk_id": "af2ba9485364cc55982c",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 7: c1=Consumer Banking",
+        "location": "HTML table 19, row 7",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r7"
+        ],
+        "token_count": 240
+      },
+      "score": 0.015873015873015872
+    },
+    {
+      "chunk": {
+        "chunk_id": "6fa2eb225f4ce9a2327e",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | %\nTable header context:\nc1-18=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-18=Table 7: Loan Information and Performance Statistics\nc18-22=2025 Q2 | c24-31=Six Months Ended June 30 ,\nc1=(Dollars in millions, except as noted) | c3-4=2025 | c6-7=2025 | c9-10=2024 | c12-13=2024 | c15-16=2024 | c18-19=2025 | c21-22=2024 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc1=(Dollars in millions, except as noted) | c3-4=Q2 | c6-7=Q1 | c9-10=Q4 | c12-13=Q3 | c15-16=Q2 | c18-19=Q1 | c21-22=Q2 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc1=Loans Held for Investment (Period-End)\nc1=Credit card:\nRow 13: c1=Consumer banking:",
+        "location": "HTML table 13, row 13",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t13:r13"
+        ],
+        "token_count": 267
+      },
+      "score": 0.015625
+    },
+    {
+      "chunk": {
+        "chunk_id": "ad57ff81ca1ebe401319",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | %\nTable header context:\nc1-18=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-18=Table 7: Loan Information and Performance Statistics\nc18-22=2025 Q2 | c24-31=Six Months Ended June 30 ,\nc1=(Dollars in millions, except as noted) | c3-4=2025 | c6-7=2025 | c9-10=2024 | c12-13=2024 | c15-16=2024 | c18-19=2025 | c21-22=2024 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc1=(Dollars in millions, except as noted) | c3-4=Q2 | c6-7=Q1 | c9-10=Q4 | c12-13=Q3 | c15-16=Q2 | c18-19=Q1 | c21-22=Q2 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc1=Loans Held for Investment (Period-End)\nc1=Credit card:\nRow 28: c1=Consumer banking:",
+        "location": "HTML table 13, row 28",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t13:r28"
+        ],
+        "token_count": 267
+      },
+      "score": 0.015384615384615385
+    },
+    {
+      "chunk": {
+        "chunk_id": "76a25dfdb5c0f3e9f48d",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 29: c1=Nonperforming asset rate (7) | c4=0.82 | c8=0.82 | c12=1.08 | c16=1.01 | c20=0.99 | c23=\u2014 | c26=(17 | c27=) | c30=0.82 | c34=0.99 | c37=(17 | c38=)",
+        "location": "HTML table 19, row 29",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r29"
+        ],
+        "token_count": 323
+      },
+      "score": 0.015151515151515152
+    },
+    {
+      "chunk": {
+        "chunk_id": "f41fee282f69355e66a8",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 3: c1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business",
+        "location": "HTML table 19, row 3",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r3"
+        ],
+        "token_count": 251
+      },
+      "score": 0.015151515151515152
+    },
+    {
+      "chunk": {
+        "chunk_id": "99e172a96a4dbfdd3156",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "Certain statements in this release may constitute forward-looking statements, which involve a number of risks and uncertainties. Forward-looking statements often use words such as \u201cwill,\u201d \u201canticipate,\u201d \u201ctarget,\u201d \u201cexpect,\u201d \u201cthink,\u201d \u201cestimate,\u201d \u201cintend,\u201d \u201cplan,\u201d \u201cgoal,\u201d \u201cbelieve,\u201d \u201cforecast,\u201d \u201coutlook\u201d or other words of similar meaning. Any forward-looking statements made by Capital One or on its behalf speak only as of the date they are made or as of the date indicated, and Capital One does not undertake any obligation to update forward-looking statements as a result of new information, future events or otherwise. Capital One cautions readers that any forward-looking information is not a guarantee of future performance and that actual results could differ materially from those contained in the forward-looking information due to a number of factors. For additional information on factors that could materially influence forward-looking statements included in this earnings press release, see the risk factors set forth under \u201cPart I\u2014Item 1A. Risk Factors\u201d in the Annual Report on Form 10-K for the year ended December 31, 2024 filed with the Securities and Exchange Commission (the \u201cSEC\u201d) and Quarterly Reports on Form 10-Q and Current Reports on Form 8-K filed with the SEC . Capital One Financial Corporation ( www.capitalone.com ) is a financial holding company which, along with its subsidiaries, had $468.1 billion in deposits and $659.0 billion in total assets as of June 30, 2025 . Headquartered in McLean, Virginia , Capital One offers a broad spectrum of financial products and services to consumers, small businesses and commercial clients through a variety of channels. Capital One, N.A. has branches and Caf\u00e9s located primarily in New York , Louisiana , Texas , Maryland , Virginia and the District of Columbia .",
+        "location": "HTML paragraph 87 through HTML paragraph 18528",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:p87:through:cof-2025q2-results:p18528:fragment:99e172a96a4dbfdd3156"
+        ],
+        "token_count": 386
+      },
+      "score": 0.014925373134328358
+    },
+    {
+      "chunk": {
+        "chunk_id": "be76c72005f1bebd48d6",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 4: c23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,",
+        "location": "HTML table 19, row 4",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r4"
+        ],
+        "token_count": 259
+      },
+      "score": 0.014925373134328358
+    },
+    {
+      "chunk": {
+        "chunk_id": "2e9168a10a549b69805d",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 6: c1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024",
+        "location": "HTML table 19, row 6",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r6"
+        ],
+        "token_count": 327
+      },
+      "score": 0.014492753623188406
+    },
+    {
+      "chunk": {
+        "chunk_id": "2ea8aa1fc1b1c5ceb3c7",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "semantic",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 24: c1=Average deposits interest rate | c4=3.02 | c5=% | c8=3.00 | c9=% | c12=3.21 | c13=% | c16=3.33 | c17=% | c20=3.22 | c21=% | c23=2 | c24=bps | c26=(20 | c27=) bps | c30=3.01 | c31=% | c34=3.19 | c35=% | c37=(18 | c38=) bps",
+        "location": "HTML table 19, row 24",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r24"
+        ],
+        "token_count": 363
+      },
+      "score": 0.014492753623188406
+    }
+  ],
+  "answer": {
+    "question": "What was Capital One consumer banking noninterest expense in Q2 2025?",
+    "status": "evidence_only",
+    "mode": "evidence_only",
+    "text": "Evidence-only mode: retrieved excerpts are shown below; no language-model answer was generated.\n\n[b86e5116a76601fc05d5] HTML table 19, row 13\nCOF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 13: c1=Non-interest expense | c4=1,713 | c8=1,581 | c12=1,545 | c16=1,331 | c20=1,250 | c23=8 | c26=37 | c30=3,294 | c34=2,496 | c37=32\nhttps://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content\n\n[2633defc4cb7b0496d31] HTML table 19, row 17\nCOF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 17: c1=Selected performance metrics:\nhttps://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content\n\n[76ca32af6e09e74ebe8e] HTML table 19, row 10\nCOF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 10: c1=Non-interest income | c4=394 | c8=183 | c12=182 | c16=182 | c20=172 | c23=115 | c26=129 | c30=577 | c34=331 | c37=74\nhttps://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content\n\n[2652f2c886c77b73ecc7] HTML table 19, row 15\nCOF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 15: c1=Income tax provision | c4=141 | c8=58 | c12=63 | c16=125 | c20=146 | c23=143 | c26=(3 | c27=) | c30=199 | c34=263 | c37=(24 | c38=)\nhttps://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content\n\n[7b6d654613c0d779f0c3] HTML table 19, row 33\nCOF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 33: c1=621 - 660 | c4=19 | c8=19 | c12=19 | c16=20 | c20=20 | c23=\u2014 | c26=(1 | c27=) | c30=19 | c34=20 | c37=(1 | c38=)\nhttps://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+    "hits": [
+      {
+        "chunk": {
+          "chunk_id": "b86e5116a76601fc05d5",
+          "document_id": "cof-2025q2-results",
+          "bank": "COF",
+          "strategy": "semantic",
+          "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 13: c1=Non-interest expense | c4=1,713 | c8=1,581 | c12=1,545 | c16=1,331 | c20=1,250 | c23=8 | c26=37 | c30=3,294 | c34=2,496 | c37=32",
+          "location": "HTML table 19, row 13",
+          "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "cof-2025q2-results:t19:r13"
+          ],
+          "token_count": 310
+        },
+        "score": 0.03278688524590164
+      },
+      {
+        "chunk": {
+          "chunk_id": "2633defc4cb7b0496d31",
+          "document_id": "cof-2025q2-results",
+          "bank": "COF",
+          "strategy": "semantic",
+          "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 17: c1=Selected performance metrics:",
+          "location": "HTML table 19, row 17",
+          "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "cof-2025q2-results:t19:r17"
+          ],
+          "token_count": 243
+        },
+        "score": 0.028790389395194696
+      },
+      {
+        "chunk": {
+          "chunk_id": "76ca32af6e09e74ebe8e",
+          "document_id": "cof-2025q2-results",
+          "bank": "COF",
+          "strategy": "semantic",
+          "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 10: c1=Non-interest income | c4=394 | c8=183 | c12=182 | c16=182 | c20=172 | c23=115 | c26=129 | c30=577 | c34=331 | c37=74",
+          "location": "HTML table 19, row 10",
+          "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "cof-2025q2-results:t19:r10"
+          ],
+          "token_count": 294
+        },
+        "score": 0.02871794871794872
+      },
+      {
+        "chunk": {
+          "chunk_id": "2652f2c886c77b73ecc7",
+          "document_id": "cof-2025q2-results",
+          "bank": "COF",
+          "strategy": "semantic",
+          "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 15: c1=Income tax provision | c4=141 | c8=58 | c12=63 | c16=125 | c20=146 | c23=143 | c26=(3 | c27=) | c30=199 | c34=263 | c37=(24 | c38=)",
+          "location": "HTML table 19, row 15",
+          "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "cof-2025q2-results:t19:r15"
+          ],
+          "token_count": 303
+        },
+        "score": 0.02844551282051282
+      },
+      {
+        "chunk": {
+          "chunk_id": "7b6d654613c0d779f0c3",
+          "document_id": "cof-2025q2-results",
+          "bank": "COF",
+          "strategy": "semantic",
+          "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary\u2014Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 33: c1=621 - 660 | c4=19 | c8=19 | c12=19 | c16=20 | c20=20 | c23=\u2014 | c26=(1 | c27=) | c30=19 | c34=20 | c37=(1 | c38=)",
+          "location": "HTML table 19, row 33",
+          "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "cof-2025q2-results:t19:r33"
+          ],
+          "token_count": 304
+        },
+        "score": 0.027984344422700584
+      }
+    ],
+    "elapsed_seconds": 1.794,
+    "usage": {}
+  },
+  "timestamp": "2026-10-18T22:16:33.717422+00:00",
+  "gold": {
+    "id": "F10",
+    "question": "What was Capital One consumer banking noninterest expense in Q2 2025?",
+    "base_bank": null,
+    "expected_behavior": "answered",
+    "annotation_status": "reviewed",
+    "evidence": [
+      {
+        "document_id": "cof-2025q2-results",
+        "evidence_id": "cof-2025q2-results:t19:r13",
+        "quote": "Row 13: c1=Non-interest expense | c4=1,713 | c8=1,581 | c12=1,545 | c16=1,331 | c20=1,250 | c23=8 | c26=37 | c30=3,294 | c34=2,496 | c37=32",
+        "bank": "COF",
+        "metric": "noninterest_expense",
+        "period": "2025Q2"
+      }
+    ],
+    "expected_answer": "COF 2025Q2 noninterest_expense 1713 USD_millions GAAP",
+    "review_method": "Assistant verified original HTML cells or PDF text-line columns before this expanded-corpus evaluation; not independent human review.",
+    "annotation_version": "v2-preexisting-reviewed-alternatives"
+  }
+}

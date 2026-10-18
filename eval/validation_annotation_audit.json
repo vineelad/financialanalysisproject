@@ -1,0 +1,36 @@
+{
+  "original_question_hash": "d0b87b1dbbcc205e450ebd622ec2bdab64c31269dfac0ea3e5e3987a2be1cbfb",
+  "audited_question_hash": "9cbb57dc041a2e544968fbfaf720c1adccb2c6a6f8f595f0f5e3747b366ed849",
+  "reviewer": "coding assistant; not independent human audit",
+  "source_cell_checks": [
+    {
+      "question_id": "v01",
+      "evidence_id": "jpm-2025q2-supplement:t4:r38",
+      "column": 5,
+      "value": "14987",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_16"
+    },
+    {
+      "question_id": "v01",
+      "evidence_id": "jpm-2025q2-supplement:t4:r38",
+      "column": 29,
+      "value": "18149",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_16"
+    },
+    {
+      "question_id": "v06",
+      "evidence_id": "jpm-2025q2-supplement:t4:r46",
+      "column": 4,
+      "value": "18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_16"
+    },
+    {
+      "question_id": "v06",
+      "evidence_id": "jpm-2025q2-supplement:t4:r46",
+      "column": 28,
+      "value": "23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_16"
+    }
+  ],
+  "reason": "Post-run annotation audit: equivalent consolidated net income and ROE rows were unannotated false negatives. Question text, expected values, retrieval code, rankings, and answers were not changed. Original labels and scores retained."
+}

@@ -1,0 +1,20 @@
+{
+  "frozen_at": "2026-10-18T21:57:56.786030+00:00",
+  "questions": 20,
+  "protocol": "Frozen before expanded-corpus retrieval inspection. First expansion evaluation, same financial topics and assistant-authored labels; not an independent benchmark. Earlier two-bank data preserved in data/snapshots/two-bank-v1 and existing reports.",
+  "planned_configs": [
+    "fixed",
+    "semantic",
+    "fixed_rerank",
+    "semantic_rerank"
+  ],
+  "question_sha256": "ebb28c0911df3248b60861bcf92fd7af8bb2e7b80b6bb9449840d2696370b8b7",
+  "source_hashes": {
+    "bac-2025q2-results": "54d1f1ba829231d80c550299ac17fc44b8ea8fe17ec2e96eab76c656a45b9706",
+    "bac-2025q2-supplement": "3609ccab4f8708c568735cd68eb91293526bea73615b80ab22710dcf2cbb25e5",
+    "jpm-2025q2-supplement": "04a163219a535f734eb9eb35d3cc433296fa979ff1e0adfe8b0d6d5794f76f2f",
+    "wfc-2025q2-results": "aa59f322786dac5a9d0735a8bd7a38138c46be607b1448eeb2adaaab477aa2a1",
+    "c-2025q2-results": "72ff4d4eba3abddded6d4fadd263cd899cec31151a684ed27725b4a3ad1d7443",
+    "cof-2025q2-results": "ebcde4d7483b2ef1fe18077ff659314677bcc320e1bb23d4cd6cb02b779f89d6"
+  }
+}

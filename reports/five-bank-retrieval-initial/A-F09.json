@@ -1,0 +1,564 @@
+{
+  "strategy": "fixed",
+  "reranking": false,
+  "scope": {
+    "banks": [
+      "C"
+    ],
+    "periods": [
+      "2025Q2"
+    ],
+    "clarification": null,
+    "unsupported": null
+  },
+  "retrieval_policy": "v5-bank-scaled-evidence-budgets",
+  "retrieval_budget": {
+    "candidate_k": 20,
+    "final_k": 5,
+    "context_tokens": 2200
+  },
+  "answer_policy": "v6-selected-base-all-supported-peers",
+  "metric_registry": {
+    "version": "1.0",
+    "sha256": "144e38de3e22143e67f8949babbe6068bc87cc09baca096dea8c7e6d654ba710"
+  },
+  "base_bank": null,
+  "retrieval_queries": [
+    "What was Citi consumer banking noninterest expense in Q2 2025?"
+  ],
+  "framework": "LangChain + LangGraph",
+  "prompt_hash": "daea8e8a5c1687975d416a5a6c3c87da7058afe71f42dedd2fba8049aae46617",
+  "calculations": [],
+  "candidate_hits": [
+    {
+      "chunk": {
+        "chunk_id": "025e7032bb09539b5ee6",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "by a higher net build in the allowance for credit losses (ACL) related to deterioration in the macroeconomic outlook in the current quarter relative to the prior-year period and a net ACL build related to transfer risk associated with client activity in Russia, largely offset by a lower net ACL build for volume and lower net credit losses in the card portfolios in USPB.\nCitigroup net income was $4.0 billion in the second quarter 2025, compared to net income of $3.2 billion in the prior-year period, driven by the higher revenues, partially offset by the higher expenses and the higher cost of credit. Citigroup ’ s effective tax rate decreased to approximately 23% in the current quarter from 24% in the second quarter 2024, largely due to the resolution of a tax audit.\nCitigroup ’ s total allowance for credit losses was approximately $23.7 billion at quarter end, compared to $21.8 billion at the end of the prior-year period. Total ACL on loans was approximately $19.1 billion at quarter end, compared to $18.2 billion at the\nend of the prior-year period, with a reserve-to-funded loans ratio of 2.67%, down from 2.68% in the prior-year period. Total non-accrual loans increased 49% from the prior-year period to $3.4 billion. Corporate non-accrual loans increased 73% from the prior-year period to $1.7 billion, primarily driven by idiosyncratic downgrades, primarily in Markets . Consumer non-accrual loans increased 30% from the prior-year period to $1.6 billion, primarily driven by Wealth , primarily due to residential mortgage loans impacted by the California wildfires.\nCitigroup ’ s end-of-period loans were $725.3 billion at quarter end, up 5% versus the prior-year period",
+        "location": "HTML paragraph 396 through HTML paragraph 834",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p396:through:c-2025q2-results:p834:fragment:025e7032bb09539b5ee6"
+        ],
+        "token_count": 400
+      },
+      "score": 0.03125763125763126
+    },
+    {
+      "chunk": {
+        "chunk_id": "22493cd42851bc9e554b",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "the second quarter 2025 of $4.0 billion, or $1.96 per diluted share, on revenues of $21.7 billion. This compares to net income of $3.2 billion, or $1.52 per diluted share, on revenues of $20.0 billion for the second quarter 2024. ​ Revenues increased 8% from the prior-year period, on a reported basis, driven by growth in each of Citi’s five interconnected businesses, partially offset by a decline in All Other . Excluding divestiture-related impacts in both periods (5) , revenues were up 9%. ​ Net income was $4.0 billion, compared to $3.2 billion in the prior-year period, driven by the higher revenues, partially offset by higher cost of credit and higher expenses. ​ Earnings per share of $1.96 increased from $1.52 per diluted share in the prior-year period, reflecting the higher net income and lower shares outstanding. ​ Percentage comparisons throughout this press release are calculated for the second quarter 2025 versus the second quarter 2024, unless otherwise specified. | c2-3=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $",
+        "location": "HTML table 1, row 4",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r4:fragment:22493cd42851bc9e554b"
+        ],
+        "token_count": 400
+      },
+      "score": 0.031024531024531024
+    },
+    {
+      "chunk": {
+        "chunk_id": "c103fe4fa918240783a6",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "or on behalf of Citigroup speak only as to the date they are made, and Citi does not undertake to update forward-looking statements to reflect the impact of circumstances or events that arise after the date the forward-looking statements were made.\n(a) Reconciling Items consist of the divestiture-related impacts excluded from the results of All Other, as well as All Other — Legacy Franchises on a managed basis.\n(b) 2Q25 includes (i) an approximately $186 million loss recorded in revenue (approximately $157 million after tax) related to the announced sale of the Poland consumer banking business; and (ii) approximately $37 million in operating expenses (approximately $26 million after tax) primarily related to separation costs in Mexico.\n(c) 1Q25 includes approximately $34 million in operating expenses (approximately $23 million after-tax), largely related to separation costs in Mexico and severance costs in the Asia exit markets. For additional information, see Citi's Quarterly Report on Form 10-Q for the quarterly period ended March 31, 2025.\n(d) 2Q24 includes approximately $85 million in operating expenses (approximately $58 million after-tax), primarily related to separation costs in Mexico and severance costs in the Asia exit markets. For additional information, see Citi's Quarterly Report on Form 10-Q for the quarterly period ended June 30, 2024.\n(e) Includes credit reserve build / (release) for loans and provision for credit losses on unfunded lending commitments.\n(f) Includes provisions for policyholder benefits and claims and other assets.\nNote: Citi’s binding CET1 Capital ratios were derived under the Basel III Standardized Approach for all periods reflected.\n(b) Excludes issuance costs related to outstanding preferred stock in accordance with Federal Reserve Board regulatory reporting requirements.\n(c) Please refer to Footnote 2 at the end of this press release for additional information.\n(d",
+        "location": "HTML paragraph 2579 through HTML paragraph 4326",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p2579:through:c-2025q2-results:p4326:fragment:c103fe4fa918240783a6"
+        ],
+        "token_count": 400
+      },
+      "score": 0.030776515151515152
+    },
+    {
+      "chunk": {
+        "chunk_id": "04f966a5ab12c4ba307b",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "C | ​\nTable header context:\nc1=For Immediate Release Citigroup Inc. (NYSE: C) July 15, 2025\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2=​ | c3=CEO COMMENTARY\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=RETURNED ~$3.1 BILLION IN THE FORM OF COMMON DIVIDENDS AND SHARE REPURCHASES PAYOUT RATIO OF 82% (3) BOOK VALUE PER SHARE OF $106.94 TANGIBLE BOOK VALUE PER SHARE OF $94.16 (4) ​ ​ New York, July 15, 2025",
+        "location": "HTML table 1, row 1",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r1:fragment:04f966a5ab12c4ba307b"
+        ],
+        "token_count": 400
+      },
+      "score": 0.03028233151183971
+    },
+    {
+      "chunk": {
+        "chunk_id": "0b00fad3be52f6904281",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "C | ​\nTable header context:\nc1=For Immediate Release Citigroup Inc. (NYSE: C) July 15, 2025\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-",
+        "location": "HTML table 1, row 3",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r3:fragment:0b00fad3be52f6904281"
+        ],
+        "token_count": 400
+      },
+      "score": 0.02964254577157803
+    },
+    {
+      "chunk": {
+        "chunk_id": "b1ea4a66c9832f66f99a",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "Retail Services revenues of $1.6 billion decreased 5%, largely driven by the higher partner payment accruals due to lower net credit losses.\nRetail Banking revenues of $648 million increased 16%, driven by the impact of higher deposit spreads.\nUSPB operating expenses of $2.4 billion increased 1% from the prior-year period.\nUSPB cost of credit was $1.9 billion, compared to $2.3 billion in the prior-year period. The decrease was driven by a net ACL release in the current period, compared to a net ACL build in the prior-year period, and lower net credit losses in the cards portfolios. The net ACL release in the current period reflected improvements in quality, including seasonal mix changes, offset by deterioration in the macroeconomic outlook and loan growth. The decline in net credit losses was driven by Retail Services, partially offset by higher net credit losses in Branded Cards, reflecting loan growth.\nUSPB net income of $649 million increased 436%, driven by the lower cost of credit and the higher revenues.\n(a) Includes Legacy Franchises and certain unallocated costs of global staff functions (including finance, risk, human resources, legal and compliance-related costs), other corporate expenses, and unallocated global operations and technology expenses and income taxes, as well as Corporate Treasury investment activities and discontinued operations.\n(b) Reflects results on a managed basis, which excludes divestiture-related impacts related to Citi’s divestitures of its Asia consumer banking businesses and the planned divestiture of Banamex within Legacy Franchises. For additional information, please refer to Footnote 10.\n(c) Includes credit reserve build / (release) for loans and provision for credit losses on unfunded lending commitments.\n(d) Includes provisions on Other Assets and policyholder benefits and claims.\n(e) TCE is a non-GAAP financial measure. For a",
+        "location": "HTML paragraph 2299 through HTML paragraph 2578",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p2299:through:c-2025q2-results:p2578:fragment:b1ea4a66c9832f66f99a"
+        ],
+        "token_count": 400
+      },
+      "score": 0.02964254577157803
+    },
+    {
+      "chunk": {
+        "chunk_id": "fef5cc5b2d8d8692358d",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=RETURNED ~$3.1 BILLION IN THE FORM OF COMMON DIVIDENDS AND SHARE REPURCHASES PAYOUT RATIO OF 82% (3) BOOK VALUE PER SHARE OF $106.94 TANGIBLE BOOK VALUE PER SHARE OF $94.16 (4) ​ ​ New York, July 15, 2025 – Citigroup Inc. today reported net income for the second quarter 2025 of $4.0 billion, or $1.96 per diluted share, on revenues of $21.7 billion. This compares to net income of $3.2 billion, or $1.52 per diluted share, on revenues of $20.0 billion for the second quarter 2024. ​ Revenues increased 8% from the prior-year period, on a reported basis, driven by growth in each of Citi’s five interconnected businesses, partially offset by a decline in All Other . Excluding divestiture-related impacts in both periods (5) , revenues were up 9%. ​ Net income was $4.0 billion, compared to $3.2 billion in the prior-year period, driven by the higher revenues, partially offset",
+        "location": "HTML table 1, row 4",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r4:fragment:fef5cc5b2d8d8692358d"
+        ],
+        "token_count": 400
+      },
+      "score": 0.029083245521601686
+    },
+    {
+      "chunk": {
+        "chunk_id": "9867f181c919070b3ec4",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "partially offset by a decline in All Other . Excluding divestiture-related impacts in both periods (5) , revenues were up 9%. ​ Net income was $4.0 billion, compared to $3.2 billion in the prior-year period, driven by the higher revenues, partially offset by higher cost of credit and higher expenses. ​ Earnings per share of $1.96 increased from $1.52 per diluted share in the prior-year period, reflecting the higher net income and lower shares outstanding. ​ Percentage comparisons throughout this press release are calculated for the second quarter 2025 versus the second quarter 2024, unless otherwise specified. | c2-3=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create",
+        "location": "HTML table 1, row 4",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r4:fragment:9867f181c919070b3ec4"
+        ],
+        "token_count": 400
+      },
+      "score": 0.028991596638655463
+    },
+    {
+      "chunk": {
+        "chunk_id": "d7cc378bbd0b907bb103",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "per share, see Appendix F.\n(5) Citigroup’s revenues excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation to reported results, see Appendices B and C. The reconciling items’ impact on revenue is reflected in non-interest revenue.\n(6) Citigroup’s expenses excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation to reported results, see Appendices B and C. Included in Citi's reported expenses was an immaterial decrease in expenses of $(20) million in the second quarter 2025 related to a lower incremental FDIC special assessment, compared to $34 million in the second quarter 2024.\n(7) Prime balances are defined as client’s billable balances where Citigroup provides cash or synthetic prime brokerage services.\n(8) Credit derivatives are used to economically hedge a portion of the Corporate Lending portfolio that includes both accrual loans and loans at fair value. Gain/(loss) on loan hedges includes the mark-to-market on the credit derivatives and the mark-to-market on the loans in the portfolio that are at fair value. The fixed premium costs of these hedges are netted against the Corporate Lending revenues to reflect the cost of credit protection. Citigroup’s results of operations excluding the impact of gain / (loss) on loan hedges are non-GAAP financial measures. For a reconciliation to reported results, see Appendix G.\n(9) Reflects the impact of the net deposit balance transfers from USPB to Citigold in Wealth of approximately $17 billion over the last 5 quarters, including approximately $3 billion during the second quarter 2025. These amounts represent the balances at the time client relationships are transferred.\n(10) All Other (managed basis) reflects results on a managed basis, which excludes divestiture-related impacts, for",
+        "location": "HTML paragraph 4328 through HTML paragraph 4346",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p4328:through:c-2025q2-results:p4346:fragment:d7cc378bbd0b907bb103"
+        ],
+        "token_count": 400
+      },
+      "score": 0.02862400327131466
+    },
+    {
+      "chunk": {
+        "chunk_id": "2d4ec5637a38d21165ec",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "(a) Includes credit reserve build / (release) for loans and provision for credit losses on unfunded lending commitments.\n(b) Includes provisions on Other Assets, policyholder benefits and claims and HTM debt securities.\nCitigroup revenues of $21.7 billion in the second quarter 2025 increased 8%, on a reported basis, driven by growth in each of Citi ’ s five interconnected businesses, partially offset by a decline in All Other . Excluding the divestiture-related impacts in both periods (5) , revenues were up 9%. Net interest income increased 12%, driven by Markets , Services, U.S. Personal Banking (USPB) , Wealth and Banking , partially offset by a decline in All Other . Non-interest revenue decreased 1%, driven by All Other, USPB, Markets and Services , offset by increases in Banking and Wealth .\nCitigroup operating expenses of $13.6 billion were up 2% on a reported basis, driven by higher compensation and benefits expenses, largely offset by lower tax-related and deposit insurance costs as well as the absence of the civil money penalties in the prior-year period. The higher compensation and benefits expenses were driven by higher severance of approximately $400 million, primarily related to the realignment of the technology workforce, higher volume and other revenue-related expenses and higher investments in Citi ’ s transformation and technology, with productivity savings and stranded cost reductions partially offsetting continued investments in the businesses. Excluding divestiture-related impacts in both periods (6) , expenses were up 3%.\nCitigroup cost of credit of $2.9 billion increased 16%, driven by a higher net build in the allowance for credit losses (ACL) related to deterioration in the macroeconomic outlook in the current quarter relative to the prior-year period and a net ACL build related to transfer risk associated with client activity in Russia, largely offset by a lower net ACL build",
+        "location": "HTML paragraph 396 through HTML paragraph 834",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p396:through:c-2025q2-results:p834:fragment:2d4ec5637a38d21165ec"
+        ],
+        "token_count": 400
+      },
+      "score": 0.028612012987012988
+    },
+    {
+      "chunk": {
+        "chunk_id": "e9b40c72cef42a61a2c2",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "billion over the last 5 quarters, including approximately $3 billion during the second quarter 2025. These amounts represent the balances at the time client relationships are transferred.\n(10) All Other (managed basis) reflects results on a managed basis, which excludes divestiture-related impacts, for all periods, related to Citigroup’s divestitures of its Asia consumer banking businesses and the planned divestiture of Banamex within Legacy Franchises. Certain of the results of operations of All Other (managed basis) and Legacy Franchises (managed basis) that exclude divestiture-related impacts are non-GAAP financial measures. For additional information and a reconciliation of these results, see Appendix C.",
+        "location": "HTML paragraph 4328 through HTML paragraph 4346",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p4328:through:c-2025q2-results:p4346:fragment:e9b40c72cef42a61a2c2"
+        ],
+        "token_count": 143
+      },
+      "score": 0.028577260665441927
+    },
+    {
+      "chunk": {
+        "chunk_id": "bdbd52e218b148900076",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "prior-year period to $1.6 billion, primarily driven by Wealth , primarily due to residential mortgage loans impacted by the California wildfires.\nCitigroup ’ s end-of-period loans were $725.3 billion at quarter end, up 5% versus the prior-year period, driven by higher loans in Markets , in Retail Banking and Branded Cards in USPB and in Services, partially offset by lower loans in Banking .\nCitigroup ’ s end-of-period deposits were approximately $1.4 trillion at quarter end, up 6% versus the prior-year period, driven by increases in Services and USPB , partially offset by lower deposits in Wealth , Markets , and All Other .\nCitigroup ’ s book value per share of $106.94 at quarter end increased 7% versus the prior-year period, and tangible book value per share of $94.16 at quarter end increased 8% versus the prior-year period. The increases reflected net income, common share repurchases and beneficial net movements in accumulated other comprehensive income (AOCI), partially offset by the payment of common and preferred dividends. At quarter end, Citigroup ’ s preliminary CET1 Capital ratio was 13.5% versus 13.4% at the end of the prior quarter, driven by net income, beneficial net movements in AOCI and lower deferred tax assets, partially offset by the payment of common and preferred dividends as well as common share repurchases and higher risk-weighted assets. Citigroup ’ s Supplementary Leverage ratio for the second quarter 2025 was 5.5% versus 5.8% in the prior quarter. During the quarter, Citigroup returned approximately $3.1 billion to common shareholders in the form of dividends and share repurchases.\n(a) Services includes revenues earned by Citigroup that are subject to a revenue sharing arrangement with Banking—Corporate Lending for Investment Banking",
+        "location": "HTML paragraph 396 through HTML paragraph 834",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p396:through:c-2025q2-results:p834:fragment:bdbd52e218b148900076"
+        ],
+        "token_count": 400
+      },
+      "score": 0.027583600982429624
+    },
+    {
+      "chunk": {
+        "chunk_id": "a7d791b1e6c536c7bb3b",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "higher net income and lower shares outstanding. ​ Percentage comparisons throughout this press release are calculated for the second quarter 2025 versus the second quarter 2024, unless otherwise specified. | c2-3=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.",
+        "location": "HTML table 1, row 4",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r4:fragment:a7d791b1e6c536c7bb3b"
+        ],
+        "token_count": 314
+      },
+      "score": 0.027526395173453996
+    },
+    {
+      "chunk": {
+        "chunk_id": "f3ec6243caf433edaaa1",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=RETURNED ~$3.1 BILLION IN THE FORM OF COMMON DIVIDENDS AND SHARE REPURCHASES PAYOUT RATIO OF 82% (3) BOOK VALUE PER SHARE OF $106.94 TANGIBLE BOOK VALUE PER SHARE OF $94.16 (4) ​ ​ New York, July 15, 2025 – Citigroup Inc. today reported net income for the second quarter 2025 of $4.0 billion, or $1.96 per diluted share, on revenues of $21.7 billion. This compares to net income of $3.2 billion, or $1.52 per diluted share, on revenues of $20.0",
+        "location": "HTML table 1, row 4",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r4:fragment:f3ec6243caf433edaaa1"
+        ],
+        "token_count": 400
+      },
+      "score": 0.02715098147128967
+    },
+    {
+      "chunk": {
+        "chunk_id": "21b5980a5807bd3cad30",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "Certain statements in this presentation are “forward-looking statements” within the meaning of the Private Securities Litigation Reform Act of 1995. These statements are based on management's current expectations and are subject to uncertainty and changes in circumstances. These statements are not guarantees of future results or occurrences. Actual results and capital and other financial condition may differ materially from those included in these statements due to a variety of factors. These factors include, among others: (i) macroeconomic, geopolitical and other challenges and uncertainties, including those related to policies and announcements of the U.S. administration, such as tariffs and retaliatory actions by U.S. trading partners, significant volatility and disruptions in financial markets, a resurgence of inflation, increases in unemployment rates, increases in interest rates, slowing economic growth or recession in the U.S. and other countries and conflicts in the Middle East; (ii) the execution and efficacy of Citi’s priorities regarding its simplification, transformation and enhanced business performance, including those related to revenues, net interest income, expenses and capital-related expectations; (iii) a deterioration in business and consumer confidence and spending, including lower credit card spend volume and loan growth, as well as lower than expected interest rates; (iv) changes in regulatory capital requirements, interpretations or rules; and (v) the precautionary statements included in this presentation. These factors also consist of those contained in Citigroup's filings with the U.S. Securities and Exchange Commission, including without limitation the “Risk Factors” section of Citigroup’s 2024 Form 10-K. Any forward-looking statements made by or on behalf of Citigroup speak only as to the date they are made, and Citi does not undertake to update forward-looking statements to reflect the impact of circumstances or events that arise after the date the forward-looking statements were made.\n(a) Reconciling Items consist of",
+        "location": "HTML paragraph 2579 through HTML paragraph 4326",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p2579:through:c-2025q2-results:p4326:fragment:21b5980a5807bd3cad30"
+        ],
+        "token_count": 400
+      },
+      "score": 0.027046783625730993
+    },
+    {
+      "chunk": {
+        "chunk_id": "6226db4a31195b4f932c",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nRow 1: c1=For Immediate Release Citigroup Inc. (NYSE: C) July 15, 2025",
+        "location": "HTML table 1, row 1",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r1:fragment:6226db4a31195b4f932c"
+        ],
+        "token_count": 264
+      },
+      "score": 0.02690501986276634
+    },
+    {
+      "chunk": {
+        "chunk_id": "b622d4b4d1bce6e5d0d9",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "up 17%.\nPrivate Bank revenues of $731 million increased 20%, driven by the sale of the alternative investments fund platform, the higher deposit spreads and the higher investment fee revenues, partially offset by the lower mortgage spreads.\nWealth at Work revenues of $221 million increased 13%, driven by the higher deposit spreads, largely offset by the lower mortgage spreads.\nCitigold revenues of $1.2 billion increased 21%, driven by the higher deposit spreads, the higher investment fee revenues and higher lending revenues, partially offset by the lower deposit balances. The decrease in deposit balances reflected higher tax payments and other operating outflows as well as a shift in deposits to higher-yielding investments on Citi’s Wealth platform, partially offset by the deposit impact from client transfers from USPB (9) .\nWealth operating expenses of $1.6 billion increased 1% from the prior-year period, driven by higher volume and other revenue-related expenses, episodic items and higher severance, primarily offset by benefits from prior repositioning actions and lower deposit insurance costs.\nWealth cost of credit was a benefit of $(26) million, compared to a benefit of $(9) million in the prior-year period.\nWealth net income was $494 million, compared to $210 million in the prior-year period, driven by the higher revenues, partially offset by the higher expenses.\n(a) Includes credit reserve build / (release) for loans.\n(b) Includes provisions on policyholder benefits and claims and Other Assets.\n(c) TCE and RoTCE are non-GAAP financial measures. For a reconciliation of the summation of the segments’ and components’ average allocated TCE to Citi’s total average TCE, total average stockholders’ equity, and RoTCE by Segment, see Appendices H and I.\nUSPB revenues of $5.1 billion increased 6%, driven by growth in Branded Cards",
+        "location": "HTML paragraph 1561 through HTML paragraph 2297",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p1561:through:c-2025q2-results:p2297:fragment:b622d4b4d1bce6e5d0d9"
+        ],
+        "token_count": 400
+      },
+      "score": 0.02649122807017544
+    },
+    {
+      "chunk": {
+        "chunk_id": "70478268a538bdbbbc05",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "ti CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions.",
+        "location": "HTML table 1, row 3",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r3:fragment:70478268a538bdbbbc05"
+        ],
+        "token_count": 400
+      },
+      "score": 0.02548701298701299
+    },
+    {
+      "chunk": {
+        "chunk_id": "794cf4f3488184610479",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "C | ​\nTable header context:\nc2-3=​ | c5-6=​ | c8-9=​ | c11=​ | c13=​\nc1=USPB ($ in millions, except as otherwise noted) | c3-4=2Q’25 | c6-7=1Q’25 | c9-10=2Q’24 | c12=QoQ% | c14=YoY%\nc1-14=​\nRow 7: c1=Total revenues, net of interest expense | c2-3=​ | c4=5,119 | c5-6=​ | c7=5,228 | c8-9=​ | c10=4,832 | c11=​ | c12=(2)% | c13=​ | c14=6%",
+        "location": "HTML table 7, row 7",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t7:r7"
+        ],
+        "token_count": 167
+      },
+      "score": 0.01639344262295082
+    },
+    {
+      "chunk": {
+        "chunk_id": "87f4ecc28518fdccf877",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nRow 3: c1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3",
+        "location": "HTML table 1, row 3",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r3:fragment:87f4ecc28518fdccf877"
+        ],
+        "token_count": 400
+      },
+      "score": 0.014285714285714285
+    }
+  ],
+  "answer": {
+    "question": "What was Citi consumer banking noninterest expense in Q2 2025?",
+    "status": "evidence_only",
+    "mode": "evidence_only",
+    "text": "Evidence-only mode: retrieved excerpts are shown below; no language-model answer was generated.\n\n[025e7032bb09539b5ee6] HTML paragraph 396 through HTML paragraph 834\nby a higher net build in the allowance for credit losses (ACL) related to deterioration in the macroeconomic outlook in the current quarter relative to the prior-year period and a net ACL build related to transfer risk associated with client activity in Russia, largely offset by a lower net ACL build for volume and lower net credit losses in the card portfolios in USPB.\nCitigroup net income was $4.0 billion in the second quarter 2025, compared to net income of $3.2 billion in the prior-year period, driven by the higher revenues, partially offset by the higher expenses and the higher cost of credit. Citigroup ’ s effective tax rate decreased to approximately 23% in the current quarter from 24% in the second quarter 2024, largely due to the resolution of a tax audit.\nCitigroup ’ s total allowance for credit losses was approximately $23.7 billion at quarter end, compared to $21.8 billion at the end of the prior-year period. Total ACL on loans was approximately $19.1 billion at quarter end, compared to $18.2 billion at the\nend of the prior-year period, with a reserve-to-funded loans ratio of 2.67%, down from 2.68% in the prior-year period. Total non-accrual loans increased 49% from the prior-year period to $3.4 billion. Corporate non-accrual loans increased 73% from the prior-year period to $1.7 billion, primarily driven by idiosyncratic downgrades, primarily in Markets . Consumer non-accrual loans increased 30% from the prior-year period to $1.6 billion, primarily driven by Wealth , primarily due to residential mortgage loans impacted by the California wildfires.\nCitigroup ’ s end-of-period loans were $725.3 billion at quarter end, up 5% versus the prior-year period\nhttps://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm\n\n[22493cd42851bc9e554b] HTML table 1, row 4\nthe second quarter 2025 of $4.0 billion, or $1.96 per diluted share, on revenues of $21.7 billion. This compares to net income of $3.2 billion, or $1.52 per diluted share, on revenues of $20.0 billion for the second quarter 2024. ​ Revenues increased 8% from the prior-year period, on a reported basis, driven by growth in each of Citi’s five interconnected businesses, partially offset by a decline in All Other . Excluding divestiture-related impacts in both periods (5) , revenues were up 9%. ​ Net income was $4.0 billion, compared to $3.2 billion in the prior-year period, driven by the higher revenues, partially offset by higher cost of credit and higher expenses. ​ Earnings per share of $1.96 increased from $1.52 per diluted share in the prior-year period, reflecting the higher net income and lower shares outstanding. ​ Percentage comparisons throughout this press release are calculated for the second quarter 2025 versus the second quarter 2024, unless otherwise specified. | c2-3=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $\nhttps://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm\n\n[c103fe4fa918240783a6] HTML paragraph 2579 through HTML paragraph 4326\nor on behalf of Citigroup speak only as to the date they are made, and Citi does not undertake to update forward-looking statements to reflect the impact of circumstances or events that arise after the date the forward-looking statements were made.\n(a) Reconciling Items consist of the divestiture-related impacts excluded from the results of All Other, as well as All Other — Legacy Franchises on a managed basis.\n(b) 2Q25 includes (i) an approximately $186 million loss recorded in revenue (approximately $157 million after tax) related to the announced sale of the Poland consumer banking business; and (ii) approximately $37 million in operating expenses (approximately $26 million after tax) primarily related to separation costs in Mexico.\n(c) 1Q25 includes approximately $34 million in operating expenses (approximately $23 million after-tax), largely related to separation costs in Mexico and severance costs in the Asia exit markets. For additional information, see Citi's Quarterly Report on Form 10-Q for the quarterly period ended March 31, 2025.\n(d) 2Q24 includes approximately $85 million in operating expenses (approximately $58 million after-tax), primarily related to separation costs in Mexico and severance costs in the Asia exit markets. For additional information, see Citi's Quarterly Report on Form 10-Q for the quarterly period ended June 30, 2024.\n(e) Includes credit reserve build / (release) for loans and provision for credit losses on unfunded lending commitments.\n(f) Includes provisions for policyholder benefits and claims and other assets.\nNote: Citi’s binding CET1 Capital ratios were derived under the Basel III Standardized Approach for all periods reflected.\n(b) Excludes issuance costs related to outstanding preferred stock in accordance with Federal Reserve Board regulatory reporting requirements.\n(c) Please refer to Footnote 2 at the end of this press release for additional information.\n(d\nhttps://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm\n\n[04f966a5ab12c4ba307b] HTML table 1, row 1\nC | ​\nTable header context:\nc1=For Immediate Release Citigroup Inc. (NYSE: C) July 15, 2025\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2=​ | c3=CEO COMMENTARY\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=RETURNED ~$3.1 BILLION IN THE FORM OF COMMON DIVIDENDS AND SHARE REPURCHASES PAYOUT RATIO OF 82% (3) BOOK VALUE PER SHARE OF $106.94 TANGIBLE BOOK VALUE PER SHARE OF $94.16 (4) ​ ​ New York, July 15, 2025\nhttps://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm\n\n[0b00fad3be52f6904281] HTML table 1, row 3\nC | ​\nTable header context:\nc1=For Immediate Release Citigroup Inc. (NYSE: C) July 15, 2025\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-\nhttps://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+    "hits": [
+      {
+        "chunk": {
+          "chunk_id": "025e7032bb09539b5ee6",
+          "document_id": "c-2025q2-results",
+          "bank": "C",
+          "strategy": "fixed",
+          "text": "by a higher net build in the allowance for credit losses (ACL) related to deterioration in the macroeconomic outlook in the current quarter relative to the prior-year period and a net ACL build related to transfer risk associated with client activity in Russia, largely offset by a lower net ACL build for volume and lower net credit losses in the card portfolios in USPB.\nCitigroup net income was $4.0 billion in the second quarter 2025, compared to net income of $3.2 billion in the prior-year period, driven by the higher revenues, partially offset by the higher expenses and the higher cost of credit. Citigroup ’ s effective tax rate decreased to approximately 23% in the current quarter from 24% in the second quarter 2024, largely due to the resolution of a tax audit.\nCitigroup ’ s total allowance for credit losses was approximately $23.7 billion at quarter end, compared to $21.8 billion at the end of the prior-year period. Total ACL on loans was approximately $19.1 billion at quarter end, compared to $18.2 billion at the\nend of the prior-year period, with a reserve-to-funded loans ratio of 2.67%, down from 2.68% in the prior-year period. Total non-accrual loans increased 49% from the prior-year period to $3.4 billion. Corporate non-accrual loans increased 73% from the prior-year period to $1.7 billion, primarily driven by idiosyncratic downgrades, primarily in Markets . Consumer non-accrual loans increased 30% from the prior-year period to $1.6 billion, primarily driven by Wealth , primarily due to residential mortgage loans impacted by the California wildfires.\nCitigroup ’ s end-of-period loans were $725.3 billion at quarter end, up 5% versus the prior-year period",
+          "location": "HTML paragraph 396 through HTML paragraph 834",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "c-2025q2-results:p396:through:c-2025q2-results:p834:fragment:025e7032bb09539b5ee6"
+          ],
+          "token_count": 400
+        },
+        "score": 0.03125763125763126
+      },
+      {
+        "chunk": {
+          "chunk_id": "22493cd42851bc9e554b",
+          "document_id": "c-2025q2-results",
+          "bank": "C",
+          "strategy": "fixed",
+          "text": "the second quarter 2025 of $4.0 billion, or $1.96 per diluted share, on revenues of $21.7 billion. This compares to net income of $3.2 billion, or $1.52 per diluted share, on revenues of $20.0 billion for the second quarter 2024. ​ Revenues increased 8% from the prior-year period, on a reported basis, driven by growth in each of Citi’s five interconnected businesses, partially offset by a decline in All Other . Excluding divestiture-related impacts in both periods (5) , revenues were up 9%. ​ Net income was $4.0 billion, compared to $3.2 billion in the prior-year period, driven by the higher revenues, partially offset by higher cost of credit and higher expenses. ​ Earnings per share of $1.96 increased from $1.52 per diluted share in the prior-year period, reflecting the higher net income and lower shares outstanding. ​ Percentage comparisons throughout this press release are calculated for the second quarter 2025 versus the second quarter 2024, unless otherwise specified. | c2-3=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $",
+          "location": "HTML table 1, row 4",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "c-2025q2-results:t1:r4:fragment:22493cd42851bc9e554b"
+          ],
+          "token_count": 400
+        },
+        "score": 0.031024531024531024
+      },
+      {
+        "chunk": {
+          "chunk_id": "c103fe4fa918240783a6",
+          "document_id": "c-2025q2-results",
+          "bank": "C",
+          "strategy": "fixed",
+          "text": "or on behalf of Citigroup speak only as to the date they are made, and Citi does not undertake to update forward-looking statements to reflect the impact of circumstances or events that arise after the date the forward-looking statements were made.\n(a) Reconciling Items consist of the divestiture-related impacts excluded from the results of All Other, as well as All Other — Legacy Franchises on a managed basis.\n(b) 2Q25 includes (i) an approximately $186 million loss recorded in revenue (approximately $157 million after tax) related to the announced sale of the Poland consumer banking business; and (ii) approximately $37 million in operating expenses (approximately $26 million after tax) primarily related to separation costs in Mexico.\n(c) 1Q25 includes approximately $34 million in operating expenses (approximately $23 million after-tax), largely related to separation costs in Mexico and severance costs in the Asia exit markets. For additional information, see Citi's Quarterly Report on Form 10-Q for the quarterly period ended March 31, 2025.\n(d) 2Q24 includes approximately $85 million in operating expenses (approximately $58 million after-tax), primarily related to separation costs in Mexico and severance costs in the Asia exit markets. For additional information, see Citi's Quarterly Report on Form 10-Q for the quarterly period ended June 30, 2024.\n(e) Includes credit reserve build / (release) for loans and provision for credit losses on unfunded lending commitments.\n(f) Includes provisions for policyholder benefits and claims and other assets.\nNote: Citi’s binding CET1 Capital ratios were derived under the Basel III Standardized Approach for all periods reflected.\n(b) Excludes issuance costs related to outstanding preferred stock in accordance with Federal Reserve Board regulatory reporting requirements.\n(c) Please refer to Footnote 2 at the end of this press release for additional information.\n(d",
+          "location": "HTML paragraph 2579 through HTML paragraph 4326",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "c-2025q2-results:p2579:through:c-2025q2-results:p4326:fragment:c103fe4fa918240783a6"
+          ],
+          "token_count": 400
+        },
+        "score": 0.030776515151515152
+      },
+      {
+        "chunk": {
+          "chunk_id": "04f966a5ab12c4ba307b",
+          "document_id": "c-2025q2-results",
+          "bank": "C",
+          "strategy": "fixed",
+          "text": "C | ​\nTable header context:\nc1=For Immediate Release Citigroup Inc. (NYSE: C) July 15, 2025\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2=​ | c3=CEO COMMENTARY\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=RETURNED ~$3.1 BILLION IN THE FORM OF COMMON DIVIDENDS AND SHARE REPURCHASES PAYOUT RATIO OF 82% (3) BOOK VALUE PER SHARE OF $106.94 TANGIBLE BOOK VALUE PER SHARE OF $94.16 (4) ​ ​ New York, July 15, 2025",
+          "location": "HTML table 1, row 1",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "c-2025q2-results:t1:r1:fragment:04f966a5ab12c4ba307b"
+          ],
+          "token_count": 400
+        },
+        "score": 0.03028233151183971
+      },
+      {
+        "chunk": {
+          "chunk_id": "0b00fad3be52f6904281",
+          "document_id": "c-2025q2-results",
+          "bank": "C",
+          "strategy": "fixed",
+          "text": "C | ​\nTable header context:\nc1=For Immediate Release Citigroup Inc. (NYSE: C) July 15, 2025\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-",
+          "location": "HTML table 1, row 3",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "c-2025q2-results:t1:r3:fragment:0b00fad3be52f6904281"
+          ],
+          "token_count": 400
+        },
+        "score": 0.02964254577157803
+      }
+    ],
+    "elapsed_seconds": 0.423,
+    "usage": {}
+  },
+  "timestamp": "2026-10-18T22:09:21.236928+00:00",
+  "gold": {
+    "id": "F09",
+    "question": "What was Citi consumer banking noninterest expense in Q2 2025?",
+    "base_bank": null,
+    "expected_behavior": "answered",
+    "annotation_status": "reviewed",
+    "evidence": [
+      {
+        "document_id": "c-2025q2-results",
+        "evidence_id": "c-2025q2-results:t7:r9",
+        "quote": "Row 9: c1=Total operating expenses | c2=​ | c4=2,381 | c5=​ | c7=2,442 | c8=​ | c10=2,355 | c11=​ | c12=(2)% | c13=​ | c14=1%",
+        "bank": "C",
+        "metric": "noninterest_expense",
+        "period": "2025Q2"
+      }
+    ],
+    "expected_answer": "C 2025Q2 noninterest_expense 2381 USD_millions reported",
+    "review_method": "Assistant verified original HTML cells or PDF text-line columns before this expanded-corpus evaluation; not independent human review."
+  }
+}

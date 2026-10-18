@@ -1,0 +1,651 @@
+{
+  "strategy": "semantic",
+  "reranking": true,
+  "scope": {
+    "banks": [
+      "WFC"
+    ],
+    "periods": [
+      "2024Q2",
+      "2025Q2"
+    ],
+    "clarification": null,
+    "unsupported": null
+  },
+  "retrieval_policy": "v5-bank-scaled-evidence-budgets",
+  "retrieval_budget": {
+    "candidate_k": 20,
+    "final_k": 5,
+    "context_tokens": 2200
+  },
+  "answer_policy": "v6-selected-base-all-supported-peers",
+  "metric_registry": {
+    "version": "1.0",
+    "sha256": "144e38de3e22143e67f8949babbe6068bc87cc09baca096dea8c7e6d654ba710"
+  },
+  "base_bank": null,
+  "retrieval_queries": [
+    "What was Wells Fargo consumer total net revenue from Q2 2024 to Q2 2025?",
+    "What was Wells Fargo consumer total noninterest expense from Q2 2024 to Q2 2025?"
+  ],
+  "framework": "LangChain + LangGraph",
+  "prompt_hash": "daea8e8a5c1687975d416a5a6c3c87da7058afe71f42dedd2fba8049aae46617",
+  "calculations": [
+    {
+      "bank": "WFC",
+      "value": "0.75",
+      "unit": "percentage points",
+      "formula": "revenue YoY growth minus noninterest expense YoY growth",
+      "components": {
+        "revenue_growth": "2.47",
+        "expense_growth": "1.72"
+      },
+      "inputs": [
+        {
+          "bank": "WFC",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2025Q2",
+          "value": "9228",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "wfc-2025q2-results:page4:line17",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "WFC",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2024Q2",
+          "value": "9006",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "wfc-2025q2-results:page4:line17",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "WFC",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2025Q2",
+          "value": "5799",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "wfc-2025q2-results:page4:line19",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "WFC",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2024Q2",
+          "value": "5701",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "wfc-2025q2-results:page4:line19",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "candidate_hits": [
+    {
+      "chunk": {
+        "chunk_id": "2db617bec894cfbcd55b",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+        "location": "PDF page 4, text line 17 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line17"
+        ],
+        "token_count": 189
+      },
+      "score": 0.06172718694299794
+    },
+    {
+      "chunk": {
+        "chunk_id": "6cf0c5973ee22e5ca3d6",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2",
+        "location": "PDF page 4, text line 19 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line19"
+        ],
+        "token_count": 195
+      },
+      "score": 0.05966995777446597
+    },
+    {
+      "chunk": {
+        "chunk_id": "cd4d604e908503227b12",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nWealth and Investment Management provides personalized wealth management, brokerage, financial planning, lending,\nprivate banking, trust and fiduciary products and services to affluent, high-net worth and ultra-high-net worth clients. We\noperate through financial advisors in our brokerage and wealth offices, consumer bank branches, independent offices, and\ndigitally through WellsTrade® and Intuitive Investor®.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 13: c1=Total revenue | c2=3,898 | c3=3,874 | c4=3,858 | c5=1 | c6=1",
+        "location": "PDF page 7, text line 13 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=7",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page7:line13"
+        ],
+        "token_count": 209
+      },
+      "score": 0.060787938184148085
+    },
+    {
+      "chunk": {
+        "chunk_id": "6538fb18974521cd63a1",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "News Release | July 15, 2025 Wells Fargo Reports Second Quarter 2025 Net Income of $5.5 billion, or $1.60 per Diluted Share Company-wide Financial Summary Operating Segments and Other Highlights Quarter ended Quarter Jun 30, 2025 ended % Change from Jun 30, Jun 30, 2025 2024 Jun 30, Mar 31, Jun 30, ($ in billions) 2025 2025 2024 Selected Income Statement Data ($ in millions except per share amounts) Average loans Consumer Banking and Lending $ 315.4 (1) % (3) Total revenue $ 20,822 20,689 Commercial Banking 226.5 1 1 Noninterest expense 13,379 13,293 Provision for credit losses1 1,005 1,236 Corporate and Investment Banking 285.9 3 4 Net income 5,494 4,910 Wealth and Investment Diluted earnings per common share 1.60 1.33 Management 84.9 1 2 Selected Balance Sheet Data Average deposits ($ in billions) Consumer Banking and Lending 781.4 — — Average loans $ 916.7 917.0 Commercial Banking 178.0 (3) 7 Average deposits 1,331.7 1,346.5 Corporate and Investment CET12 11.1% 11.0 Banking 202.4 (1) 8 Wealth and Investment Performance Metrics Management 123.6 — 20 ROE3 12.8% 11.5 ROTCE4 15.2 13.7 Capital ◦ Repurchased 43.9 million shares, or $3.0 billion, of common stock in second quarter 2025 Second quarter 2025 results included: ◦ $253 million, or $0.06 per share, gain associated with our acquisition of the remaining interest in our merchant services joint venture Chief Executive Officer Charlie Scharf commented, “Our second quarter results reflect the progress we are making to",
+        "location": "PDF page 1",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=1",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page1:through:wfc-2025q2-results:page1:fragment:6538fb18974521cd63a1"
+        ],
+        "token_count": 384
+      },
+      "score": 0.06038490580166868
+    },
+    {
+      "chunk": {
+        "chunk_id": "e359c20fecd32c2c3500",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nWealth and Investment Management provides personalized wealth management, brokerage, financial planning, lending,\nprivate banking, trust and fiduciary products and services to affluent, high-net worth and ultra-high-net worth clients. We\noperate through financial advisors in our brokerage and wealth offices, consumer bank branches, independent offices, and\ndigitally through WellsTrade® and Intuitive Investor®.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 15: c1=Noninterest expense | c2=3,245 | c3=3,360 | c4=3,193 | c5=(3) | c6=2",
+        "location": "PDF page 7, text line 15 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=7",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page7:line15"
+        ],
+        "token_count": 211
+      },
+      "score": 0.05932958454539554
+    },
+    {
+      "chunk": {
+        "chunk_id": "78074c653ef550181061",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nWealth and Investment Management provides personalized wealth management, brokerage, financial planning, lending,\nprivate banking, trust and fiduciary products and services to affluent, high-net worth and ultra-high-net worth clients. We\noperate through financial advisors in our brokerage and wealth offices, consumer bank branches, independent offices, and\ndigitally through WellsTrade® and Intuitive Investor®.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 12: c1=Noninterest income | c2=3,007 | c3=3,048 | c4=2,952 | c5=(1) | c6=2",
+        "location": "PDF page 7, text line 12 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=7",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page7:line12"
+        ],
+        "token_count": 214
+      },
+      "score": 0.05900887544723161
+    },
+    {
+      "chunk": {
+        "chunk_id": "7877d6233999ad9e4b88",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nWealth and Investment Management provides personalized wealth management, brokerage, financial planning, lending,\nprivate banking, trust and fiduciary products and services to affluent, high-net worth and ultra-high-net worth clients. We\noperate through financial advisors in our brokerage and wealth offices, consumer bank branches, independent offices, and\ndigitally through WellsTrade® and Intuitive Investor®.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total client assets (in billions) | c2=2,346 | c3=2,233 | c4=2,200 | c5=5 | c6=7",
+        "location": "PDF page 7, text line 17 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=7",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page7:line17"
+        ],
+        "token_count": 212
+      },
+      "score": 0.05830989360401126
+    },
+    {
+      "chunk": {
+        "chunk_id": "0ddfc64387f01159b7e4",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 20: c1=Net income | c2=1,863 | c3=1,689 | c4=1,777 | c5=10 | c6=5",
+        "location": "PDF page 4, text line 20 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line20"
+        ],
+        "token_count": 190
+      },
+      "score": 0.057845172633075224
+    },
+    {
+      "chunk": {
+        "chunk_id": "96759b5369b566e2dccc",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nWealth and Investment Management provides personalized wealth management, brokerage, financial planning, lending,\nprivate banking, trust and fiduciary products and services to affluent, high-net worth and ultra-high-net worth clients. We\noperate through financial advisors in our brokerage and wealth offices, consumer bank branches, independent offices, and\ndigitally through WellsTrade® and Intuitive Investor®.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 16: c1=Net income | c2=480 | c3=392 | c4=484 | c5=22 | c6=(1)",
+        "location": "PDF page 7, text line 16 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=7",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page7:line16"
+        ],
+        "token_count": 204
+      },
+      "score": 0.057178932178932176
+    },
+    {
+      "chunk": {
+        "chunk_id": "e01dc046ac6159ce3ad9",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "Wealth and Investment Management provides personalized wealth management, brokerage, financial planning, lending,\nprivate banking, trust and fiduciary products and services to affluent, high-net worth and ultra-high-net worth clients. We\noperate through financial advisors in our brokerage and wealth offices, consumer bank branches, independent offices, and\ndigitally through WellsTrade® and Intuitive Investor®.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nNet interest income $ 891 826 906 8% (2)\nNoninterest income 3,007 3,048 2,952 (1) 2\nTotal revenue 3,898 3,874 3,858 1 1\nProvision for credit losses 12 11 (14) 9 186\nNoninterest expense 3,245 3,360 3,193 (3) 2\nNet income $ 480 392 484 22 (1)\nTotal client assets (in billions) 2,346 2,233 2,200 5 7\nAverage balances (in billions)\nLoans $ 84.9 84.3 83.2 1 2\nDeposits 123.6 123.4 102.8 — 20\nSecond Quarter 2025 vs. Second Quarter 2024\n◦ Revenue increased 1%\n▪ Net interest income was down 2% driven by the impact of lower interest rates, partially offset by higher deposit and\nloan balances\n▪ Noninterest income was up 2% on higher asset-based fees driven by an increase in market valuations\n◦ Noninterest expense increased 2% due to higher revenue-related compensation expense, partially offset by lower\noperating losses and the impact of efficiency initiatives\n7",
+        "location": "PDF page 7",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=7",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page7"
+        ],
+        "token_count": 361
+      },
+      "score": 0.05690425959413301
+    },
+    {
+      "chunk": {
+        "chunk_id": "47aeeb46002f65260c1b",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 11: c1=Consumer, Small and Business Banking | c2=6,288 | c3=5,981 | c4=6,129 | c5=5 | c6=3",
+        "location": "PDF page 4, text line 11 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line11"
+        ],
+        "token_count": 192
+      },
+      "score": 0.05602356010897509
+    },
+    {
+      "chunk": {
+        "chunk_id": "b73b1f38ad5f769aa165",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 14: c1=Credit Card | c2=1,588 | c3=1,524 | c4=1,452 | c5=4 | c6=9",
+        "location": "PDF page 4, text line 14 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line14"
+        ],
+        "token_count": 190
+      },
+      "score": 0.05590227546714888
+    },
+    {
+      "chunk": {
+        "chunk_id": "66d973a3ddcb02ac0425",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 15: c1=Auto | c2=241 | c3=237 | c4=282 | c5=2 | c6=(15)",
+        "location": "PDF page 4, text line 15 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line15"
+        ],
+        "token_count": 182
+      },
+      "score": 0.0556611088700641
+    },
+    {
+      "chunk": {
+        "chunk_id": "92f26259b45ed3ff088f",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nWealth and Investment Management provides personalized wealth management, brokerage, financial planning, lending,\nprivate banking, trust and fiduciary products and services to affluent, high-net worth and ultra-high-net worth clients. We\noperate through financial advisors in our brokerage and wealth offices, consumer bank branches, independent offices, and\ndigitally through WellsTrade® and Intuitive Investor®.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 11: c1=Net interest income | c2=891 | c3=826 | c4=906 | c5=8 | c6=(2)",
+        "location": "PDF page 7, text line 11 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=7",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page7:line11"
+        ],
+        "token_count": 206
+      },
+      "score": 0.05496391480373174
+    },
+    {
+      "chunk": {
+        "chunk_id": "75f71c41c95d616075cf",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nWealth and Investment Management provides personalized wealth management, brokerage, financial planning, lending,\nprivate banking, trust and fiduciary products and services to affluent, high-net worth and ultra-high-net worth clients. We\noperate through financial advisors in our brokerage and wealth offices, consumer bank branches, independent offices, and\ndigitally through WellsTrade® and Intuitive Investor®.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 14: c1=Provision for credit losses | c2=12 | c3=11 | c4=(14) | c5=9 | c6=186",
+        "location": "PDF page 7, text line 14 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=7",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page7:line14"
+        ],
+        "token_count": 204
+      },
+      "score": 0.05464759535655059
+    },
+    {
+      "chunk": {
+        "chunk_id": "fafd19c9234451653039",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 16: c1=Personal Lending | c2=290 | c3=305 | c4=320 | c5=(5) | c6=(9)",
+        "location": "PDF page 4, text line 16 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line16"
+        ],
+        "token_count": 185
+      },
+      "score": 0.05415117486055701
+    },
+    {
+      "chunk": {
+        "chunk_id": "0d4f9f749173feac77c7",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 13: c1=Home Lending | c2=821 | c3=866 | c4=823 | c5=(5) | c6=—",
+        "location": "PDF page 4, text line 13 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line13"
+        ],
+        "token_count": 186
+      },
+      "score": 0.05412925214655567
+    },
+    {
+      "chunk": {
+        "chunk_id": "2272775535360c227d08",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "◦ Nonperforming assets were down $261 million, or 3%, driven by lower commercial real estate nonaccrual loans, predominantly in the office portfolio Endnotes are presented on page 9. 3 Operating Segment Performance Consumer Banking and Lending offers diversified financial products and services for consumers and small businesses with annual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit and debit cards, as well as home, auto, personal, and small business lending. Selected Financial Information Jun 30, 2025 Quarter ended % Change from Jun 30, Mar 31, Jun 30, Mar 31, Jun 30, 2025 2025 2024 2025 2024 Earnings (in millions) Consumer, Small and Business Banking $ 6,288 5,981 6,129 5% 3 Consumer Lending: Home Lending 821 866 823 (5) — Credit Card 1,588 1,524 1,452 4 9 Auto 241 237 282 2 (15) Personal Lending 290 305 320 (5) (9) Total revenue 9,228 8,913 9,006 4 2 Provision for credit losses 945 739 932 28 1 Noninterest expense 5,799 5,928 5,701 (2) 2 Net income $ 1,863 1,689 1,777 10 5 Average balances (in billions) Loans $ 315.4 318.1 325.9 (1) (3) Deposits 781.4 778.6 778.2 — — Second Quarter 2025 vs. Second Quarter 2024 ◦ Revenue increased 2% ▪ Consumer, Small and Business Banking was up 3% driven by the impact of lower interest rates on deposit pricing and higher deposit balances, partially offset by lower deposit-related fees ▪ Home Lending was stable and included lower net interest income on lower loan balances, offset by higher mortgage banking fees",
+        "location": "PDF page 3 through PDF page 4",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=3",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page3:through:wfc-2025q2-results:page4:fragment:2272775535360c227d08"
+        ],
+        "token_count": 392
+      },
+      "score": 0.04375
+    },
+    {
+      "chunk": {
+        "chunk_id": "ea5ad53e770ea4816b77",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "consistently produce stronger financial results with net income and diluted earnings per share up from both the first quarter and a year ago. Our efforts to increase fee-based income drove revenue growth and both net interest income and noninterest income grew from the first quarter. We are investing in our businesses but remain focused on expense management. While there continue to be risks as we look forward, activity levels have remained consistent and our strong credit performance continues to point to the strength of our commercial and consumer customers’ financial position.” “The lifting of the asset cap in the second quarter marked a pivotal milestone in Wells Fargo’s ongoing transformation, along with the termination of thirteen consent orders since 2019, including seven this year alone. We are a far stronger company today because of the work we’ve done. This is a huge accomplishment, and I appreciate the focus and dedication that was required of everyone at Wells Fargo. We now have the opportunity to grow in ways we could not while the asset cap was in place and are able to move forward more aggressively to serve consumers, businesses, and communities to support U.S. economic growth,” Scharf added. “As we have been investing to drive organic growth and improve the earnings capacity in each of our businesses, we have also been returning excess capital to shareholders. During the first half of this year, we repurchased over $6 billion of common stock and as previously announced, we expect to increase our third quarter common stock dividend by 12.5%, subject to approval by the Company’s Board of Directors at its regularly scheduled meeting later this month,” Scharf concluded. Endnotes are presented on page 9.",
+        "location": "PDF page 1",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=1",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page1:through:wfc-2025q2-results:page1:fragment:ea5ad53e770ea4816b77"
+        ],
+        "token_count": 339
+      },
+      "score": 0.042019148796642404
+    },
+    {
+      "chunk": {
+        "chunk_id": "a59aa956d0c030a238ee",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "semantic",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 18: c1=Provision for credit losses | c2=945 | c3=739 | c4=932 | c5=28 | c6=1",
+        "location": "PDF page 4, text line 18 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line18"
+        ],
+        "token_count": 186
+      },
+      "score": 0.04174147336970295
+    }
+  ],
+  "answer": {
+    "question": "What was Wells Fargo consumer operating leverage from Q2 2024 to Q2 2025?",
+    "status": "evidence_only",
+    "mode": "evidence_only",
+    "text": "Evidence-only mode: retrieved excerpts are shown below; no language-model answer was generated.\n\nValidated calculations:\n[\n  {\n    \"bank\": \"WFC\",\n    \"value\": \"0.75\",\n    \"unit\": \"percentage points\",\n    \"formula\": \"revenue YoY growth minus noninterest expense YoY growth\",\n    \"components\": {\n      \"revenue_growth\": \"2.47\",\n      \"expense_growth\": \"1.72\"\n    },\n    \"inputs\": [\n      {\n        \"bank\": \"WFC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2025Q2\",\n        \"value\": \"9228\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"wfc-2025q2-results:page4:line17\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"WFC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2024Q2\",\n        \"value\": \"9006\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"wfc-2025q2-results:page4:line17\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"WFC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2025Q2\",\n        \"value\": \"5799\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"wfc-2025q2-results:page4:line19\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"WFC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2024Q2\",\n        \"value\": \"5701\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"wfc-2025q2-results:page4:line19\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      }\n    ]\n  }\n]\n\n[2db617bec894cfbcd55b] PDF page 4, text line 17 (reviewed values only)\nWFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2\nhttps://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4\n\n[6cf0c5973ee22e5ca3d6] PDF page 4, text line 19 (reviewed values only)\nWFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2\nhttps://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4\n\n[6538fb18974521cd63a1] PDF page 1\nNews Release | July 15, 2025 Wells Fargo Reports Second Quarter 2025 Net Income of $5.5 billion, or $1.60 per Diluted Share Company-wide Financial Summary Operating Segments and Other Highlights Quarter ended Quarter Jun 30, 2025 ended % Change from Jun 30, Jun 30, 2025 2024 Jun 30, Mar 31, Jun 30, ($ in billions) 2025 2025 2024 Selected Income Statement Data ($ in millions except per share amounts) Average loans Consumer Banking and Lending $ 315.4 (1) % (3) Total revenue $ 20,822 20,689 Commercial Banking 226.5 1 1 Noninterest expense 13,379 13,293 Provision for credit losses1 1,005 1,236 Corporate and Investment Banking 285.9 3 4 Net income 5,494 4,910 Wealth and Investment Diluted earnings per common share 1.60 1.33 Management 84.9 1 2 Selected Balance Sheet Data Average deposits ($ in billions) Consumer Banking and Lending 781.4 — — Average loans $ 916.7 917.0 Commercial Banking 178.0 (3) 7 Average deposits 1,331.7 1,346.5 Corporate and Investment CET12 11.1% 11.0 Banking 202.4 (1) 8 Wealth and Investment Performance Metrics Management 123.6 — 20 ROE3 12.8% 11.5 ROTCE4 15.2 13.7 Capital ◦ Repurchased 43.9 million shares, or $3.0 billion, of common stock in second quarter 2025 Second quarter 2025 results included: ◦ $253 million, or $0.06 per share, gain associated with our acquisition of the remaining interest in our merchant services joint venture Chief Executive Officer Charlie Scharf commented, “Our second quarter results reflect the progress we are making to\nhttps://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=1\n\n[0ddfc64387f01159b7e4] PDF page 4, text line 20 (reviewed values only)\nWFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 20: c1=Net income | c2=1,863 | c3=1,689 | c4=1,777 | c5=10 | c6=5\nhttps://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4\n\n[a59aa956d0c030a238ee] PDF page 4, text line 18 (reviewed values only)\nWFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 18: c1=Provision for credit losses | c2=945 | c3=739 | c4=932 | c5=28 | c6=1\nhttps://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+    "hits": [
+      {
+        "chunk": {
+          "chunk_id": "2db617bec894cfbcd55b",
+          "document_id": "wfc-2025q2-results",
+          "bank": "WFC",
+          "strategy": "semantic",
+          "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+          "location": "PDF page 4, text line 17 (reviewed values only)",
+          "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "wfc-2025q2-results:page4:line17"
+          ],
+          "token_count": 189
+        },
+        "score": 3.039212703704834
+      },
+      {
+        "chunk": {
+          "chunk_id": "6cf0c5973ee22e5ca3d6",
+          "document_id": "wfc-2025q2-results",
+          "bank": "WFC",
+          "strategy": "semantic",
+          "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2",
+          "location": "PDF page 4, text line 19 (reviewed values only)",
+          "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "wfc-2025q2-results:page4:line19"
+          ],
+          "token_count": 195
+        },
+        "score": 3.152601957321167
+      },
+      {
+        "chunk": {
+          "chunk_id": "6538fb18974521cd63a1",
+          "document_id": "wfc-2025q2-results",
+          "bank": "WFC",
+          "strategy": "semantic",
+          "text": "News Release | July 15, 2025 Wells Fargo Reports Second Quarter 2025 Net Income of $5.5 billion, or $1.60 per Diluted Share Company-wide Financial Summary Operating Segments and Other Highlights Quarter ended Quarter Jun 30, 2025 ended % Change from Jun 30, Jun 30, 2025 2024 Jun 30, Mar 31, Jun 30, ($ in billions) 2025 2025 2024 Selected Income Statement Data ($ in millions except per share amounts) Average loans Consumer Banking and Lending $ 315.4 (1) % (3) Total revenue $ 20,822 20,689 Commercial Banking 226.5 1 1 Noninterest expense 13,379 13,293 Provision for credit losses1 1,005 1,236 Corporate and Investment Banking 285.9 3 4 Net income 5,494 4,910 Wealth and Investment Diluted earnings per common share 1.60 1.33 Management 84.9 1 2 Selected Balance Sheet Data Average deposits ($ in billions) Consumer Banking and Lending 781.4 — — Average loans $ 916.7 917.0 Commercial Banking 178.0 (3) 7 Average deposits 1,331.7 1,346.5 Corporate and Investment CET12 11.1% 11.0 Banking 202.4 (1) 8 Wealth and Investment Performance Metrics Management 123.6 — 20 ROE3 12.8% 11.5 ROTCE4 15.2 13.7 Capital ◦ Repurchased 43.9 million shares, or $3.0 billion, of common stock in second quarter 2025 Second quarter 2025 results included: ◦ $253 million, or $0.06 per share, gain associated with our acquisition of the remaining interest in our merchant services joint venture Chief Executive Officer Charlie Scharf commented, “Our second quarter results reflect the progress we are making to",
+          "location": "PDF page 1",
+          "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=1",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "wfc-2025q2-results:page1:through:wfc-2025q2-results:page1:fragment:6538fb18974521cd63a1"
+          ],
+          "token_count": 384
+        },
+        "score": 3.6536331176757812
+      },
+      {
+        "chunk": {
+          "chunk_id": "0ddfc64387f01159b7e4",
+          "document_id": "wfc-2025q2-results",
+          "bank": "WFC",
+          "strategy": "semantic",
+          "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 20: c1=Net income | c2=1,863 | c3=1,689 | c4=1,777 | c5=10 | c6=5",
+          "location": "PDF page 4, text line 20 (reviewed values only)",
+          "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "wfc-2025q2-results:page4:line20"
+          ],
+          "token_count": 190
+        },
+        "score": 2.717198371887207
+      },
+      {
+        "chunk": {
+          "chunk_id": "a59aa956d0c030a238ee",
+          "document_id": "wfc-2025q2-results",
+          "bank": "WFC",
+          "strategy": "semantic",
+          "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 18: c1=Provision for credit losses | c2=945 | c3=739 | c4=932 | c5=28 | c6=1",
+          "location": "PDF page 4, text line 18 (reviewed values only)",
+          "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "wfc-2025q2-results:page4:line18"
+          ],
+          "token_count": 186
+        },
+        "score": 2.5674710273742676
+      }
+    ],
+    "elapsed_seconds": 4.002,
+    "usage": {}
+  },
+  "timestamp": "2026-10-18T22:12:48.313106+00:00",
+  "gold": {
+    "id": "F11",
+    "question": "What was Wells Fargo consumer operating leverage from Q2 2024 to Q2 2025?",
+    "base_bank": null,
+    "expected_behavior": "answered",
+    "annotation_status": "reviewed",
+    "evidence": [
+      {
+        "document_id": "wfc-2025q2-results",
+        "evidence_id": "wfc-2025q2-results:page4:line17",
+        "quote": "Row 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+        "bank": "WFC",
+        "metric": "revenue",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "wfc-2025q2-results",
+        "evidence_id": "wfc-2025q2-results:page4:line17",
+        "quote": "Row 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+        "bank": "WFC",
+        "metric": "revenue",
+        "period": "2024Q2"
+      },
+      {
+        "document_id": "wfc-2025q2-results",
+        "evidence_id": "wfc-2025q2-results:page4:line19",
+        "quote": "Row 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2",
+        "bank": "WFC",
+        "metric": "noninterest_expense",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "wfc-2025q2-results",
+        "evidence_id": "wfc-2025q2-results:page4:line19",
+        "quote": "Row 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2",
+        "bank": "WFC",
+        "metric": "noninterest_expense",
+        "period": "2024Q2"
+      }
+    ],
+    "expected_answer": "WFC 2025Q2 revenue 9228 USD_millions reported; WFC 2024Q2 revenue 9006 USD_millions reported; WFC 2025Q2 noninterest_expense 5799 USD_millions reported; WFC 2024Q2 noninterest_expense 5701 USD_millions reported",
+    "review_method": "Assistant verified original HTML cells or PDF text-line columns before this expanded-corpus evaluation; not independent human review."
+  }
+}

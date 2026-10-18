@@ -1,0 +1,31 @@
+{
+  "embedding": "BAAI/bge-small-en-v1.5",
+  "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "retrieval_policy": "v6-source-segment-alias-coverage",
+  "metric_registry": {
+    "version": "1.0",
+    "sha256": "144e38de3e22143e67f8949babbe6068bc87cc09baca096dea8c7e6d654ba710"
+  },
+  "embedding_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "reranker_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "candidate_k": 20,
+  "final_k": 5,
+  "context_tokens": 2200,
+  "generation": false,
+  "question_hash": "ebb28c0911df3248b60861bcf92fd7af8bb2e7b80b6bb9449840d2696370b8b7",
+  "scope": "Frozen configured corpus; assistant-reviewed labels; some question types overlap development checks.",
+  "budget_note": "Budgets scale for >2 banks. Generic recall/precision fields use each query's recorded budget; legacy @5/@20 fields are populated only at those exact limits.",
+  "prompt_hash": "daea8e8a5c1687975d416a5a6c3c87da7058afe71f42dedd2fba8049aae46617",
+  "framework_versions": {
+    "langchain-core": "1.6.12",
+    "langchain-chroma": "1.1.0",
+    "langchain-openai": "1.7.2",
+    "langgraph": "1.2.16"
+  },
+  "note": "First query includes model loading. Timings are not warm-latency benchmarks.",
+  "annotation_audit": {
+    "original_question_hash": "ebb28c0911df3248b60861bcf92fd7af8bb2e7b80b6bb9449840d2696370b8b7",
+    "audited_label_hash": "a0770ca63693c97b3029c00c109fd1e42232e345d4b5d993f58cea71648420a1",
+    "rescore_only": true
+  }
+}

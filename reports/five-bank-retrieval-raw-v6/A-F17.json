@@ -1,0 +1,573 @@
+{
+  "strategy": "fixed",
+  "reranking": false,
+  "scope": {
+    "banks": [
+      "BAC",
+      "WFC"
+    ],
+    "periods": [
+      "2025Q2"
+    ],
+    "clarification": null,
+    "unsupported": null
+  },
+  "retrieval_policy": "v6-source-segment-alias-coverage",
+  "retrieval_budget": {
+    "candidate_k": 20,
+    "final_k": 5,
+    "context_tokens": 2200
+  },
+  "answer_policy": "v6-selected-base-all-supported-peers",
+  "metric_registry": {
+    "version": "1.0",
+    "sha256": "144e38de3e22143e67f8949babbe6068bc87cc09baca096dea8c7e6d654ba710"
+  },
+  "base_bank": "BAC",
+  "retrieval_queries": [
+    "Compare consumer revenue with Wells Fargo in Q2 2025"
+  ],
+  "framework": "LangChain + LangGraph",
+  "prompt_hash": "daea8e8a5c1687975d416a5a6c3c87da7058afe71f42dedd2fba8049aae46617",
+  "calculations": [],
+  "candidate_hits": [
+    {
+      "chunk": {
+        "chunk_id": "133730d62332d8c47460",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+        "location": "HTML table 27, row 14",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t27:r14"
+        ],
+        "token_count": 253
+      },
+      "score": 0.03200204813108039
+    },
+    {
+      "chunk": {
+        "chunk_id": "d63ed7ddf52e3ec0681f",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+        "location": "PDF page 4, text line 17 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line17"
+        ],
+        "token_count": 189
+      },
+      "score": 0.03252247488101534
+    },
+    {
+      "chunk": {
+        "chunk_id": "732cd36447719d5a7481",
+        "document_id": "bac-2025q2-results",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "(c) • No. 1 in Banking Mobile App Satisfaction(d) • Certified by J.D. Power for Outstanding Client Satisfaction with Customer Financial Health Support – Banking & Payments(e) • Merrill Edge Self-Directed Best in Class Award for Customer Service (4th consecutive year)(f) See page 11 for Business Leadership sources. 1 Comparisons are to the year-ago quarter unless noted. 2 Revenue, net of interest expense. 3 The consumer credit card portfolio includes Consumer Banking and GWIM. 4 Represents the percentage of consumer checking accounts that are estimated to be the customer’s primary account based on multiple relationship factors (e.g., linked to their direct deposit). 5 End of period. Consumer investment assets includes client brokerage assets, deposit sweep balances, brokered CDs, and AUM in Consumer Banking. 6 As of May 2025. Includes clients in Consumer, Small Business and GWIM. 7 Household adoption represents households with consumer bank login activities in a 90-day period, as of May 2025. 8 Includes Bank of America person-to-person payments sent and received through e-mail or mobile identification. Zelle® users represent 90-day active users. • Net income of $3.0 billion • Revenue of $10.8 billion,2 up 6%, driven primarily by higher NII • Provision for credit losses of $1.3 billion was flat – Net reserve build of $82 million vs. $93 million in 2Q24(G) – Net charge-offs of $1.2 billion were flat • Noninterest expense of $5.6 billion increased 2%, driven by investments in people and technology – Efficiency ratio of 51% Business Highlights1,3(B) • Average deposits of $952 billion were modestly higher – 58% of deposits in checking accounts; 92% are primary4 • Average loans and leases of $319 billion increased 2% • Combined credit / de",
+        "location": "HTML image text layer 3 (not a parsed table)",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-results:textlayer3:through:bac-2025q2-results:textlayer3:fragment:732cd36447719d5a7481"
+        ],
+        "token_count": 400
+      },
+      "score": 0.032266458495966696
+    },
+    {
+      "chunk": {
+        "chunk_id": "bbb715c1157751b96bd0",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-42=Bank of America Corporation and Subsidiaries\nc1-42=Quarterly Results by Business Segment and All Other\nc1-3=(Dollars in millions)\nc7-42=Second Quarter 2025\nc7-9=Total Corporation | c16-18=Consumer Banking | c22-24=GWIM | c28-30=Global Banking | c34-36=Global Markets | c40-42=All Other\nRow 18: c1-3=Total revenue, net of interest expense | c7-8=26,608 | c16-17=10,813 | c22-23=5,937 | c28-29=5,690 | c34-35=5,980 | c40-41=(1,812)",
+        "location": "HTML table 21, row 18",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t21:r18"
+        ],
+        "token_count": 176
+      },
+      "score": 0.03125
+    },
+    {
+      "chunk": {
+        "chunk_id": "5b64d142f65c9daa6f65",
+        "document_id": "bac-2025q2-results",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "3 Consumer Banking1 Financial Results Three months ended ($ in millions) 6/30/2025 3/31/2025 6/30/2024 Total revenue2 $10,813 $10,493 $10,206 Provision for credit losses 1,282 1,292 1,281 Noninterest expense 5,567 5,826 5,464 Pretax income 3,964 3,375 3,461 Income tax expense 991 844 866 Net income $2,973 $2,531 $2,595 Business Highlights(B) Three months ended ($ in billions) 6/30/2025 3/31/2025 6/30/2024 Average deposits $952.0 $947.6 $949.2 Average loans and leases 319.1 315.0 312.3 Consumer investment assets (EOP)5 539.7 497.7 476.1 Active mobile banking users (MM) 40.8 40.5 39.0 Number of financial centers 3,664 3,681 3,786 Efficiency ratio 51 % 56 % 54 % Return on average allocated capital 27 23 24 Total Consumer Credit Card3 Average credit card outstanding balances $100.0 $100.2 $99.0 Total credit / debit spend 244.1 228.4 233.6 Risk-adjusted margin 7.1 % 6.7 % 6.8 % Continued Business Leadership • No. 1 in U.S. Consumer Deposits(a) • No. 1 Small Business Lender(b) • No. 1 in Retail Banking Advice Satisfaction(c) • No. 1 in Banking Mobile App Satisfaction(d) • Certified by J.D. Power for Outstanding Client Satisfaction with Customer Financial Health Support – Banking & Payments(e) • Merrill Edge Self-Directed Best in Class Award for Customer Service (4th consecutive year)(f)",
+        "location": "HTML image text layer 3 (not a parsed table)",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-results:textlayer3:through:bac-2025q2-results:textlayer3:fragment:5b64d142f65c9daa6f65"
+        ],
+        "token_count": 400
+      },
+      "score": 0.0288981288981289
+    },
+    {
+      "chunk": {
+        "chunk_id": "165f1615a05af4d1fa57",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 19: c1-3=Income before income taxes | c4-5=7,339 | c10-11=7,002 | c19-20=3,964 | c25-26=3,375 | c31-32=3,761 | c37-38=3,582 | c43-44=3,461",
+        "location": "HTML table 27, row 19",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t27:r19"
+        ],
+        "token_count": 250
+      },
+      "score": 0.01639344262295082
+    },
+    {
+      "chunk": {
+        "chunk_id": "3b5482baf5bac008bae3",
+        "document_id": "bac-2025q2-results",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "cl. self-led) of $1.4 billion, down 9% • #3 investment banking fee ranking YTD9 • $603 billion in average deposits, up 15% • 8% growth in Middle Market average loan balances10 • 15% improvement in treasury service charges Global Markets • Net income of $1.5 billion • Sales and trading revenue up 14% to $5.3 billion including net debit valuation adjustment (DVA) losses of $51 million. Excluding net DVA, up 15%.(E) 13th consecutive quarter of year-over-year growth – Fixed Income, Currencies and Commodities (FICC) revenue up 16% to $3.2 billion. Excluding net DVA, up 19%(E) – Equities revenue up 10% to $2.1 billion, including and excluding net DVA(E) Bank of America Reports 2Q25 Net Income of $7.1 Billion and EPS of $0.89 Revenue up 4% YoY to $26.5 Billion,1 Net Interest Income Grew 7% YoY to $14.7 Billion ($14.8 Billion FTE)(A) Ending Deposits up 5% YoY to more than $2 trillion From Chair and CEO Brian Moynihan: “We delivered another solid quarter, with earnings per share up seven percent from last year. Net interest income grew for the fourth straight quarter, reflecting eight consecutive quarters of deposit growth and seven percent year-over-year loan growth. Consumers remained resilient, with healthy spending and asset quality, and commercial borrower utilization rates rose. In addition, we saw good momentum in our markets businesses. So far this year, we have supplied more capital to our businesses and returned 40 percent more capital to shareholders in the first half of this year than last year.” See page 10 for endnotes. Amounts may not total due to rounding. 1 Revenue, net of interest expense",
+        "location": "HTML image text layer 1 (not a parsed table)",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-results:textlayer1:through:bac-2025q2-results:textlayer1:fragment:3b5482baf5bac008bae3"
+        ],
+        "token_count": 400
+      },
+      "score": 0.016129032258064516
+    },
+    {
+      "chunk": {
+        "chunk_id": "d7763af539691cd1494a",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 9: c1-3=Card income | c4-5=2,712 | c10-11=2,633 | c19-20=1,415 | c25-26=1,297 | c31-32=1,397 | c37-38=1,402 | c43-44=1,361",
+        "location": "HTML table 27, row 9",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t27:r9"
+        ],
+        "token_count": 247
+      },
+      "score": 0.015384615384615385
+    },
+    {
+      "chunk": {
+        "chunk_id": "0bf0e240d1b5a84edddd",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 24: c1-3=Efficiency ratio | c4-5=53.48 | c10-11=53.70 | c19-20=51.48 | c25-26=55.53 | c31-32=52.89 | c37-38=53.12 | c43-44=53.54",
+        "location": "HTML table 27, row 24",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t27:r24"
+        ],
+        "token_count": 243
+      },
+      "score": 0.015151515151515152
+    },
+    {
+      "chunk": {
+        "chunk_id": "6a4c3b31bd2a1e0a1056",
+        "document_id": "bac-2025q2-results",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "Officer Brian Moynihan and Chief Financial Officer Alastair Borthwick will discuss second- quarter 2025 financial results in an investor conference call at 8 a.m. ET today. The conference call and presentation materials can be accessed on the Bank of America Investor Relations website at https://investor.bankofamerica.com.* For a listen-only connection to the conference call, dial 1.877.200.4456 (U.S.) or 1.785.424.1732 (international). The conference ID is 79795. Please dial in 10 minutes prior to the start of the call. Investors can access replays of the conference call by visiting the Investor Relations website or by calling 1.800.934.4850 (U.S.) or 1.402.220.1178 (international) from noon on July 16 through 11:59 p.m. ET on July 25. Investors May Contact: Lee McEntire, Bank of America Phone: 1.980.388.6780 lee.mcentire@bofa.com Jonathan G. Blum, Bank of America (Fixed Income) Phone: 1.212.449.3112 jonathan.blum@bofa.com Bank of America Bank of America is one of the world’s leading financial institutions, serving individual consumers, small and middle-market businesses and large corporations with a full range of banking, investing, asset management and other financial and risk management products and services. The company provides unmatched convenience in the United States, serving approximately 69 million consumer and small business clients with approximately 3,700 retail financial centers, approximately 15,000 ATMs (automated teller machines) and award-winning digital banking with approximately 59 million verified digital users. Bank of America is a global leader in wealth management, corporate and investment banking and trading across a broad range of asset classes, serving corporations, governments, institutions",
+        "location": "HTML image text layer 11 (not a parsed table) through HTML image text layer 12 (not a parsed table)",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-results:textlayer11:through:bac-2025q2-results:textlayer12:fragment:6a4c3b31bd2a1e0a1056"
+        ],
+        "token_count": 400
+      },
+      "score": 0.015151515151515152
+    },
+    {
+      "chunk": {
+        "chunk_id": "4143ec45754fa06f6b6b",
+        "document_id": "bac-2025q2-results",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "in our markets businesses. So far this year, we have supplied more capital to our businesses and returned 40 percent more capital to shareholders in the first half of this year than last year.” See page 10 for endnotes. Amounts may not total due to rounding. 1 Revenue, net of interest expense. 2 Financial Highlights and Business Segment Highlights are compared to the year-ago quarter unless noted. 3 The Bank of America Corporation (Corporation) reports the results of operations of its four business segments and All Other on a fully taxable-equivalent (FTE) basis. 4 Represents the percentage of consumer checking accounts that are estimated to be the customer’s primary account based on multiple relationship factors (e.g., linked to their direct deposit). 5 End of period. Consumer investment assets include client brokerage assets, deposit sweep balances, brokered CDs, and AUM in Consumer Banking. 6 Total payments represent payments made from Bank of America accounts using credit card, debit card, ACH, wires, billpay, person-to-person, cash and checks. 7 Subject to approval by the Corporation’s Board of Directors. 8 Tangible book value per common share and return on average tangible common shareholders’ equity ratio represent non-GAAP financial measures. For more information, see page 19. 9 Source: Dealogic as of June 30, 2025. 10 Includes loans to Global Commercial Banking clients, excluding commercial real estate and specialized industries. • Net income of $7.1 billion, or $0.89 per diluted share, compared to $6.9 billion, or $0.83 per diluted share • Revenue, net of interest expense, of $26.5 billion ($26.6 billion FTE),(A) up 4%, reflected higher net interest income (NII), sales and trading revenue and asset management fees, as well as lower investment banking fees – NII of $14.7 billion (",
+        "location": "HTML image text layer 1 (not a parsed table)",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-results:textlayer1:through:bac-2025q2-results:textlayer1:fragment:4143ec45754fa06f6b6b"
+        ],
+        "token_count": 400
+      },
+      "score": 0.014925373134328358
+    },
+    {
+      "chunk": {
+        "chunk_id": "cd263c93b0c299812483",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "News Release | July 15, 2025\nWells Fargo Reports Second Quarter 2025 Net Income of\n$5.5 billion, or $1.60 per Diluted Share\nCompany-wide Financial Summary Operating Segments and Other Highlights\nQuarter ended Quarter Jun 30, 2025\nended % Change from\nJun 30, Jun 30,\n2025 2024 Jun 30, Mar 31, Jun 30,\n($ in billions) 2025 2025 2024\nSelected Income Statement Data\n($ in millions except per share amounts)\nAverage loans\nConsumer Banking and Lending $ 315.4 (1) % (3)\nTotal revenue $ 20,822 20,689\nCommercial Banking 226.5 1 1\nNoninterest expense 13,379 13,293\nProvision for credit losses1 1,005 1,236 Corporate and Investment\nBanking 285.9 3 4\nNet income 5,494 4,910\nWealth and Investment\nDiluted earnings per common share 1.60 1.33\nManagement 84.9 1 2\nSelected Balance Sheet Data Average deposits\n($ in billions)\nConsumer Banking and Lending 781.4 — —\nAverage loans $ 916.7 917.0\nCommercial Banking 178.0 (3) 7\nAverage deposits 1,331.7 1,346.5\nCorporate and Investment\nCET12 11.1% 11.0 Banking 202.4 (1) 8\nWealth and Investment\nPerformance Metrics Management 123.6 — 20\nROE3 12.8% 11.5\nROTCE4 15.2 13.7\nCapital\n◦ Repurchased 43.9 million shares, or $3.0 billion, of\ncommon stock in second quarter 2025\nSecond quarter 2025 results included:\n◦ $253 million, or $0.06 per share, gain associated with our acquisition of the remaining interest in our merchant services\njoint venture\nChief Executive Officer Charlie Scharf commented, “Our second quarter results reflect the progress we are making to\nconsistently produce stronger financial results with net income and diluted earnings per share up from",
+        "location": "PDF page 1",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=1",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page1:through:wfc-2025q2-results:page1:fragment:cd263c93b0c299812483"
+        ],
+        "token_count": 400
+      },
+      "score": 0.032018442622950824
+    },
+    {
+      "chunk": {
+        "chunk_id": "6608f148d2ab366a767a",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 11: c1=Consumer, Small and Business Banking | c2=6,288 | c3=5,981 | c4=6,129 | c5=5 | c6=3",
+        "location": "PDF page 4, text line 11 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line11"
+        ],
+        "token_count": 192
+      },
+      "score": 0.03128054740957967
+    },
+    {
+      "chunk": {
+        "chunk_id": "17973d3ef57b0c53f6df",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 15: c1=Auto | c2=241 | c3=237 | c4=282 | c5=2 | c6=(15)",
+        "location": "PDF page 4, text line 15 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line15"
+        ],
+        "token_count": 182
+      },
+      "score": 0.030798389007344232
+    },
+    {
+      "chunk": {
+        "chunk_id": "896ef1f1946b3b6ffef5",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 14: c1=Credit Card | c2=1,588 | c3=1,524 | c4=1,452 | c5=4 | c6=9",
+        "location": "PDF page 4, text line 14 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line14"
+        ],
+        "token_count": 190
+      },
+      "score": 0.030798389007344232
+    },
+    {
+      "chunk": {
+        "chunk_id": "6b3b21c1390a88809e13",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 20: c1=Net income | c2=1,863 | c3=1,689 | c4=1,777 | c5=10 | c6=5",
+        "location": "PDF page 4, text line 20 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line20"
+        ],
+        "token_count": 190
+      },
+      "score": 0.030117753623188408
+    },
+    {
+      "chunk": {
+        "chunk_id": "8328df4b8f7da053e440",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2",
+        "location": "PDF page 4, text line 19 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line19"
+        ],
+        "token_count": 195
+      },
+      "score": 0.030090497737556562
+    },
+    {
+      "chunk": {
+        "chunk_id": "3bc1d5660a28ab826027",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 13: c1=Home Lending | c2=821 | c3=866 | c4=823 | c5=(5) | c6=—",
+        "location": "PDF page 4, text line 13 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line13"
+        ],
+        "token_count": 186
+      },
+      "score": 0.02967032967032967
+    },
+    {
+      "chunk": {
+        "chunk_id": "fc58729a20b5165f22e6",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 16: c1=Personal Lending | c2=290 | c3=305 | c4=320 | c5=(5) | c6=(9)",
+        "location": "PDF page 4, text line 16 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line16"
+        ],
+        "token_count": 185
+      },
+      "score": 0.02964426877470356
+    },
+    {
+      "chunk": {
+        "chunk_id": "47678528828e2ee37dcf",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 18: c1=Provision for credit losses | c2=945 | c3=739 | c4=932 | c5=28 | c6=1",
+        "location": "PDF page 4, text line 18 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line18"
+        ],
+        "token_count": 186
+      },
+      "score": 0.028991596638655463
+    }
+  ],
+  "answer": {
+    "question": "Compare consumer revenue with Wells Fargo in Q2 2025",
+    "status": "evidence_only",
+    "mode": "evidence_only",
+    "text": "Evidence-only mode: retrieved excerpts are shown below; no language-model answer was generated.\n\n[133730d62332d8c47460] HTML table 27, row 14\nBAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206\nhttps://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49\n\n[d63ed7ddf52e3ec0681f] PDF page 4, text line 17 (reviewed values only)\nWFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2\nhttps://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4\n\n[732cd36447719d5a7481] HTML image text layer 3 (not a parsed table)\n(c) • No. 1 in Banking Mobile App Satisfaction(d) • Certified by J.D. Power for Outstanding Client Satisfaction with Customer Financial Health Support – Banking & Payments(e) • Merrill Edge Self-Directed Best in Class Award for Customer Service (4th consecutive year)(f) See page 11 for Business Leadership sources. 1 Comparisons are to the year-ago quarter unless noted. 2 Revenue, net of interest expense. 3 The consumer credit card portfolio includes Consumer Banking and GWIM. 4 Represents the percentage of consumer checking accounts that are estimated to be the customer’s primary account based on multiple relationship factors (e.g., linked to their direct deposit). 5 End of period. Consumer investment assets includes client brokerage assets, deposit sweep balances, brokered CDs, and AUM in Consumer Banking. 6 As of May 2025. Includes clients in Consumer, Small Business and GWIM. 7 Household adoption represents households with consumer bank login activities in a 90-day period, as of May 2025. 8 Includes Bank of America person-to-person payments sent and received through e-mail or mobile identification. Zelle® users represent 90-day active users. • Net income of $3.0 billion • Revenue of $10.8 billion,2 up 6%, driven primarily by higher NII • Provision for credit losses of $1.3 billion was flat – Net reserve build of $82 million vs. $93 million in 2Q24(G) – Net charge-offs of $1.2 billion were flat • Noninterest expense of $5.6 billion increased 2%, driven by investments in people and technology – Efficiency ratio of 51% Business Highlights1,3(B) • Average deposits of $952 billion were modestly higher – 58% of deposits in checking accounts; 92% are primary4 • Average loans and leases of $319 billion increased 2% • Combined credit / de\nhttps://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm\n\n[cd263c93b0c299812483] PDF page 1\nNews Release | July 15, 2025\nWells Fargo Reports Second Quarter 2025 Net Income of\n$5.5 billion, or $1.60 per Diluted Share\nCompany-wide Financial Summary Operating Segments and Other Highlights\nQuarter ended Quarter Jun 30, 2025\nended % Change from\nJun 30, Jun 30,\n2025 2024 Jun 30, Mar 31, Jun 30,\n($ in billions) 2025 2025 2024\nSelected Income Statement Data\n($ in millions except per share amounts)\nAverage loans\nConsumer Banking and Lending $ 315.4 (1) % (3)\nTotal revenue $ 20,822 20,689\nCommercial Banking 226.5 1 1\nNoninterest expense 13,379 13,293\nProvision for credit losses1 1,005 1,236 Corporate and Investment\nBanking 285.9 3 4\nNet income 5,494 4,910\nWealth and Investment\nDiluted earnings per common share 1.60 1.33\nManagement 84.9 1 2\nSelected Balance Sheet Data Average deposits\n($ in billions)\nConsumer Banking and Lending 781.4 — —\nAverage loans $ 916.7 917.0\nCommercial Banking 178.0 (3) 7\nAverage deposits 1,331.7 1,346.5\nCorporate and Investment\nCET12 11.1% 11.0 Banking 202.4 (1) 8\nWealth and Investment\nPerformance Metrics Management 123.6 — 20\nROE3 12.8% 11.5\nROTCE4 15.2 13.7\nCapital\n◦ Repurchased 43.9 million shares, or $3.0 billion, of\ncommon stock in second quarter 2025\nSecond quarter 2025 results included:\n◦ $253 million, or $0.06 per share, gain associated with our acquisition of the remaining interest in our merchant services\njoint venture\nChief Executive Officer Charlie Scharf commented, “Our second quarter results reflect the progress we are making to\nconsistently produce stronger financial results with net income and diluted earnings per share up from\nhttps://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=1\n\n[6608f148d2ab366a767a] PDF page 4, text line 11 (reviewed values only)\nWFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 11: c1=Consumer, Small and Business Banking | c2=6,288 | c3=5,981 | c4=6,129 | c5=5 | c6=3\nhttps://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+    "hits": [
+      {
+        "chunk": {
+          "chunk_id": "133730d62332d8c47460",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "fixed",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+          "location": "HTML table 27, row 14",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r14"
+          ],
+          "token_count": 253
+        },
+        "score": 0.03200204813108039
+      },
+      {
+        "chunk": {
+          "chunk_id": "d63ed7ddf52e3ec0681f",
+          "document_id": "wfc-2025q2-results",
+          "bank": "WFC",
+          "strategy": "fixed",
+          "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+          "location": "PDF page 4, text line 17 (reviewed values only)",
+          "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "wfc-2025q2-results:page4:line17"
+          ],
+          "token_count": 189
+        },
+        "score": 0.03252247488101534
+      },
+      {
+        "chunk": {
+          "chunk_id": "732cd36447719d5a7481",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "fixed",
+          "text": "(c) • No. 1 in Banking Mobile App Satisfaction(d) • Certified by J.D. Power for Outstanding Client Satisfaction with Customer Financial Health Support – Banking & Payments(e) • Merrill Edge Self-Directed Best in Class Award for Customer Service (4th consecutive year)(f) See page 11 for Business Leadership sources. 1 Comparisons are to the year-ago quarter unless noted. 2 Revenue, net of interest expense. 3 The consumer credit card portfolio includes Consumer Banking and GWIM. 4 Represents the percentage of consumer checking accounts that are estimated to be the customer’s primary account based on multiple relationship factors (e.g., linked to their direct deposit). 5 End of period. Consumer investment assets includes client brokerage assets, deposit sweep balances, brokered CDs, and AUM in Consumer Banking. 6 As of May 2025. Includes clients in Consumer, Small Business and GWIM. 7 Household adoption represents households with consumer bank login activities in a 90-day period, as of May 2025. 8 Includes Bank of America person-to-person payments sent and received through e-mail or mobile identification. Zelle® users represent 90-day active users. • Net income of $3.0 billion • Revenue of $10.8 billion,2 up 6%, driven primarily by higher NII • Provision for credit losses of $1.3 billion was flat – Net reserve build of $82 million vs. $93 million in 2Q24(G) – Net charge-offs of $1.2 billion were flat • Noninterest expense of $5.6 billion increased 2%, driven by investments in people and technology – Efficiency ratio of 51% Business Highlights1,3(B) • Average deposits of $952 billion were modestly higher – 58% of deposits in checking accounts; 92% are primary4 • Average loans and leases of $319 billion increased 2% • Combined credit / de",
+          "location": "HTML image text layer 3 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer3:through:bac-2025q2-results:textlayer3:fragment:732cd36447719d5a7481"
+          ],
+          "token_count": 400
+        },
+        "score": 0.032266458495966696
+      },
+      {
+        "chunk": {
+          "chunk_id": "cd263c93b0c299812483",
+          "document_id": "wfc-2025q2-results",
+          "bank": "WFC",
+          "strategy": "fixed",
+          "text": "News Release | July 15, 2025\nWells Fargo Reports Second Quarter 2025 Net Income of\n$5.5 billion, or $1.60 per Diluted Share\nCompany-wide Financial Summary Operating Segments and Other Highlights\nQuarter ended Quarter Jun 30, 2025\nended % Change from\nJun 30, Jun 30,\n2025 2024 Jun 30, Mar 31, Jun 30,\n($ in billions) 2025 2025 2024\nSelected Income Statement Data\n($ in millions except per share amounts)\nAverage loans\nConsumer Banking and Lending $ 315.4 (1) % (3)\nTotal revenue $ 20,822 20,689\nCommercial Banking 226.5 1 1\nNoninterest expense 13,379 13,293\nProvision for credit losses1 1,005 1,236 Corporate and Investment\nBanking 285.9 3 4\nNet income 5,494 4,910\nWealth and Investment\nDiluted earnings per common share 1.60 1.33\nManagement 84.9 1 2\nSelected Balance Sheet Data Average deposits\n($ in billions)\nConsumer Banking and Lending 781.4 — —\nAverage loans $ 916.7 917.0\nCommercial Banking 178.0 (3) 7\nAverage deposits 1,331.7 1,346.5\nCorporate and Investment\nCET12 11.1% 11.0 Banking 202.4 (1) 8\nWealth and Investment\nPerformance Metrics Management 123.6 — 20\nROE3 12.8% 11.5\nROTCE4 15.2 13.7\nCapital\n◦ Repurchased 43.9 million shares, or $3.0 billion, of\ncommon stock in second quarter 2025\nSecond quarter 2025 results included:\n◦ $253 million, or $0.06 per share, gain associated with our acquisition of the remaining interest in our merchant services\njoint venture\nChief Executive Officer Charlie Scharf commented, “Our second quarter results reflect the progress we are making to\nconsistently produce stronger financial results with net income and diluted earnings per share up from",
+          "location": "PDF page 1",
+          "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=1",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "wfc-2025q2-results:page1:through:wfc-2025q2-results:page1:fragment:cd263c93b0c299812483"
+          ],
+          "token_count": 400
+        },
+        "score": 0.032018442622950824
+      },
+      {
+        "chunk": {
+          "chunk_id": "6608f148d2ab366a767a",
+          "document_id": "wfc-2025q2-results",
+          "bank": "WFC",
+          "strategy": "fixed",
+          "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 11: c1=Consumer, Small and Business Banking | c2=6,288 | c3=5,981 | c4=6,129 | c5=5 | c6=3",
+          "location": "PDF page 4, text line 11 (reviewed values only)",
+          "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "wfc-2025q2-results:page4:line11"
+          ],
+          "token_count": 192
+        },
+        "score": 0.03128054740957967
+      }
+    ],
+    "elapsed_seconds": 0.806,
+    "usage": {}
+  },
+  "timestamp": "2026-10-18T22:16:25.251794+00:00",
+  "gold": {
+    "id": "F17",
+    "question": "Compare consumer revenue with Wells Fargo in Q2 2025",
+    "base_bank": "BAC",
+    "expected_behavior": "answered",
+    "annotation_status": "reviewed",
+    "evidence": [
+      {
+        "document_id": "bac-2025q2-supplement",
+        "evidence_id": "bac-2025q2-supplement:t27:r14",
+        "quote": "Row 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+        "bank": "BAC",
+        "metric": "revenue",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "wfc-2025q2-results",
+        "evidence_id": "wfc-2025q2-results:page4:line17",
+        "quote": "Row 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+        "bank": "WFC",
+        "metric": "revenue",
+        "period": "2025Q2"
+      }
+    ],
+    "expected_answer": "BAC 2025Q2 revenue 10813 USD_millions FTE; WFC 2025Q2 revenue 9228 USD_millions reported",
+    "review_method": "Assistant verified original HTML cells or PDF text-line columns before this expanded-corpus evaluation; not independent human review."
+  }
+}

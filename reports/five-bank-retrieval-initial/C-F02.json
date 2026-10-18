@@ -1,0 +1,564 @@
+{
+  "strategy": "fixed",
+  "reranking": true,
+  "scope": {
+    "banks": [
+      "JPM"
+    ],
+    "periods": [
+      "2025Q2"
+    ],
+    "clarification": null,
+    "unsupported": null
+  },
+  "retrieval_policy": "v5-bank-scaled-evidence-budgets",
+  "retrieval_budget": {
+    "candidate_k": 20,
+    "final_k": 5,
+    "context_tokens": 2200
+  },
+  "answer_policy": "v6-selected-base-all-supported-peers",
+  "metric_registry": {
+    "version": "1.0",
+    "sha256": "144e38de3e22143e67f8949babbe6068bc87cc09baca096dea8c7e6d654ba710"
+  },
+  "base_bank": null,
+  "retrieval_queries": [
+    "What was JPMorgan Chase consumer banking revenue in Q2 2025?"
+  ],
+  "framework": "LangChain + LangGraph",
+  "prompt_hash": "daea8e8a5c1687975d416a5a6c3c87da7058afe71f42dedd2fba8049aae46617",
+  "calculations": [],
+  "candidate_hits": [
+    {
+      "chunk": {
+        "chunk_id": "8391bc6113f3e0e0fea7",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+        "location": "HTML table 13, row 19",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r19"
+        ],
+        "token_count": 289
+      },
+      "score": 0.03009207275993712
+    },
+    {
+      "chunk": {
+        "chunk_id": "6ebd98e44fdada7d8c7f",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 18: c1-3=Consumer & Community Banking | c4=$ | c5=9,858 | c10=$ | c11=9,857 | c16=$ | c17=9,728 | c22=$ | c23=9,586 | c28=$ | c29=9,425 | c34-35=— | c40-41=5 | c49=$ | c50=19,715 | c55=$ | c56=18,722 | c61-62=5",
+        "location": "HTML table 9, row 18",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t9:r18"
+        ],
+        "token_count": 315
+      },
+      "score": 0.03125763125763126
+    },
+    {
+      "chunk": {
+        "chunk_id": "92e3e1a102278d1c8b71",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 39: c1-3=Consumer & Community Banking | c4=$ | c5=5,169 | c10=$ | c11=4,425 | c16=$ | c17=4,516 | c22=$ | c23=4,046 | c28=$ | c29=4,210 | c34-35=17 | c40-41=23 | c49=$ | c50=9,594 | c55=$ | c56=9,041 | c61-62=6",
+        "location": "HTML table 9, row 39",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t9:r39"
+        ],
+        "token_count": 313
+      },
+      "score": 0.030330882352941176
+    },
+    {
+      "chunk": {
+        "chunk_id": "ba7d2d8f88d338b1ac42",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 17: c1-3=Noninterest revenue | c4-5=4,452 | c10-11=4,171 | c16-17=4,494 | c22-23=4,214 | c28-29=3,996 | c34-35=7 | c40-41=11 | c49-50=8,623 | c55-56=7,941 | c61-62=9",
+        "location": "HTML table 13, row 17",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r17"
+        ],
+        "token_count": 292
+      },
+      "score": 0.03021353930031804
+    },
+    {
+      "chunk": {
+        "chunk_id": "4ff147739a990d88db27",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 11: c1-3=Consumer & Community Banking | c4=$ | c5=18,847 | c10=$ | c11=18,313 | c16=$ | c17=18,362 | c22=$ | c23=17,791 | c28=$ | c29=17,701 | c34-35=3 | c36=% | c40-41=6 | c42=% | c49=$ | c50=37,160 | c55=$ | c56=35,354 | c61-62=5 | c63=%",
+        "location": "HTML table 9, row 11",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t9:r11"
+        ],
+        "token_count": 329
+      },
+      "score": 0.02967032967032967
+    },
+    {
+      "chunk": {
+        "chunk_id": "3a609f7a12d015299d40",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 25: c1-3=Consumer & Community Banking | c4=$ | c5=8,989 | c10=$ | c11=8,456 | c16=$ | c17=8,634 | c22=$ | c23=8,205 | c28=$ | c29=8,276 | c34-35=6 | c40-41=9 | c49=$ | c50=17,445 | c55=$ | c56=16,632 | c61-62=5",
+        "location": "HTML table 9, row 25",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t9:r25"
+        ],
+        "token_count": 314
+      },
+      "score": 0.02964426877470356
+    },
+    {
+      "chunk": {
+        "chunk_id": "0f238c69bb4a900c7c30",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS, CONTINUED\nc1-3=(in millions, except ratio data and where otherwise noted)\nc4-45=QUARTERLY TRENDS | c52-69=SIX MONTHS ENDED JUNE 30,\nc37-45=2Q25 Change | c67-69=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c37-39=1Q25 | c43-45=2Q24 | c52-54=2025 | c58-60=2024 | c67-69=2024\nc1-3=BUSINESS METRICS\nc1-3=Number of:\nRow 37: c1-3=Net revenue rate | c4-5=10.06 | c7-9=% | c10-11=10.38 | c13-15=% | c16-17=10.47 | c19-21=% | c22-23=9.91 | c25-27=% | c28-29=9.61 | c31-33=% | c52-53=10.22 | c55-57=% | c58-59=9.85 | c61-63=%",
+        "location": "HTML table 16, row 37",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t16:r37"
+        ],
+        "token_count": 322
+      },
+      "score": 0.02761904761904762
+    },
+    {
+      "chunk": {
+        "chunk_id": "c656fdc55468020e6fa8",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 32: c1-3=Consumer & Community Banking | c4=$ | c5=2,082 | c10=$ | c11=2,629 | c16=$ | c17=2,623 | c22=$ | c23=2,795 | c28=$ | c29=2,643 | c34-35=(21) | c40-41=(21) | c49=$ | c50=4,711 | c55=$ | c56=4,556 | c61-62=3",
+        "location": "HTML table 9, row 32",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t9:r32"
+        ],
+        "token_count": 320
+      },
+      "score": 0.027583600982429624
+    },
+    {
+      "chunk": {
+        "chunk_id": "be5d4e4b589c8d98ec5b",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 3: c1-3=CONSUMER & COMMUNITY BANKING",
+        "location": "HTML table 13, row 3",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r3"
+        ],
+        "token_count": 201
+      },
+      "score": 0.01639344262295082
+    },
+    {
+      "chunk": {
+        "chunk_id": "9b9f7d59c06a13ecfdce",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 11: c1-3=REVENUE",
+        "location": "HTML table 13, row 11",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r11"
+        ],
+        "token_count": 198
+      },
+      "score": 0.016129032258064516
+    },
+    {
+      "chunk": {
+        "chunk_id": "7e8b7443ce21aea918bf",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 32: c1-3=REVENUE BY BUSINESS",
+        "location": "HTML table 13, row 32",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r32"
+        ],
+        "token_count": 200
+      },
+      "score": 0.015873015873015872
+    },
+    {
+      "chunk": {
+        "chunk_id": "2232b503ae53239eacff",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 2: c1-3=JPMORGAN CHASE & CO.",
+        "location": "HTML table 13, row 2",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r2"
+        ],
+        "token_count": 204
+      },
+      "score": 0.015625
+    },
+    {
+      "chunk": {
+        "chunk_id": "aaf76f8524b7fdd1c22a",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 18: c1-3=Net interest income | c4-5=14,395 | c10-11=14,142 | c16-17=13,868 | c22-23=13,577 | c28-29=13,705 | c34-35=2 | c40-41=5 | c49-50=28,537 | c55-56=27,413 | c61-62=4",
+        "location": "HTML table 13, row 18",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r18"
+        ],
+        "token_count": 290
+      },
+      "score": 0.015151515151515152
+    },
+    {
+      "chunk": {
+        "chunk_id": "f347781fd8f0e1635efa",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 12: c1-3=Lending- and deposit-related fees | c4=$ | c5=888 | c10=$ | c11=839 | c16=$ | c17=872 | c22=$ | c23=863 | c28=$ | c29=830 | c34-35=6 | c36=% | c40-41=7 | c42=% | c49=$ | c50=1,727 | c55=$ | c56=1,652 | c61-62=5 | c63=%",
+        "location": "HTML table 13, row 12",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r12"
+        ],
+        "token_count": 323
+      },
+      "score": 0.014925373134328358
+    },
+    {
+      "chunk": {
+        "chunk_id": "fbc9be1b5ad9144e69f5",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 35: c1-3=Card Services & Auto | c4-5=6,899 | c10-11=6,852 | c16-17=6,911 | c22-23=6,406 | c28-29=6,007 | c34-35=1 | c40-41=15 | c49-50=13,751 | c55-56=12,150 | c61-62=13",
+        "location": "HTML table 13, row 35",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r35"
+        ],
+        "token_count": 290
+      },
+      "score": 0.014705882352941176
+    },
+    {
+      "chunk": {
+        "chunk_id": "eb211d44d35e67ffd9d8",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 38: c1-3=Production revenue | c4-5=151 | c10-11=110 | c16-17=186 | c22-23=154 | c28-29=157 | c34-35=37 | c40-41=(4) | c49-50=261 | c55-56=287 | c61-62=(9)",
+        "location": "HTML table 13, row 38",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r38"
+        ],
+        "token_count": 274
+      },
+      "score": 0.014492753623188406
+    },
+    {
+      "chunk": {
+        "chunk_id": "59cb1d24778c416108d8",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 13: c1-3=Asset management fees | c4-5=1,110 | c10-11=1,093 | c16-17=1,067 | c22-23=1,022 | c28-29=978 | c34-35=2 | c40-41=13 | c49-50=2,203 | c55-56=1,925 | c61-62=14",
+        "location": "HTML table 13, row 13",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r13"
+        ],
+        "token_count": 287
+      },
+      "score": 0.014084507042253521
+    },
+    {
+      "chunk": {
+        "chunk_id": "9525b4e59c23371de6ea",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 5: c1-3=(in millions, except ratio data)",
+        "location": "HTML table 13, row 5",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r5"
+        ],
+        "token_count": 205
+      },
+      "score": 0.013888888888888888
+    },
+    {
+      "chunk": {
+        "chunk_id": "bdf8ff34a5f68e9e188f",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 24: c1-3=Compensation expense | c4-5=4,336 | c10-11=4,448 | c16-17=4,301 | c22-23=4,275 | c28-29=4,240 | c34-35=(3) | c40-41=2 | c49-50=8,784 | c55-56=8,469 | c61-62=4",
+        "location": "HTML table 13, row 24",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r24"
+        ],
+        "token_count": 289
+      },
+      "score": 0.013888888888888888
+    },
+    {
+      "chunk": {
+        "chunk_id": "bbfb8500c1c3367dcca6",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 30: c1-3=NET INCOME | c4=$ | c5=5,169 | c10=$ | c11=4,425 | c16=$ | c17=4,516 | c22=$ | c23=4,046 | c28=$ | c29=4,210 | c34-35=17 | c40-41=23 | c49=$ | c50=9,594 | c55=$ | c56=9,041 | c61-62=6",
+        "location": "HTML table 13, row 30",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r30"
+        ],
+        "token_count": 309
+      },
+      "score": 0.0136986301369863
+    }
+  ],
+  "answer": {
+    "question": "What was JPMorgan Chase consumer banking revenue in Q2 2025?",
+    "status": "evidence_only",
+    "mode": "evidence_only",
+    "text": "Evidence-only mode: retrieved excerpts are shown below; no language-model answer was generated.\n\n[8391bc6113f3e0e0fea7] HTML table 13, row 19\nJPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5\nhttps://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[9b9f7d59c06a13ecfdce] HTML table 13, row 11\nJPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 11: c1-3=REVENUE\nhttps://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[7e8b7443ce21aea918bf] HTML table 13, row 32\nJPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 32: c1-3=REVENUE BY BUSINESS\nhttps://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[2232b503ae53239eacff] HTML table 13, row 2\nJPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 2: c1-3=JPMORGAN CHASE & CO.\nhttps://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[be5d4e4b589c8d98ec5b] HTML table 13, row 3\nJPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 3: c1-3=CONSUMER & COMMUNITY BANKING\nhttps://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+    "hits": [
+      {
+        "chunk": {
+          "chunk_id": "8391bc6113f3e0e0fea7",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "fixed",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+          "location": "HTML table 13, row 19",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r19"
+          ],
+          "token_count": 289
+        },
+        "score": 5.423650741577148
+      },
+      {
+        "chunk": {
+          "chunk_id": "9b9f7d59c06a13ecfdce",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "fixed",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 11: c1-3=REVENUE",
+          "location": "HTML table 13, row 11",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r11"
+          ],
+          "token_count": 198
+        },
+        "score": 5.540154457092285
+      },
+      {
+        "chunk": {
+          "chunk_id": "7e8b7443ce21aea918bf",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "fixed",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 32: c1-3=REVENUE BY BUSINESS",
+          "location": "HTML table 13, row 32",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r32"
+          ],
+          "token_count": 200
+        },
+        "score": 5.52305793762207
+      },
+      {
+        "chunk": {
+          "chunk_id": "2232b503ae53239eacff",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "fixed",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 2: c1-3=JPMORGAN CHASE & CO.",
+          "location": "HTML table 13, row 2",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r2"
+          ],
+          "token_count": 204
+        },
+        "score": 5.429390907287598
+      },
+      {
+        "chunk": {
+          "chunk_id": "be5d4e4b589c8d98ec5b",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "fixed",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 3: c1-3=CONSUMER & COMMUNITY BANKING",
+          "location": "HTML table 13, row 3",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r3"
+          ],
+          "token_count": 201
+        },
+        "score": 5.402158260345459
+      }
+    ],
+    "elapsed_seconds": 5.827,
+    "usage": {}
+  },
+  "timestamp": "2026-10-18T22:10:16.611499+00:00",
+  "gold": {
+    "id": "F02",
+    "question": "What was JPMorgan Chase consumer banking revenue in Q2 2025?",
+    "base_bank": null,
+    "expected_behavior": "answered",
+    "annotation_status": "reviewed",
+    "evidence": [
+      {
+        "document_id": "jpm-2025q2-supplement",
+        "evidence_id": "jpm-2025q2-supplement:t13:r19",
+        "quote": "Row 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+        "bank": "JPM",
+        "metric": "revenue",
+        "period": "2025Q2"
+      }
+    ],
+    "expected_answer": "JPM 2025Q2 revenue 18847 USD_millions managed_FTE",
+    "review_method": "Assistant verified original HTML cells or PDF text-line columns before this expanded-corpus evaluation; not independent human review."
+  }
+}

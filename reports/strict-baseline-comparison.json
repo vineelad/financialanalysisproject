@@ -1,0 +1,124 @@
+{
+  "gold_hash": "c141ecd47ccae17fdb73070e2ed80436637d79f6113f4f9a37a90dde82ed77e1",
+  "note": "Both versions rescored with identical corrected per-period labels; source traces retained.",
+  "results": [
+    {
+      "policy": "v2-peer-overviews-bank-and-metric-coverage",
+      "run": "A",
+      "strict_recall": 0.6583333333333333,
+      "answerable_questions": 15,
+      "calculations_ready": 2,
+      "calculation_questions": 5,
+      "incomplete_questions": [
+        "06",
+        "07",
+        "08",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "source_run": "evaluation-20261018T201229581282Z"
+    },
+    {
+      "policy": "v2-peer-overviews-bank-and-metric-coverage",
+      "run": "B",
+      "strict_recall": 0.6583333333333333,
+      "answerable_questions": 15,
+      "calculations_ready": 2,
+      "calculation_questions": 5,
+      "incomplete_questions": [
+        "06",
+        "07",
+        "08",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "source_run": "evaluation-20261018T201229581282Z"
+    },
+    {
+      "policy": "v2-peer-overviews-bank-and-metric-coverage",
+      "run": "C",
+      "strict_recall": 0.6083333333333333,
+      "answerable_questions": 15,
+      "calculations_ready": 2,
+      "calculation_questions": 5,
+      "incomplete_questions": [
+        "05",
+        "07",
+        "08",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "source_run": "evaluation-20261018T201229581282Z"
+    },
+    {
+      "policy": "v2-peer-overviews-bank-and-metric-coverage",
+      "run": "D",
+      "strict_recall": 0.6083333333333333,
+      "answerable_questions": 15,
+      "calculations_ready": 2,
+      "calculation_questions": 5,
+      "incomplete_questions": [
+        "05",
+        "07",
+        "08",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "source_run": "evaluation-20261018T201229581282Z"
+    },
+    {
+      "policy": "v3-typed-metric-period-and-narrative-coverage",
+      "run": "A",
+      "strict_recall": 0.9333333333333333,
+      "answerable_questions": 15,
+      "calculations_ready": 5,
+      "calculation_questions": 5,
+      "incomplete_questions": [
+        "14"
+      ],
+      "source_run": "evaluation-20261018T202641309949Z"
+    },
+    {
+      "policy": "v3-typed-metric-period-and-narrative-coverage",
+      "run": "B",
+      "strict_recall": 0.9333333333333333,
+      "answerable_questions": 15,
+      "calculations_ready": 5,
+      "calculation_questions": 5,
+      "incomplete_questions": [
+        "14"
+      ],
+      "source_run": "evaluation-20261018T202641309949Z"
+    },
+    {
+      "policy": "v3-typed-metric-period-and-narrative-coverage",
+      "run": "C",
+      "strict_recall": 0.9333333333333333,
+      "answerable_questions": 15,
+      "calculations_ready": 5,
+      "calculation_questions": 5,
+      "incomplete_questions": [
+        "14"
+      ],
+      "source_run": "evaluation-20261018T202641309949Z"
+    },
+    {
+      "policy": "v3-typed-metric-period-and-narrative-coverage",
+      "run": "D",
+      "strict_recall": 1.0,
+      "answerable_questions": 15,
+      "calculations_ready": 5,
+      "calculation_questions": 5,
+      "incomplete_questions": [],
+      "source_run": "evaluation-20261018T202641309949Z"
+    }
+  ]
+}

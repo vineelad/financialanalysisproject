@@ -1,0 +1,218 @@
+{
+  "original_question_hash": "ebb28c0911df3248b60861bcf92fd7af8bb2e7b80b6bb9449840d2696370b8b7",
+  "audited_label_hash": "a0770ca63693c97b3029c00c109fd1e42232e345d4b5d993f58cea71648420a1",
+  "snapshot_facts_hash": "0c0c9a6a5549e12d1666da5021a2023f78a64fb0e4c487a140bf889b26308276",
+  "additions": [
+    {
+      "question_id": "F01",
+      "bank": "BAC",
+      "metric": "revenue",
+      "period": "2025Q2",
+      "evidence_id": "bac-2025q2-supplement:t21:r18",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "bac-2025q2-supplement:t21:r18",
+          "column": 16,
+          "value": "10813",
+          "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F02",
+      "bank": "JPM",
+      "metric": "revenue",
+      "period": "2025Q2",
+      "evidence_id": "jpm-2025q2-supplement:t9:r11",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "jpm-2025q2-supplement:t9:r11",
+          "column": 5,
+          "value": "18847",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F06",
+      "bank": "BAC",
+      "metric": "noninterest_expense",
+      "period": "2025Q2",
+      "evidence_id": "bac-2025q2-supplement:t21:r20",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "bac-2025q2-supplement:t21:r20",
+          "column": 16,
+          "value": "5567",
+          "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F14",
+      "bank": "BAC",
+      "metric": "revenue",
+      "period": "2025Q2",
+      "evidence_id": "bac-2025q2-supplement:t21:r18",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "bac-2025q2-supplement:t21:r18",
+          "column": 16,
+          "value": "10813",
+          "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F14",
+      "bank": "JPM",
+      "metric": "revenue",
+      "period": "2025Q2",
+      "evidence_id": "jpm-2025q2-supplement:t9:r11",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "jpm-2025q2-supplement:t9:r11",
+          "column": 5,
+          "value": "18847",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F15",
+      "bank": "BAC",
+      "metric": "noninterest_expense",
+      "period": "2025Q2",
+      "evidence_id": "bac-2025q2-supplement:t21:r20",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "bac-2025q2-supplement:t21:r20",
+          "column": 16,
+          "value": "5567",
+          "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F16",
+      "bank": "BAC",
+      "metric": "revenue",
+      "period": "2025Q2",
+      "evidence_id": "bac-2025q2-supplement:t21:r18",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "bac-2025q2-supplement:t21:r18",
+          "column": 16,
+          "value": "10813",
+          "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F16",
+      "bank": "BAC",
+      "metric": "revenue",
+      "period": "2024Q2",
+      "evidence_id": "bac-2025q2-supplement:t23:r18",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "bac-2025q2-supplement:t23:r18",
+          "column": 16,
+          "value": "10206",
+          "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F16",
+      "bank": "BAC",
+      "metric": "noninterest_expense",
+      "period": "2025Q2",
+      "evidence_id": "bac-2025q2-supplement:t21:r20",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "bac-2025q2-supplement:t21:r20",
+          "column": 16,
+          "value": "5567",
+          "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F16",
+      "bank": "BAC",
+      "metric": "noninterest_expense",
+      "period": "2024Q2",
+      "evidence_id": "bac-2025q2-supplement:t23:r20",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "bac-2025q2-supplement:t23:r20",
+          "column": 16,
+          "value": "5464",
+          "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F16",
+      "bank": "JPM",
+      "metric": "revenue",
+      "period": "2025Q2",
+      "evidence_id": "jpm-2025q2-supplement:t9:r11",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "jpm-2025q2-supplement:t9:r11",
+          "column": 5,
+          "value": "18847",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F16",
+      "bank": "JPM",
+      "metric": "revenue",
+      "period": "2024Q2",
+      "evidence_id": "jpm-2025q2-supplement:t9:r11",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "jpm-2025q2-supplement:t9:r11",
+          "column": 29,
+          "value": "17701",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    },
+    {
+      "question_id": "F17",
+      "bank": "BAC",
+      "metric": "revenue",
+      "period": "2025Q2",
+      "evidence_id": "bac-2025q2-supplement:t21:r18",
+      "preexisting_original_cell_checks": [
+        {
+          "evidence_id": "bac-2025q2-supplement:t21:r18",
+          "column": 16,
+          "value": "10813",
+          "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "review_method": "original HTML expanded cell checked against selected value"
+        }
+      ]
+    }
+  ],
+  "method": "Aliases checked against pre-evaluation fact snapshot and its original-cell checks. Questions, expected values, answers, candidates and ranks unchanged.",
+  "raw_retrieval_run": "runs\\evaluation-20261018T221510623886Z",
+  "audited_retrieval_run": "runs\\evaluation-20261018T221510623886Z-audited"
+}

@@ -1,0 +1,1735 @@
+{
+  "strategy": "fixed",
+  "reranking": true,
+  "scope": {
+    "banks": [
+      "BAC",
+      "C",
+      "COF",
+      "JPM",
+      "WFC"
+    ],
+    "periods": [
+      "2024Q2",
+      "2025Q2"
+    ],
+    "clarification": null,
+    "unsupported": null
+  },
+  "retrieval_policy": "v5-bank-scaled-evidence-budgets",
+  "retrieval_budget": {
+    "candidate_k": 50,
+    "final_k": 10,
+    "context_tokens": 5500
+  },
+  "answer_policy": "v6-selected-base-all-supported-peers",
+  "metric_registry": {
+    "version": "1.0",
+    "sha256": "144e38de3e22143e67f8949babbe6068bc87cc09baca096dea8c7e6d654ba710"
+  },
+  "base_bank": "BAC",
+  "retrieval_queries": [
+    "Compare consumer total net revenue across peers from Q2 2024 to Q2 2025",
+    "Compare consumer total noninterest expense across peers from Q2 2024 to Q2 2025"
+  ],
+  "framework": "LangChain + LangGraph",
+  "prompt_hash": "daea8e8a5c1687975d416a5a6c3c87da7058afe71f42dedd2fba8049aae46617",
+  "calculations": [
+    {
+      "bank": "BAC",
+      "value": "4.06",
+      "unit": "percentage points",
+      "formula": "revenue YoY growth minus noninterest expense YoY growth",
+      "components": {
+        "revenue_growth": "5.95",
+        "expense_growth": "1.89"
+      },
+      "inputs": [
+        {
+          "bank": "BAC",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2025Q2",
+          "value": "10813",
+          "unit": "USD_millions",
+          "basis": "FTE",
+          "evidence_id": "bac-2025q2-supplement:t27:r14",
+          "period_type": "quarter",
+          "alternative_evidence_ids": [
+            "bac-2025q2-supplement:t21:r18"
+          ]
+        },
+        {
+          "bank": "BAC",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2024Q2",
+          "value": "10206",
+          "unit": "USD_millions",
+          "basis": "FTE",
+          "evidence_id": "bac-2025q2-supplement:t27:r14",
+          "period_type": "quarter",
+          "alternative_evidence_ids": [
+            "bac-2025q2-supplement:t23:r18"
+          ]
+        },
+        {
+          "bank": "BAC",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2025Q2",
+          "value": "5567",
+          "unit": "USD_millions",
+          "basis": "FTE",
+          "evidence_id": "bac-2025q2-supplement:t27:r18",
+          "period_type": "quarter",
+          "alternative_evidence_ids": [
+            "bac-2025q2-supplement:t21:r20"
+          ]
+        },
+        {
+          "bank": "BAC",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2024Q2",
+          "value": "5464",
+          "unit": "USD_millions",
+          "basis": "FTE",
+          "evidence_id": "bac-2025q2-supplement:t27:r18",
+          "period_type": "quarter",
+          "alternative_evidence_ids": [
+            "bac-2025q2-supplement:t23:r20"
+          ]
+        }
+      ]
+    },
+    {
+      "bank": "C",
+      "value": "4.84",
+      "unit": "percentage points",
+      "formula": "revenue YoY growth minus noninterest expense YoY growth",
+      "components": {
+        "revenue_growth": "5.94",
+        "expense_growth": "1.10"
+      },
+      "inputs": [
+        {
+          "bank": "C",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2025Q2",
+          "value": "5119",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "c-2025q2-results:t7:r7",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "C",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2024Q2",
+          "value": "4832",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "c-2025q2-results:t7:r7",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "C",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2025Q2",
+          "value": "2381",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "c-2025q2-results:t7:r9",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "C",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2024Q2",
+          "value": "2355",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "c-2025q2-results:t7:r9",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "bank": "COF",
+      "value": "-20.70",
+      "unit": "percentage points",
+      "formula": "revenue YoY growth minus noninterest expense YoY growth",
+      "components": {
+        "revenue_growth": "16.34",
+        "expense_growth": "37.04"
+      },
+      "inputs": [
+        {
+          "bank": "COF",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2025Q2",
+          "value": "2556",
+          "unit": "USD_millions",
+          "basis": "GAAP",
+          "evidence_id": "cof-2025q2-results:t19:r11",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "COF",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2024Q2",
+          "value": "2197",
+          "unit": "USD_millions",
+          "basis": "GAAP",
+          "evidence_id": "cof-2025q2-results:t19:r11",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "COF",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2025Q2",
+          "value": "1713",
+          "unit": "USD_millions",
+          "basis": "GAAP",
+          "evidence_id": "cof-2025q2-results:t19:r13",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "COF",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2024Q2",
+          "value": "1250",
+          "unit": "USD_millions",
+          "basis": "GAAP",
+          "evidence_id": "cof-2025q2-results:t19:r13",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "bank": "JPM",
+      "value": "1.88",
+      "unit": "percentage points",
+      "formula": "revenue YoY growth minus noninterest expense YoY growth",
+      "components": {
+        "revenue_growth": "6.47",
+        "expense_growth": "4.59"
+      },
+      "inputs": [
+        {
+          "bank": "JPM",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2025Q2",
+          "value": "18847",
+          "unit": "USD_millions",
+          "basis": "managed_FTE",
+          "evidence_id": "jpm-2025q2-supplement:t13:r19",
+          "period_type": "quarter",
+          "alternative_evidence_ids": [
+            "jpm-2025q2-supplement:t9:r11"
+          ]
+        },
+        {
+          "bank": "JPM",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2024Q2",
+          "value": "17701",
+          "unit": "USD_millions",
+          "basis": "managed_FTE",
+          "evidence_id": "jpm-2025q2-supplement:t13:r19",
+          "period_type": "quarter",
+          "alternative_evidence_ids": [
+            "jpm-2025q2-supplement:t9:r11"
+          ]
+        },
+        {
+          "bank": "JPM",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2025Q2",
+          "value": "9858",
+          "unit": "USD_millions",
+          "basis": "managed_FTE",
+          "evidence_id": "jpm-2025q2-supplement:t13:r26",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "JPM",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2024Q2",
+          "value": "9425",
+          "unit": "USD_millions",
+          "basis": "managed_FTE",
+          "evidence_id": "jpm-2025q2-supplement:t13:r26",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "bank": "WFC",
+      "value": "0.75",
+      "unit": "percentage points",
+      "formula": "revenue YoY growth minus noninterest expense YoY growth",
+      "components": {
+        "revenue_growth": "2.47",
+        "expense_growth": "1.72"
+      },
+      "inputs": [
+        {
+          "bank": "WFC",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2025Q2",
+          "value": "9228",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "wfc-2025q2-results:page4:line17",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "WFC",
+          "segment": "consumer",
+          "metric": "revenue",
+          "period": "2024Q2",
+          "value": "9006",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "wfc-2025q2-results:page4:line17",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "WFC",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2025Q2",
+          "value": "5799",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "wfc-2025q2-results:page4:line19",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        },
+        {
+          "bank": "WFC",
+          "segment": "consumer",
+          "metric": "noninterest_expense",
+          "period": "2024Q2",
+          "value": "5701",
+          "unit": "USD_millions",
+          "basis": "reported",
+          "evidence_id": "wfc-2025q2-results:page4:line19",
+          "period_type": "quarter",
+          "alternative_evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "candidate_hits": [
+    {
+      "chunk": {
+        "chunk_id": "133730d62332d8c47460",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+        "location": "HTML table 27, row 14",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t27:r14"
+        ],
+        "token_count": 253
+      },
+      "score": 0.06256805303507278
+    },
+    {
+      "chunk": {
+        "chunk_id": "71830a6cf490a45170fd",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 18: c1-3=Noninterest expense | c4-5=11,393 | c10-11=10,939 | c19-20=5,567 | c25-26=5,826 | c31-32=5,631 | c37-38=5,534 | c43-44=5,464",
+        "location": "HTML table 27, row 18",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t27:r18"
+        ],
+        "token_count": 253
+      },
+      "score": 0.03278688524590164
+    },
+    {
+      "chunk": {
+        "chunk_id": "794cf4f3488184610479",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "C | ​\nTable header context:\nc2-3=​ | c5-6=​ | c8-9=​ | c11=​ | c13=​\nc1=USPB ($ in millions, except as otherwise noted) | c3-4=2Q’25 | c6-7=1Q’25 | c9-10=2Q’24 | c12=QoQ% | c14=YoY%\nc1-14=​\nRow 7: c1=Total revenues, net of interest expense | c2-3=​ | c4=5,119 | c5-6=​ | c7=5,228 | c8-9=​ | c10=4,832 | c11=​ | c12=(2)% | c13=​ | c14=6%",
+        "location": "HTML table 7, row 7",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t7:r7"
+        ],
+        "token_count": 167
+      },
+      "score": 0.058172288776796977
+    },
+    {
+      "chunk": {
+        "chunk_id": "db96483ea5b6b91f32ca",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "C | ​\nTable header context:\nc2-3=​ | c5-6=​ | c8-9=​ | c11=​ | c13=​\nc1=USPB ($ in millions, except as otherwise noted) | c3-4=2Q’25 | c6-7=1Q’25 | c9-10=2Q’24 | c12=QoQ% | c14=YoY%\nc1-14=​\nRow 9: c1=Total operating expenses | c2=​ | c4=2,381 | c5=​ | c7=2,442 | c8=​ | c10=2,355 | c11=​ | c12=(2)% | c13=​ | c14=1%",
+        "location": "HTML table 7, row 9",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t7:r9"
+        ],
+        "token_count": 157
+      },
+      "score": 0.04226051726051726
+    },
+    {
+      "chunk": {
+        "chunk_id": "27ba5fa37faeb0501c0c",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "fixed",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary—Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 11: c1=Total net revenue | c4=2,556 | c8=2,126 | c12=2,141 | c16=2,210 | c20=2,197 | c23=20 | c26=16 | c30=4,682 | c34=4,367 | c37=7",
+        "location": "HTML table 19, row 11",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r11"
+        ],
+        "token_count": 308
+      },
+      "score": 0.04317915690866511
+    },
+    {
+      "chunk": {
+        "chunk_id": "ee7de0b71a457376bf19",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "fixed",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary—Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 13: c1=Non-interest expense | c4=1,713 | c8=1,581 | c12=1,545 | c16=1,331 | c20=1,250 | c23=8 | c26=37 | c30=3,294 | c34=2,496 | c37=32",
+        "location": "HTML table 19, row 13",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r13"
+        ],
+        "token_count": 310
+      },
+      "score": 0.031099324975891997
+    },
+    {
+      "chunk": {
+        "chunk_id": "8391bc6113f3e0e0fea7",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+        "location": "HTML table 13, row 19",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r19"
+        ],
+        "token_count": 289
+      },
+      "score": 0.01639344262295082
+    },
+    {
+      "chunk": {
+        "chunk_id": "8ce37664717b5831a233",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 26: c1-3=TOTAL NONINTEREST EXPENSE | c4-5=9,858 | c10-11=9,857 | c16-17=9,728 | c22-23=9,586 | c28-29=9,425 | c34-35=— | c40-41=5 | c49-50=19,715 | c55-56=18,722 | c61-62=5",
+        "location": "HTML table 13, row 26",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r26"
+        ],
+        "token_count": 294
+      },
+      "score": 0.032018442622950824
+    },
+    {
+      "chunk": {
+        "chunk_id": "d63ed7ddf52e3ec0681f",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+        "location": "PDF page 4, text line 17 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line17"
+        ],
+        "token_count": 189
+      },
+      "score": 0.06256805303507278
+    },
+    {
+      "chunk": {
+        "chunk_id": "8328df4b8f7da053e440",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2",
+        "location": "PDF page 4, text line 19 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line19"
+        ],
+        "token_count": 195
+      },
+      "score": 0.06056531811373199
+    },
+    {
+      "chunk": {
+        "chunk_id": "93bea0df4d33d2e4bfe6",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 13: c1-3=Total noninterest income | c4-5=4,075 | c10-11=4,057 | c19-20=2,087 | c25-26=1,988 | c31-32=2,161 | c37-38=2,140 | c43-44=2,088",
+        "location": "HTML table 27, row 13",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t27:r13"
+        ],
+        "token_count": 252
+      },
+      "score": 0.04456964190903191
+    },
+    {
+      "chunk": {
+        "chunk_id": "12f25d3e55297d86bb18",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 8: c1-3=Noninterest income:",
+        "location": "HTML table 27, row 8",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t27:r8"
+        ],
+        "token_count": 184
+      },
+      "score": 0.040674603174603176
+    },
+    {
+      "chunk": {
+        "chunk_id": "165f1615a05af4d1fa57",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 19: c1-3=Income before income taxes | c4-5=7,339 | c10-11=7,002 | c19-20=3,964 | c25-26=3,375 | c31-32=3,761 | c37-38=3,582 | c43-44=3,461",
+        "location": "HTML table 27, row 19",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t27:r19"
+        ],
+        "token_count": 250
+      },
+      "score": 0.03252247488101534
+    },
+    {
+      "chunk": {
+        "chunk_id": "66490ab16cc233393123",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-42=Bank of America Corporation and Subsidiaries\nc1-42=Quarterly Results by Business Segment and All Other\nc1-3=(Dollars in millions)\nc7-42=Second Quarter 2025\nc7-9=Total Corporation | c16-18=Consumer Banking | c22-24=GWIM | c28-30=Global Banking | c34-36=Global Markets | c40-42=All Other\nRow 20: c1-3=Noninterest expense | c7-8=17,183 | c16-17=5,567 | c22-23=4,593 | c28-29=3,070 | c34-35=3,806 | c40-41=147",
+        "location": "HTML table 21, row 20",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t21:r20"
+        ],
+        "token_count": 170
+      },
+      "score": 0.031746031746031744
+    },
+    {
+      "chunk": {
+        "chunk_id": "53679ab0ece2b3b8a335",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-42=Bank of America Corporation and Subsidiaries\nc1-42=Quarterly Results by Business Segment and All Other (continued)\nc1-3=(Dollars in millions)\nc7-42=Second Quarter 2024\nc7-9=Total Corporation | c16-18=Consumer Banking | c22-24=GWIM | c28-30=Global Banking | c34-36=Global Markets | c40-42=All Other\nRow 20: c1-3=Noninterest expense | c7-8=16,309 | c16-17=5,464 | c22-23=4,199 | c28-29=2,899 | c34-35=3,486 | c40-41=261",
+        "location": "HTML table 23, row 20",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t23:r20"
+        ],
+        "token_count": 172
+      },
+      "score": 0.03128054740957967
+    },
+    {
+      "chunk": {
+        "chunk_id": "4143ec45754fa06f6b6b",
+        "document_id": "bac-2025q2-results",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "in our markets businesses. So far this year, we have supplied more capital to our businesses and returned 40 percent more capital to shareholders in the first half of this year than last year.” See page 10 for endnotes. Amounts may not total due to rounding. 1 Revenue, net of interest expense. 2 Financial Highlights and Business Segment Highlights are compared to the year-ago quarter unless noted. 3 The Bank of America Corporation (Corporation) reports the results of operations of its four business segments and All Other on a fully taxable-equivalent (FTE) basis. 4 Represents the percentage of consumer checking accounts that are estimated to be the customer’s primary account based on multiple relationship factors (e.g., linked to their direct deposit). 5 End of period. Consumer investment assets include client brokerage assets, deposit sweep balances, brokered CDs, and AUM in Consumer Banking. 6 Total payments represent payments made from Bank of America accounts using credit card, debit card, ACH, wires, billpay, person-to-person, cash and checks. 7 Subject to approval by the Corporation’s Board of Directors. 8 Tangible book value per common share and return on average tangible common shareholders’ equity ratio represent non-GAAP financial measures. For more information, see page 19. 9 Source: Dealogic as of June 30, 2025. 10 Includes loans to Global Commercial Banking clients, excluding commercial real estate and specialized industries. • Net income of $7.1 billion, or $0.89 per diluted share, compared to $6.9 billion, or $0.83 per diluted share • Revenue, net of interest expense, of $26.5 billion ($26.6 billion FTE),(A) up 4%, reflected higher net interest income (NII), sales and trading revenue and asset management fees, as well as lower investment banking fees – NII of $14.7 billion (",
+        "location": "HTML image text layer 1 (not a parsed table)",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-results:textlayer1:through:bac-2025q2-results:textlayer1:fragment:4143ec45754fa06f6b6b"
+        ],
+        "token_count": 400
+      },
+      "score": 0.03125763125763126
+    },
+    {
+      "chunk": {
+        "chunk_id": "22ee629a70376110800a",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-30=Bank of America Corporation and Subsidiaries\nc1-30=Nonperforming Loans, Leases and Foreclosed Properties Activity (1)\nc1-3=(Dollars in millions)\nc7-9=Second Quarter 2025 | c13-15=First Quarter 2025 | c19-21=Fourth Quarter 2024 | c25-27=Third Quarter 2024 | c31-33=Second Quarter 2024\nc1-3=Nonperforming Consumer Loans and Leases:\nRow 19: c1-3=Total net additions (reductions) to nonperforming loans and leases | c7-8=(49) | c13-14=(34) | c19-20=(30) | c25-26=6 | c31-32=(26)",
+        "location": "HTML table 53, row 19",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_94",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t53:r19"
+        ],
+        "token_count": 179
+      },
+      "score": 0.030090497737556562
+    },
+    {
+      "chunk": {
+        "chunk_id": "d7763af539691cd1494a",
+        "document_id": "bac-2025q2-supplement",
+        "bank": "BAC",
+        "strategy": "fixed",
+        "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 9: c1-3=Card income | c4-5=2,712 | c10-11=2,633 | c19-20=1,415 | c25-26=1,297 | c31-32=1,397 | c37-38=1,402 | c43-44=1,361",
+        "location": "HTML table 27, row 9",
+        "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "bac-2025q2-supplement:t27:r9"
+        ],
+        "token_count": 247
+      },
+      "score": 0.029957522915269395
+    },
+    {
+      "chunk": {
+        "chunk_id": "22493cd42851bc9e554b",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "the second quarter 2025 of $4.0 billion, or $1.96 per diluted share, on revenues of $21.7 billion. This compares to net income of $3.2 billion, or $1.52 per diluted share, on revenues of $20.0 billion for the second quarter 2024. ​ Revenues increased 8% from the prior-year period, on a reported basis, driven by growth in each of Citi’s five interconnected businesses, partially offset by a decline in All Other . Excluding divestiture-related impacts in both periods (5) , revenues were up 9%. ​ Net income was $4.0 billion, compared to $3.2 billion in the prior-year period, driven by the higher revenues, partially offset by higher cost of credit and higher expenses. ​ Earnings per share of $1.96 increased from $1.52 per diluted share in the prior-year period, reflecting the higher net income and lower shares outstanding. ​ Percentage comparisons throughout this press release are calculated for the second quarter 2025 versus the second quarter 2024, unless otherwise specified. | c2-3=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $",
+        "location": "HTML table 1, row 4",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r4:fragment:22493cd42851bc9e554b"
+        ],
+        "token_count": 400
+      },
+      "score": 0.06452452301209573
+    },
+    {
+      "chunk": {
+        "chunk_id": "025e7032bb09539b5ee6",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "by a higher net build in the allowance for credit losses (ACL) related to deterioration in the macroeconomic outlook in the current quarter relative to the prior-year period and a net ACL build related to transfer risk associated with client activity in Russia, largely offset by a lower net ACL build for volume and lower net credit losses in the card portfolios in USPB.\nCitigroup net income was $4.0 billion in the second quarter 2025, compared to net income of $3.2 billion in the prior-year period, driven by the higher revenues, partially offset by the higher expenses and the higher cost of credit. Citigroup ’ s effective tax rate decreased to approximately 23% in the current quarter from 24% in the second quarter 2024, largely due to the resolution of a tax audit.\nCitigroup ’ s total allowance for credit losses was approximately $23.7 billion at quarter end, compared to $21.8 billion at the end of the prior-year period. Total ACL on loans was approximately $19.1 billion at quarter end, compared to $18.2 billion at the\nend of the prior-year period, with a reserve-to-funded loans ratio of 2.67%, down from 2.68% in the prior-year period. Total non-accrual loans increased 49% from the prior-year period to $3.4 billion. Corporate non-accrual loans increased 73% from the prior-year period to $1.7 billion, primarily driven by idiosyncratic downgrades, primarily in Markets . Consumer non-accrual loans increased 30% from the prior-year period to $1.6 billion, primarily driven by Wealth , primarily due to residential mortgage loans impacted by the California wildfires.\nCitigroup ’ s end-of-period loans were $725.3 billion at quarter end, up 5% versus the prior-year period",
+        "location": "HTML paragraph 396 through HTML paragraph 834",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p396:through:c-2025q2-results:p834:fragment:025e7032bb09539b5ee6"
+        ],
+        "token_count": 400
+      },
+      "score": 0.06430053288858155
+    },
+    {
+      "chunk": {
+        "chunk_id": "a7d791b1e6c536c7bb3b",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "higher net income and lower shares outstanding. ​ Percentage comparisons throughout this press release are calculated for the second quarter 2025 versus the second quarter 2024, unless otherwise specified. | c2-3=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.",
+        "location": "HTML table 1, row 4",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r4:fragment:a7d791b1e6c536c7bb3b"
+        ],
+        "token_count": 314
+      },
+      "score": 0.06163330361834993
+    },
+    {
+      "chunk": {
+        "chunk_id": "9867f181c919070b3ec4",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "partially offset by a decline in All Other . Excluding divestiture-related impacts in both periods (5) , revenues were up 9%. ​ Net income was $4.0 billion, compared to $3.2 billion in the prior-year period, driven by the higher revenues, partially offset by higher cost of credit and higher expenses. ​ Earnings per share of $1.96 increased from $1.52 per diluted share in the prior-year period, reflecting the higher net income and lower shares outstanding. ​ Percentage comparisons throughout this press release are calculated for the second quarter 2025 versus the second quarter 2024, unless otherwise specified. | c2-3=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create",
+        "location": "HTML table 1, row 4",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r4:fragment:9867f181c919070b3ec4"
+        ],
+        "token_count": 400
+      },
+      "score": 0.060249227896286714
+    },
+    {
+      "chunk": {
+        "chunk_id": "c103fe4fa918240783a6",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "or on behalf of Citigroup speak only as to the date they are made, and Citi does not undertake to update forward-looking statements to reflect the impact of circumstances or events that arise after the date the forward-looking statements were made.\n(a) Reconciling Items consist of the divestiture-related impacts excluded from the results of All Other, as well as All Other — Legacy Franchises on a managed basis.\n(b) 2Q25 includes (i) an approximately $186 million loss recorded in revenue (approximately $157 million after tax) related to the announced sale of the Poland consumer banking business; and (ii) approximately $37 million in operating expenses (approximately $26 million after tax) primarily related to separation costs in Mexico.\n(c) 1Q25 includes approximately $34 million in operating expenses (approximately $23 million after-tax), largely related to separation costs in Mexico and severance costs in the Asia exit markets. For additional information, see Citi's Quarterly Report on Form 10-Q for the quarterly period ended March 31, 2025.\n(d) 2Q24 includes approximately $85 million in operating expenses (approximately $58 million after-tax), primarily related to separation costs in Mexico and severance costs in the Asia exit markets. For additional information, see Citi's Quarterly Report on Form 10-Q for the quarterly period ended June 30, 2024.\n(e) Includes credit reserve build / (release) for loans and provision for credit losses on unfunded lending commitments.\n(f) Includes provisions for policyholder benefits and claims and other assets.\nNote: Citi’s binding CET1 Capital ratios were derived under the Basel III Standardized Approach for all periods reflected.\n(b) Excludes issuance costs related to outstanding preferred stock in accordance with Federal Reserve Board regulatory reporting requirements.\n(c) Please refer to Footnote 2 at the end of this press release for additional information.\n(d",
+        "location": "HTML paragraph 2579 through HTML paragraph 4326",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p2579:through:c-2025q2-results:p4326:fragment:c103fe4fa918240783a6"
+        ],
+        "token_count": 400
+      },
+      "score": 0.05896054073803434
+    },
+    {
+      "chunk": {
+        "chunk_id": "fef5cc5b2d8d8692358d",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=RETURNED ~$3.1 BILLION IN THE FORM OF COMMON DIVIDENDS AND SHARE REPURCHASES PAYOUT RATIO OF 82% (3) BOOK VALUE PER SHARE OF $106.94 TANGIBLE BOOK VALUE PER SHARE OF $94.16 (4) ​ ​ New York, July 15, 2025 – Citigroup Inc. today reported net income for the second quarter 2025 of $4.0 billion, or $1.96 per diluted share, on revenues of $21.7 billion. This compares to net income of $3.2 billion, or $1.52 per diluted share, on revenues of $20.0 billion for the second quarter 2024. ​ Revenues increased 8% from the prior-year period, on a reported basis, driven by growth in each of Citi’s five interconnected businesses, partially offset by a decline in All Other . Excluding divestiture-related impacts in both periods (5) , revenues were up 9%. ​ Net income was $4.0 billion, compared to $3.2 billion in the prior-year period, driven by the higher revenues, partially offset",
+        "location": "HTML table 1, row 4",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r4:fragment:fef5cc5b2d8d8692358d"
+        ],
+        "token_count": 400
+      },
+      "score": 0.05822012417407154
+    },
+    {
+      "chunk": {
+        "chunk_id": "04f966a5ab12c4ba307b",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "C | ​\nTable header context:\nc1=For Immediate Release Citigroup Inc. (NYSE: C) July 15, 2025\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2=​ | c3=CEO COMMENTARY\nc1=SECOND QUARTER 2025 RESULTS AND KEY METRICS | c2-4=​ | c5=Citi CEO Jane Fraser said, “We reported another very good quarter and continue to demonstrate that our strong results are sustainable through different environments. We’re improving the performance of each of our businesses to take share and drive higher returns. With revenue up 8%, Services continues to show why this high-return business is our crown jewel. Markets had its best second quarter performance since 2020 with a record second quarter for Equities. Banking revenues were up 18% and we continue to be at the center of some of the most significant transactions. Wealth revenues were up 20% with solid growth across all three lines of business. In U.S. Personal Banking, we saw good growth in Branded Cards while Retail Banking benefited from higher deposit spreads. ​ “We returned $3 billion in capital during the quarter, including $2 billion in share repurchases as part of our $20 billion repurchase plan. I’m particularly pleased that the momentum across our franchise includes the Transformation, as we streamline processes, drive automation and deploy AI. ​ “As I’ve said, next year’s 10-11% ROTCE target is a waypoint, not a destination. The actions we’ve taken have set up Citi to succeed long term, drive returns above that level and continue to create value for shareholders,” Ms. Fraser concluded.\nc1=RETURNED ~$3.1 BILLION IN THE FORM OF COMMON DIVIDENDS AND SHARE REPURCHASES PAYOUT RATIO OF 82% (3) BOOK VALUE PER SHARE OF $106.94 TANGIBLE BOOK VALUE PER SHARE OF $94.16 (4) ​ ​ New York, July 15, 2025",
+        "location": "HTML table 1, row 1",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:t1:r1:fragment:04f966a5ab12c4ba307b"
+        ],
+        "token_count": 400
+      },
+      "score": 0.05732996170496171
+    },
+    {
+      "chunk": {
+        "chunk_id": "e9b40c72cef42a61a2c2",
+        "document_id": "c-2025q2-results",
+        "bank": "C",
+        "strategy": "fixed",
+        "text": "billion over the last 5 quarters, including approximately $3 billion during the second quarter 2025. These amounts represent the balances at the time client relationships are transferred.\n(10) All Other (managed basis) reflects results on a managed basis, which excludes divestiture-related impacts, for all periods, related to Citigroup’s divestitures of its Asia consumer banking businesses and the planned divestiture of Banamex within Legacy Franchises. Certain of the results of operations of All Other (managed basis) and Legacy Franchises (managed basis) that exclude divestiture-related impacts are non-GAAP financial measures. For additional information and a reconciliation of these results, see Appendix C.",
+        "location": "HTML paragraph 4328 through HTML paragraph 4346",
+        "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "c-2025q2-results:p4328:through:c-2025q2-results:p4346:fragment:e9b40c72cef42a61a2c2"
+        ],
+        "token_count": 143
+      },
+      "score": 0.05687799908993133
+    },
+    {
+      "chunk": {
+        "chunk_id": "b49863aee1584be601d5",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "fixed",
+        "text": "COF | \nTable header context:\nc18-22=2025 Q2 | c24-31=Six Months Ended June 30 ,\nc3-4=2025 | c6-7=2025 | c9-10=2024 | c12-13=2024 | c15-16=2024 | c18-19=2025 | c21-22=2024 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc3-4=Q2 | c6-7=Q1 | c9-10=Q4 | c12-13=Q3 | c15-16=Q2 | c18-19=Q1 | c21-22=Q2 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc1=Net Charge-Off (Recovery) Rates\nc1=Credit card (3) :\nRow 37: c1=Total consumer banking | c3=0.74 | c6=0.74 | c9=0.99 | c12=0.93 | c15=0.92 | c18=— | c21=(18 | c22=) | c24=0.74 | c27=0.92 | c30=(18 | c31=)",
+        "location": "HTML table 14, row 37",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t14:r37"
+        ],
+        "token_count": 296
+      },
+      "score": 0.06257644701491044
+    },
+    {
+      "chunk": {
+        "chunk_id": "4094bf69b5cfc6bd7571",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "fixed",
+        "text": "COF | \nTable header context:\nc18-22=2025 Q2 | c24-31=Six Months Ended June 30 ,\nc3-4=2025 | c6-7=2025 | c9-10=2024 | c12-13=2024 | c15-16=2024 | c18-19=2025 | c21-22=2024 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc3-4=Q2 | c6-7=Q1 | c9-10=Q4 | c12-13=Q3 | c15-16=Q2 | c18-19=Q1 | c21-22=Q2 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc1=Net Charge-Off (Recovery) Rates\nc1=Credit card (3) :\nRow 25: c1=Consumer banking:",
+        "location": "HTML table 14, row 25",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t14:r25"
+        ],
+        "token_count": 220
+      },
+      "score": 0.06150798212739215
+    },
+    {
+      "chunk": {
+        "chunk_id": "8dc0c8b3402f7b95b342",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "fixed",
+        "text": "COF | \nTable header context:\nc18-22=2025 Q2 | c24-31=Six Months Ended June 30 ,\nc3-4=2025 | c6-7=2025 | c9-10=2024 | c12-13=2024 | c15-16=2024 | c18-19=2025 | c21-22=2024 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc3-4=Q2 | c6-7=Q1 | c9-10=Q4 | c12-13=Q3 | c15-16=Q2 | c18-19=Q1 | c21-22=Q2 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc1=Net Charge-Off (Recovery) Rates\nc1=Credit card (3) :\nRow 34: c1=Consumer banking:",
+        "location": "HTML table 14, row 34",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t14:r34"
+        ],
+        "token_count": 220
+      },
+      "score": 0.060573476702508955
+    },
+    {
+      "chunk": {
+        "chunk_id": "a802981e344fd1d0f627",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "fixed",
+        "text": "COF | \nTable header context:\nc18-22=2025 Q2 | c24-31=Six Months Ended June 30 ,\nc3-4=2025 | c6-7=2025 | c9-10=2024 | c12-13=2024 | c15-16=2024 | c18-19=2025 | c21-22=2024 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc3-4=Q2 | c6-7=Q1 | c9-10=Q4 | c12-13=Q3 | c15-16=Q2 | c18-19=Q1 | c21-22=Q2 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc1=Net Charge-Off (Recovery) Rates\nc1=Credit card (3) :\nRow 10: c1=Consumer banking:",
+        "location": "HTML table 14, row 10",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t14:r10"
+        ],
+        "token_count": 220
+      },
+      "score": 0.060421380090497745
+    },
+    {
+      "chunk": {
+        "chunk_id": "7cfa6b4c07da768ce145",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "fixed",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary—Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 14: c1=Income from continuing operations before income taxes | c4=591 | c8=244 | c12=268 | c16=528 | c20=617 | c23=142 | c26=(4 | c27=) | c30=835 | c34=1,115 | c37=(25 | c38=)",
+        "location": "HTML table 19, row 14",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r14"
+        ],
+        "token_count": 313
+      },
+      "score": 0.060372269459048195
+    },
+    {
+      "chunk": {
+        "chunk_id": "251f4dbfae8f991625f7",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "fixed",
+        "text": "COF | \nTable header context:\nc18-22=2025 Q2 | c24-31=Six Months Ended June 30 ,\nc3-4=2025 | c6-7=2025 | c9-10=2024 | c12-13=2024 | c15-16=2024 | c18-19=2025 | c21-22=2024 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc3-4=Q2 | c6-7=Q1 | c9-10=Q4 | c12-13=Q3 | c15-16=Q2 | c18-19=Q1 | c21-22=Q2 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc1=Net Charge-Off (Recovery) Rates\nc1=Credit card (3) :\nRow 13: c1=Total consumer banking | c3=1.30 | c6=1.60 | c9=2.38 | c12=2.11 | c15=1.87 | c18=(30 | c19=) | c21=(57 | c22=) | c24=1.45 | c27=1.95 | c30=(50 | c31=)",
+        "location": "HTML table 14, row 13",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t14:r13"
+        ],
+        "token_count": 302
+      },
+      "score": 0.06024563757838406
+    },
+    {
+      "chunk": {
+        "chunk_id": "47a80bf3430ee79cbbeb",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "fixed",
+        "text": "COF | \nTable header context:\nc18-22=2025 Q2 | c24-31=Six Months Ended June 30 ,\nc3-4=2025 | c6-7=2025 | c9-10=2024 | c12-13=2024 | c15-16=2024 | c18-19=2025 | c21-22=2024 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc3-4=Q2 | c6-7=Q1 | c9-10=Q4 | c12-13=Q3 | c15-16=Q2 | c18-19=Q1 | c21-22=Q2 | c24-25=2025 | c27-28=2024 | c30-31=2025 vs. 2024\nc1=Net Charge-Off (Recovery) Rates\nc1=Credit card (3) :\nRow 28: c1=Total consumer banking | c3=4.78 | c6=4.87 | c9=5.87 | c12=5.53 | c15=5.60 | c18=(9 | c19=) | c21=(82 | c22=) | c24=4.78 | c27=5.60 | c30=(82 | c31=)",
+        "location": "HTML table 14, row 28",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t14:r28"
+        ],
+        "token_count": 302
+      },
+      "score": 0.05911729232624755
+    },
+    {
+      "chunk": {
+        "chunk_id": "262808a75915494efda8",
+        "document_id": "cof-2025q2-results",
+        "bank": "COF",
+        "strategy": "fixed",
+        "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary—Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 4: c23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,",
+        "location": "HTML table 19, row 4",
+        "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "cof-2025q2-results:t19:r4"
+        ],
+        "token_count": 259
+      },
+      "score": 0.05447392243166891
+    },
+    {
+      "chunk": {
+        "chunk_id": "2ea746ef6df2a20a2e45",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-6=CREDIT-RELATED INFORMATION, CONTINUED\nc1-3=(in millions, except ratio data)\nc34-42=Jun 30, 2025\nc34-42=Change\nc4-6=Jun 30, | c10-12=Mar 31, | c16-18=Dec 31, | c22-24=Sep 30, | c28-30=Jun 30, | c34-36=Mar 31, | c40-42=Jun 30,\nc4-6=2025 | c10-12=2025 | c16-18=2024 | c22-24=2024 | c28-30=2024 | c34-36=2025 | c40-42=2024\nc1-3=NONPERFORMING ASSETS (a)\nc1-3=Consumer nonaccrual loans\nRow 32: c1-3=Total consumer, excluding credit card nonaccrual loans to",
+        "location": "HTML table 26, row 32",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_55",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t26:r32"
+        ],
+        "token_count": 224
+      },
+      "score": 0.04762704813108039
+    },
+    {
+      "chunk": {
+        "chunk_id": "b4b713245a32f64c282a",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 23: c1-3=NONINTEREST EXPENSE",
+        "location": "HTML table 13, row 23",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r23"
+        ],
+        "token_count": 202
+      },
+      "score": 0.045509487868028324
+    },
+    {
+      "chunk": {
+        "chunk_id": "ab180f06f99330c67a4e",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 29: c1-3=Income tax expense | c4-5=1,738 | c10-11=1,402 | c16-17=1,495 | c22-23=1,364 | c28-29=1,423 | c34-35=24 | c40-41=22 | c49-50=3,140 | c55-56=3,035 | c61-62=3",
+        "location": "HTML table 13, row 29",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r29"
+        ],
+        "token_count": 289
+      },
+      "score": 0.041425899634854865
+    },
+    {
+      "chunk": {
+        "chunk_id": "af1ce2fcd4bcae90f0d2",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 28: c1-3=Income before income tax expense | c4-5=6,907 | c10-11=5,827 | c16-17=6,011 | c22-23=5,410 | c28-29=5,633 | c34-35=19 | c40-41=23 | c49-50=12,734 | c55-56=12,076 | c61-62=5",
+        "location": "HTML table 13, row 28",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r28"
+        ],
+        "token_count": 293
+      },
+      "score": 0.03865384615384615
+    },
+    {
+      "chunk": {
+        "chunk_id": "08800fae2deda5879019",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 7: c4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,",
+        "location": "HTML table 13, row 7",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r7"
+        ],
+        "token_count": 212
+      },
+      "score": 0.032266458495966696
+    },
+    {
+      "chunk": {
+        "chunk_id": "2538d50a006ddabb33ac",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CREDIT-RELATED INFORMATION\nc1-3=(in millions)\nc34-42=Jun 30, 2025\nc34-42=Change\nc4-6=Jun 30, | c10-12=Mar 31, | c16-18=Dec 31, | c22-24=Sep 30, | c28-30=Jun 30, | c34-36=Mar 31, | c40-42=Jun 30,\nc4-6=2025 | c10-12=2025 | c16-18=2024 | c22-24=2024 | c28-30=2024 | c34-36=2025 | c40-42=2024\nc1-3=CREDIT EXPOSURE\nc1-3=Consumer, excluding credit card loans (a)\nRow 30: c1-3=Receivables from customers (c) | c4-5=53,099 | c10-11=49,403 | c16-17=51,929 | c22-23=53,270 | c28-29=56,018 | c34-35=7 | c40-41=(5)",
+        "location": "HTML table 25, row 30",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_55",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t25:r30"
+        ],
+        "token_count": 276
+      },
+      "score": 0.03200204813108039
+    },
+    {
+      "chunk": {
+        "chunk_id": "467a2c77788744e1807f",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-6=CREDIT-RELATED INFORMATION, CONTINUED\nc1-3=(in millions, except ratio data)\nc34-42=Jun 30, 2025\nc34-42=Change\nc4-6=Jun 30, | c10-12=Mar 31, | c16-18=Dec 31, | c22-24=Sep 30, | c28-30=Jun 30, | c34-36=Mar 31, | c40-42=Jun 30,\nc4-6=2025 | c10-12=2025 | c16-18=2024 | c22-24=2024 | c28-30=2024 | c34-36=2025 | c40-42=2024\nc1-3=ALLOWANCE COMPONENTS AND RATIOS\nc1-3=ALLOWANCE FOR LOAN LOSSES\nc1-3=Consumer, excluding credit card\nRow 32: c1-3=Consumer, excluding credit card allowance, to total",
+        "location": "HTML table 28, row 32",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_55",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t28:r32"
+        ],
+        "token_count": 224
+      },
+      "score": 0.031009615384615385
+    },
+    {
+      "chunk": {
+        "chunk_id": "be5d4e4b589c8d98ec5b",
+        "document_id": "jpm-2025q2-supplement",
+        "bank": "JPM",
+        "strategy": "fixed",
+        "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 3: c1-3=CONSUMER & COMMUNITY BANKING",
+        "location": "HTML table 13, row 3",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "jpm-2025q2-supplement:t13:r3"
+        ],
+        "token_count": 201
+      },
+      "score": 0.03057889822595705
+    },
+    {
+      "chunk": {
+        "chunk_id": "b8f9e68773c3bb823c7d",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nConsumer, Small and Business Banking $ 6,288 5,981 6,129 5% 3\nConsumer Lending:\nHome Lending 821 866 823 (5) —\nCredit Card 1,588 1,524 1,452 4 9\nAuto 241 237 282 2 (15)\nPersonal Lending 290 305 320 (5) (9)\nTotal revenue 9,228 8,913 9,006 4 2\nProvision for credit losses 945 739 932 28 1\nNoninterest expense 5,799 5,928 5,701 (2) 2\nNet income $ 1,863 1,689 1,777 10 5\nAverage balances (in billions)\nLoans $ 315.4 318.1 325.9 (1) (3)\nDeposits 781.4 778.6 778.2 — —\nSecond Quarter 2025 vs. Second Quarter 2024\n◦ Revenue increased 2%\n▪ Consumer, Small and Business Banking was up 3% driven by the impact of lower interest rates on deposit pricing and\nhigher deposit balances, partially offset by lower deposit-related fees\n▪ Home Lending was stable and included lower net interest income on lower loan balances, offset by higher mortgage\nbanking fees\n▪ Credit Card was up 9% driven by higher loan balances\n▪ Auto was down 15% due to lower loan balances and loan spread compression\n▪ Personal Lending was down 9% driven by lower loan balances\n◦ Noninterest expense increased 2% driven by higher branch personnel and advertising expense, partially offset by lower\noperating losses and the impact of efficiency initiatives\n4",
+        "location": "PDF page 3 through PDF page 4",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=3",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page3:through:wfc-2025q2-results:page4:fragment:b8f9e68773c3bb823c7d"
+        ],
+        "token_count": 362
+      },
+      "score": 0.0635634003974168
+    },
+    {
+      "chunk": {
+        "chunk_id": "95c8a1f9bb387e73663e",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "301\nNet loan charge-offs as a % of average total loans (annualized) 0.44 % 0.45 0.57\nTotal nonaccrual loans $ 7,757 7,978 8,434\nAs a % of total loans 0.84 % 0.87 0.92\nTotal nonperforming assets $ 7,964 8,225 8,650\nAs a % of total loans 0.86 % 0.90 0.94\nAllowance for credit losses for loans $ 14,568 14,552 14,789\nAs a % of total loans 1.58 % 1.59 1.61\nSecond Quarter 2025 vs. First Quarter 2025\n◦ Commercial net loan charge-offs as a percentage of average loans were 0.18% (annualized), up from 0.16%, driven by\nhigher commercial and industrial net loan charge-offs, partially offset by lower commercial real estate net loan charge-\noffs, predominantly in the office portfolio. The consumer net loan charge-off rate decreased to 0.81% (annualized), down\nfrom 0.86%, on lower auto and credit card net loan charge-offs\n◦ Nonperforming assets were down $261 million, or 3%, driven by lower commercial real estate nonaccrual loans,\npredominantly in the office portfolio\nEndnotes are presented on page 9. 3\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nConsumer, Small and Business Banking $ 6,288 5,981 6,129 5%",
+        "location": "PDF page 3 through PDF page 4",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=3",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page3:through:wfc-2025q2-results:page4:fragment:95c8a1f9bb387e73663e"
+        ],
+        "token_count": 400
+      },
+      "score": 0.05943223443223443
+    },
+    {
+      "chunk": {
+        "chunk_id": "6b3b21c1390a88809e13",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 20: c1=Net income | c2=1,863 | c3=1,689 | c4=1,777 | c5=10 | c6=5",
+        "location": "PDF page 4, text line 20 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line20"
+        ],
+        "token_count": 190
+      },
+      "score": 0.05912140834741454
+    },
+    {
+      "chunk": {
+        "chunk_id": "6608f148d2ab366a767a",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 11: c1=Consumer, Small and Business Banking | c2=6,288 | c3=5,981 | c4=6,129 | c5=5 | c6=3",
+        "location": "PDF page 4, text line 11 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line11"
+        ],
+        "token_count": 192
+      },
+      "score": 0.05790105085879734
+    },
+    {
+      "chunk": {
+        "chunk_id": "419796a390866c9aebe6",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nWealth and Investment Management provides personalized wealth management, brokerage, financial planning, lending,\nprivate banking, trust and fiduciary products and services to affluent, high-net worth and ultra-high-net worth clients. We\noperate through financial advisors in our brokerage and wealth offices, consumer bank branches, independent offices, and\ndigitally through WellsTrade® and Intuitive Investor®.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 13: c1=Total revenue | c2=3,898 | c3=3,874 | c4=3,858 | c5=1 | c6=1",
+        "location": "PDF page 7, text line 13 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=7",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page7:line13"
+        ],
+        "token_count": 209
+      },
+      "score": 0.057652842091305515
+    },
+    {
+      "chunk": {
+        "chunk_id": "896ef1f1946b3b6ffef5",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 14: c1=Credit Card | c2=1,588 | c3=1,524 | c4=1,452 | c5=4 | c6=9",
+        "location": "PDF page 4, text line 14 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line14"
+        ],
+        "token_count": 190
+      },
+      "score": 0.05740384615384615
+    },
+    {
+      "chunk": {
+        "chunk_id": "4c08f23b0ea5e768ff7d",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nWealth and Investment Management provides personalized wealth management, brokerage, financial planning, lending,\nprivate banking, trust and fiduciary products and services to affluent, high-net worth and ultra-high-net worth clients. We\noperate through financial advisors in our brokerage and wealth offices, consumer bank branches, independent offices, and\ndigitally through WellsTrade® and Intuitive Investor®.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total client assets (in billions) | c2=2,346 | c3=2,233 | c4=2,200 | c5=5 | c6=7",
+        "location": "PDF page 7, text line 17 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=7",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page7:line17"
+        ],
+        "token_count": 212
+      },
+      "score": 0.05707012629613249
+    },
+    {
+      "chunk": {
+        "chunk_id": "17973d3ef57b0c53f6df",
+        "document_id": "wfc-2025q2-results",
+        "bank": "WFC",
+        "strategy": "fixed",
+        "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 15: c1=Auto | c2=241 | c3=237 | c4=282 | c5=2 | c6=(15)",
+        "location": "PDF page 4, text line 15 (reviewed values only)",
+        "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+        "periods": [
+          "2025Q2",
+          "2024Q2"
+        ],
+        "evidence_ids": [
+          "wfc-2025q2-results:page4:line15"
+        ],
+        "token_count": 182
+      },
+      "score": 0.056853477709491756
+    }
+  ],
+  "answer": {
+    "question": "Compare consumer operating leverage across peers from Q2 2024 to Q2 2025",
+    "status": "evidence_only",
+    "mode": "evidence_only",
+    "text": "Evidence-only mode: retrieved excerpts are shown below; no language-model answer was generated.\n\nValidated calculations:\n[\n  {\n    \"bank\": \"BAC\",\n    \"value\": \"4.06\",\n    \"unit\": \"percentage points\",\n    \"formula\": \"revenue YoY growth minus noninterest expense YoY growth\",\n    \"components\": {\n      \"revenue_growth\": \"5.95\",\n      \"expense_growth\": \"1.89\"\n    },\n    \"inputs\": [\n      {\n        \"bank\": \"BAC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2025Q2\",\n        \"value\": \"10813\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"FTE\",\n        \"evidence_id\": \"bac-2025q2-supplement:t27:r14\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": [\n          \"bac-2025q2-supplement:t21:r18\"\n        ]\n      },\n      {\n        \"bank\": \"BAC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2024Q2\",\n        \"value\": \"10206\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"FTE\",\n        \"evidence_id\": \"bac-2025q2-supplement:t27:r14\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": [\n          \"bac-2025q2-supplement:t23:r18\"\n        ]\n      },\n      {\n        \"bank\": \"BAC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2025Q2\",\n        \"value\": \"5567\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"FTE\",\n        \"evidence_id\": \"bac-2025q2-supplement:t27:r18\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": [\n          \"bac-2025q2-supplement:t21:r20\"\n        ]\n      },\n      {\n        \"bank\": \"BAC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2024Q2\",\n        \"value\": \"5464\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"FTE\",\n        \"evidence_id\": \"bac-2025q2-supplement:t27:r18\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": [\n          \"bac-2025q2-supplement:t23:r20\"\n        ]\n      }\n    ]\n  },\n  {\n    \"bank\": \"C\",\n    \"value\": \"4.84\",\n    \"unit\": \"percentage points\",\n    \"formula\": \"revenue YoY growth minus noninterest expense YoY growth\",\n    \"components\": {\n      \"revenue_growth\": \"5.94\",\n      \"expense_growth\": \"1.10\"\n    },\n    \"inputs\": [\n      {\n        \"bank\": \"C\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2025Q2\",\n        \"value\": \"5119\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"c-2025q2-results:t7:r7\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"C\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2024Q2\",\n        \"value\": \"4832\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"c-2025q2-results:t7:r7\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"C\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2025Q2\",\n        \"value\": \"2381\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"c-2025q2-results:t7:r9\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"C\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2024Q2\",\n        \"value\": \"2355\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"c-2025q2-results:t7:r9\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      }\n    ]\n  },\n  {\n    \"bank\": \"COF\",\n    \"value\": \"-20.70\",\n    \"unit\": \"percentage points\",\n    \"formula\": \"revenue YoY growth minus noninterest expense YoY growth\",\n    \"components\": {\n      \"revenue_growth\": \"16.34\",\n      \"expense_growth\": \"37.04\"\n    },\n    \"inputs\": [\n      {\n        \"bank\": \"COF\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2025Q2\",\n        \"value\": \"2556\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"GAAP\",\n        \"evidence_id\": \"cof-2025q2-results:t19:r11\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"COF\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2024Q2\",\n        \"value\": \"2197\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"GAAP\",\n        \"evidence_id\": \"cof-2025q2-results:t19:r11\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"COF\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2025Q2\",\n        \"value\": \"1713\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"GAAP\",\n        \"evidence_id\": \"cof-2025q2-results:t19:r13\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"COF\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2024Q2\",\n        \"value\": \"1250\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"GAAP\",\n        \"evidence_id\": \"cof-2025q2-results:t19:r13\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      }\n    ]\n  },\n  {\n    \"bank\": \"JPM\",\n    \"value\": \"1.88\",\n    \"unit\": \"percentage points\",\n    \"formula\": \"revenue YoY growth minus noninterest expense YoY growth\",\n    \"components\": {\n      \"revenue_growth\": \"6.47\",\n      \"expense_growth\": \"4.59\"\n    },\n    \"inputs\": [\n      {\n        \"bank\": \"JPM\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2025Q2\",\n        \"value\": \"18847\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"managed_FTE\",\n        \"evidence_id\": \"jpm-2025q2-supplement:t13:r19\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": [\n          \"jpm-2025q2-supplement:t9:r11\"\n        ]\n      },\n      {\n        \"bank\": \"JPM\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2024Q2\",\n        \"value\": \"17701\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"managed_FTE\",\n        \"evidence_id\": \"jpm-2025q2-supplement:t13:r19\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": [\n          \"jpm-2025q2-supplement:t9:r11\"\n        ]\n      },\n      {\n        \"bank\": \"JPM\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2025Q2\",\n        \"value\": \"9858\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"managed_FTE\",\n        \"evidence_id\": \"jpm-2025q2-supplement:t13:r26\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"JPM\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2024Q2\",\n        \"value\": \"9425\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"managed_FTE\",\n        \"evidence_id\": \"jpm-2025q2-supplement:t13:r26\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      }\n    ]\n  },\n  {\n    \"bank\": \"WFC\",\n    \"value\": \"0.75\",\n    \"unit\": \"percentage points\",\n    \"formula\": \"revenue YoY growth minus noninterest expense YoY growth\",\n    \"components\": {\n      \"revenue_growth\": \"2.47\",\n      \"expense_growth\": \"1.72\"\n    },\n    \"inputs\": [\n      {\n        \"bank\": \"WFC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2025Q2\",\n        \"value\": \"9228\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"wfc-2025q2-results:page4:line17\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"WFC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"revenue\",\n        \"period\": \"2024Q2\",\n        \"value\": \"9006\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"wfc-2025q2-results:page4:line17\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"WFC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2025Q2\",\n        \"value\": \"5799\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"wfc-2025q2-results:page4:line19\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      },\n      {\n        \"bank\": \"WFC\",\n        \"segment\": \"consumer\",\n        \"metric\": \"noninterest_expense\",\n        \"period\": \"2024Q2\",\n        \"value\": \"5701\",\n        \"unit\": \"USD_millions\",\n        \"basis\": \"reported\",\n        \"evidence_id\": \"wfc-2025q2-results:page4:line19\",\n        \"period_type\": \"quarter\",\n        \"alternative_evidence_ids\": []\n      }\n    ]\n  }\n]\n\n[133730d62332d8c47460] HTML table 27, row 14\nBAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206\nhttps://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49\n\n[71830a6cf490a45170fd] HTML table 27, row 18\nBAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 18: c1-3=Noninterest expense | c4-5=11,393 | c10-11=10,939 | c19-20=5,567 | c25-26=5,826 | c31-32=5,631 | c37-38=5,534 | c43-44=5,464\nhttps://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49\n\n[794cf4f3488184610479] HTML table 7, row 7\nC | ​\nTable header context:\nc2-3=​ | c5-6=​ | c8-9=​ | c11=​ | c13=​\nc1=USPB ($ in millions, except as otherwise noted) | c3-4=2Q’25 | c6-7=1Q’25 | c9-10=2Q’24 | c12=QoQ% | c14=YoY%\nc1-14=​\nRow 7: c1=Total revenues, net of interest expense | c2-3=​ | c4=5,119 | c5-6=​ | c7=5,228 | c8-9=​ | c10=4,832 | c11=​ | c12=(2)% | c13=​ | c14=6%\nhttps://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm\n\n[db96483ea5b6b91f32ca] HTML table 7, row 9\nC | ​\nTable header context:\nc2-3=​ | c5-6=​ | c8-9=​ | c11=​ | c13=​\nc1=USPB ($ in millions, except as otherwise noted) | c3-4=2Q’25 | c6-7=1Q’25 | c9-10=2Q’24 | c12=QoQ% | c14=YoY%\nc1-14=​\nRow 9: c1=Total operating expenses | c2=​ | c4=2,381 | c5=​ | c7=2,442 | c8=​ | c10=2,355 | c11=​ | c12=(2)% | c13=​ | c14=1%\nhttps://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm\n\n[27ba5fa37faeb0501c0c] HTML table 19, row 11\nCOF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary—Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 11: c1=Total net revenue | c4=2,556 | c8=2,126 | c12=2,141 | c16=2,210 | c20=2,197 | c23=20 | c26=16 | c30=4,682 | c34=4,367 | c37=7\nhttps://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content\n\n[ee7de0b71a457376bf19] HTML table 19, row 13\nCOF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary—Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 13: c1=Non-interest expense | c4=1,713 | c8=1,581 | c12=1,545 | c16=1,331 | c20=1,250 | c23=8 | c26=37 | c30=3,294 | c34=2,496 | c37=32\nhttps://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content\n\n[8391bc6113f3e0e0fea7] HTML table 13, row 19\nJPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5\nhttps://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[8ce37664717b5831a233] HTML table 13, row 26\nJPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 26: c1-3=TOTAL NONINTEREST EXPENSE | c4-5=9,858 | c10-11=9,857 | c16-17=9,728 | c22-23=9,586 | c28-29=9,425 | c34-35=— | c40-41=5 | c49-50=19,715 | c55-56=18,722 | c61-62=5\nhttps://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[d63ed7ddf52e3ec0681f] PDF page 4, text line 17 (reviewed values only)\nWFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2\nhttps://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4\n\n[8328df4b8f7da053e440] PDF page 4, text line 19 (reviewed values only)\nWFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2\nhttps://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+    "hits": [
+      {
+        "chunk": {
+          "chunk_id": "133730d62332d8c47460",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "fixed",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+          "location": "HTML table 27, row 14",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r14"
+          ],
+          "token_count": 253
+        },
+        "score": -4.0768327713012695
+      },
+      {
+        "chunk": {
+          "chunk_id": "71830a6cf490a45170fd",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "fixed",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 18: c1-3=Noninterest expense | c4-5=11,393 | c10-11=10,939 | c19-20=5,567 | c25-26=5,826 | c31-32=5,631 | c37-38=5,534 | c43-44=5,464",
+          "location": "HTML table 27, row 18",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r18"
+          ],
+          "token_count": 253
+        },
+        "score": -4.219089508056641
+      },
+      {
+        "chunk": {
+          "chunk_id": "794cf4f3488184610479",
+          "document_id": "c-2025q2-results",
+          "bank": "C",
+          "strategy": "fixed",
+          "text": "C | ​\nTable header context:\nc2-3=​ | c5-6=​ | c8-9=​ | c11=​ | c13=​\nc1=USPB ($ in millions, except as otherwise noted) | c3-4=2Q’25 | c6-7=1Q’25 | c9-10=2Q’24 | c12=QoQ% | c14=YoY%\nc1-14=​\nRow 7: c1=Total revenues, net of interest expense | c2-3=​ | c4=5,119 | c5-6=​ | c7=5,228 | c8-9=​ | c10=4,832 | c11=​ | c12=(2)% | c13=​ | c14=6%",
+          "location": "HTML table 7, row 7",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "c-2025q2-results:t7:r7"
+          ],
+          "token_count": 167
+        },
+        "score": -7.965980529785156
+      },
+      {
+        "chunk": {
+          "chunk_id": "db96483ea5b6b91f32ca",
+          "document_id": "c-2025q2-results",
+          "bank": "C",
+          "strategy": "fixed",
+          "text": "C | ​\nTable header context:\nc2-3=​ | c5-6=​ | c8-9=​ | c11=​ | c13=​\nc1=USPB ($ in millions, except as otherwise noted) | c3-4=2Q’25 | c6-7=1Q’25 | c9-10=2Q’24 | c12=QoQ% | c14=YoY%\nc1-14=​\nRow 9: c1=Total operating expenses | c2=​ | c4=2,381 | c5=​ | c7=2,442 | c8=​ | c10=2,355 | c11=​ | c12=(2)% | c13=​ | c14=1%",
+          "location": "HTML table 7, row 9",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "c-2025q2-results:t7:r9"
+          ],
+          "token_count": 157
+        },
+        "score": -7.573954105377197
+      },
+      {
+        "chunk": {
+          "chunk_id": "27ba5fa37faeb0501c0c",
+          "document_id": "cof-2025q2-results",
+          "bank": "COF",
+          "strategy": "fixed",
+          "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary—Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 11: c1=Total net revenue | c4=2,556 | c8=2,126 | c12=2,141 | c16=2,210 | c20=2,197 | c23=20 | c26=16 | c30=4,682 | c34=4,367 | c37=7",
+          "location": "HTML table 19, row 11",
+          "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "cof-2025q2-results:t19:r11"
+          ],
+          "token_count": 308
+        },
+        "score": -2.0437798500061035
+      },
+      {
+        "chunk": {
+          "chunk_id": "ee7de0b71a457376bf19",
+          "document_id": "cof-2025q2-results",
+          "bank": "COF",
+          "strategy": "fixed",
+          "text": "COF | \nTable header context:\nc1-23=CAPITAL ONE FINANCIAL CORPORATION (COF)\nc1-23=Table 11: Financial & Statistical Summary—Consumer Banking Business\nc23-27=2025 Q2 vs. | c29-38=Six Months Ended June 30,\nc1=(Dollars in millions, except as noted) | c3-5=2025 | c7-9=2025 | c11-13=2024 | c15-17=2024 | c19-21=2024 | c23-24=2025 | c26-27=2024 | c37-38=2025 vs.\nc1=(Dollars in millions, except as noted) | c3-5=Q2 | c7-9=Q1 | c11-13=Q4 | c15-17=Q3 | c19-21=Q2 | c23-24=Q1 | c26-27=Q2 | c29-31=2025 | c33-35=2024 | c37-38=2024\nc1=Consumer Banking\nc1=Earnings:\nRow 13: c1=Non-interest expense | c4=1,713 | c8=1,581 | c12=1,545 | c16=1,331 | c20=1,250 | c23=8 | c26=37 | c30=3,294 | c34=2,496 | c37=32",
+          "location": "HTML table 19, row 13",
+          "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "cof-2025q2-results:t19:r13"
+          ],
+          "token_count": 310
+        },
+        "score": -2.005959987640381
+      },
+      {
+        "chunk": {
+          "chunk_id": "8391bc6113f3e0e0fea7",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "fixed",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+          "location": "HTML table 13, row 19",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r19"
+          ],
+          "token_count": 289
+        },
+        "score": -3.283581256866455
+      },
+      {
+        "chunk": {
+          "chunk_id": "8ce37664717b5831a233",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "fixed",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 26: c1-3=TOTAL NONINTEREST EXPENSE | c4-5=9,858 | c10-11=9,857 | c16-17=9,728 | c22-23=9,586 | c28-29=9,425 | c34-35=— | c40-41=5 | c49-50=19,715 | c55-56=18,722 | c61-62=5",
+          "location": "HTML table 13, row 26",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r26"
+          ],
+          "token_count": 294
+        },
+        "score": -3.1732053756713867
+      },
+      {
+        "chunk": {
+          "chunk_id": "d63ed7ddf52e3ec0681f",
+          "document_id": "wfc-2025q2-results",
+          "bank": "WFC",
+          "strategy": "fixed",
+          "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+          "location": "PDF page 4, text line 17 (reviewed values only)",
+          "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "wfc-2025q2-results:page4:line17"
+          ],
+          "token_count": 189
+        },
+        "score": 0.06503594666719437
+      },
+      {
+        "chunk": {
+          "chunk_id": "8328df4b8f7da053e440",
+          "document_id": "wfc-2025q2-results",
+          "bank": "WFC",
+          "strategy": "fixed",
+          "text": "WFC | Wells Fargo Q2 2025 earnings release\nTable header context:\nOperating Segment Performance\nConsumer Banking and Lending offers diversified financial products and services for consumers and small businesses with\nannual sales generally up to $10 million. These financial products and services include checking and savings accounts, credit\nand debit cards, as well as home, auto, personal, and small business lending.\nSelected Financial Information\nJun 30, 2025\nQuarter ended % Change from\nJun 30, Mar 31, Jun 30, Mar 31, Jun 30,\n2025 2025 2024 2025 2024\nEarnings (in millions)\nc2=2Q25 | c3=1Q25 | c4=2Q24 | c5=1Q25 | c6=2Q24\nRow 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2",
+          "location": "PDF page 4, text line 19 (reviewed values only)",
+          "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "wfc-2025q2-results:page4:line19"
+          ],
+          "token_count": 195
+        },
+        "score": 0.6892913579940796
+      }
+    ],
+    "elapsed_seconds": 10.485,
+    "usage": {}
+  },
+  "timestamp": "2026-10-18T22:11:58.691139+00:00",
+  "gold": {
+    "id": "F16",
+    "question": "Compare consumer operating leverage across peers from Q2 2024 to Q2 2025",
+    "base_bank": "BAC",
+    "expected_behavior": "answered",
+    "annotation_status": "reviewed",
+    "evidence": [
+      {
+        "document_id": "bac-2025q2-supplement",
+        "evidence_id": "bac-2025q2-supplement:t27:r14",
+        "quote": "Row 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+        "bank": "BAC",
+        "metric": "revenue",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "bac-2025q2-supplement",
+        "evidence_id": "bac-2025q2-supplement:t27:r14",
+        "quote": "Row 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+        "bank": "BAC",
+        "metric": "revenue",
+        "period": "2024Q2"
+      },
+      {
+        "document_id": "bac-2025q2-supplement",
+        "evidence_id": "bac-2025q2-supplement:t27:r18",
+        "quote": "Row 18: c1-3=Noninterest expense | c4-5=11,393 | c10-11=10,939 | c19-20=5,567 | c25-26=5,826 | c31-32=5,631 | c37-38=5,534 | c43-44=5,464",
+        "bank": "BAC",
+        "metric": "noninterest_expense",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "bac-2025q2-supplement",
+        "evidence_id": "bac-2025q2-supplement:t27:r18",
+        "quote": "Row 18: c1-3=Noninterest expense | c4-5=11,393 | c10-11=10,939 | c19-20=5,567 | c25-26=5,826 | c31-32=5,631 | c37-38=5,534 | c43-44=5,464",
+        "bank": "BAC",
+        "metric": "noninterest_expense",
+        "period": "2024Q2"
+      },
+      {
+        "document_id": "jpm-2025q2-supplement",
+        "evidence_id": "jpm-2025q2-supplement:t13:r19",
+        "quote": "Row 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+        "bank": "JPM",
+        "metric": "revenue",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "jpm-2025q2-supplement",
+        "evidence_id": "jpm-2025q2-supplement:t13:r19",
+        "quote": "Row 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+        "bank": "JPM",
+        "metric": "revenue",
+        "period": "2024Q2"
+      },
+      {
+        "document_id": "jpm-2025q2-supplement",
+        "evidence_id": "jpm-2025q2-supplement:t13:r26",
+        "quote": "Row 26: c1-3=TOTAL NONINTEREST EXPENSE | c4-5=9,858 | c10-11=9,857 | c16-17=9,728 | c22-23=9,586 | c28-29=9,425 | c34-35=— | c40-41=5 | c49-50=19,715 | c55-56=18,722 | c61-62=5",
+        "bank": "JPM",
+        "metric": "noninterest_expense",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "jpm-2025q2-supplement",
+        "evidence_id": "jpm-2025q2-supplement:t13:r26",
+        "quote": "Row 26: c1-3=TOTAL NONINTEREST EXPENSE | c4-5=9,858 | c10-11=9,857 | c16-17=9,728 | c22-23=9,586 | c28-29=9,425 | c34-35=— | c40-41=5 | c49-50=19,715 | c55-56=18,722 | c61-62=5",
+        "bank": "JPM",
+        "metric": "noninterest_expense",
+        "period": "2024Q2"
+      },
+      {
+        "document_id": "c-2025q2-results",
+        "evidence_id": "c-2025q2-results:t7:r7",
+        "quote": "Row 7: c1=Total revenues, net of interest expense | c2-3=​ | c4=5,119 | c5-6=​ | c7=5,228 | c8-9=​ | c10=4,832 | c11=​ | c12=(2)% | c13=​ | c14=6%",
+        "bank": "C",
+        "metric": "revenue",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "c-2025q2-results",
+        "evidence_id": "c-2025q2-results:t7:r7",
+        "quote": "Row 7: c1=Total revenues, net of interest expense | c2-3=​ | c4=5,119 | c5-6=​ | c7=5,228 | c8-9=​ | c10=4,832 | c11=​ | c12=(2)% | c13=​ | c14=6%",
+        "bank": "C",
+        "metric": "revenue",
+        "period": "2024Q2"
+      },
+      {
+        "document_id": "c-2025q2-results",
+        "evidence_id": "c-2025q2-results:t7:r9",
+        "quote": "Row 9: c1=Total operating expenses | c2=​ | c4=2,381 | c5=​ | c7=2,442 | c8=​ | c10=2,355 | c11=​ | c12=(2)% | c13=​ | c14=1%",
+        "bank": "C",
+        "metric": "noninterest_expense",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "c-2025q2-results",
+        "evidence_id": "c-2025q2-results:t7:r9",
+        "quote": "Row 9: c1=Total operating expenses | c2=​ | c4=2,381 | c5=​ | c7=2,442 | c8=​ | c10=2,355 | c11=​ | c12=(2)% | c13=​ | c14=1%",
+        "bank": "C",
+        "metric": "noninterest_expense",
+        "period": "2024Q2"
+      },
+      {
+        "document_id": "cof-2025q2-results",
+        "evidence_id": "cof-2025q2-results:t19:r11",
+        "quote": "Row 11: c1=Total net revenue | c4=2,556 | c8=2,126 | c12=2,141 | c16=2,210 | c20=2,197 | c23=20 | c26=16 | c30=4,682 | c34=4,367 | c37=7",
+        "bank": "COF",
+        "metric": "revenue",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "cof-2025q2-results",
+        "evidence_id": "cof-2025q2-results:t19:r11",
+        "quote": "Row 11: c1=Total net revenue | c4=2,556 | c8=2,126 | c12=2,141 | c16=2,210 | c20=2,197 | c23=20 | c26=16 | c30=4,682 | c34=4,367 | c37=7",
+        "bank": "COF",
+        "metric": "revenue",
+        "period": "2024Q2"
+      },
+      {
+        "document_id": "cof-2025q2-results",
+        "evidence_id": "cof-2025q2-results:t19:r13",
+        "quote": "Row 13: c1=Non-interest expense | c4=1,713 | c8=1,581 | c12=1,545 | c16=1,331 | c20=1,250 | c23=8 | c26=37 | c30=3,294 | c34=2,496 | c37=32",
+        "bank": "COF",
+        "metric": "noninterest_expense",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "cof-2025q2-results",
+        "evidence_id": "cof-2025q2-results:t19:r13",
+        "quote": "Row 13: c1=Non-interest expense | c4=1,713 | c8=1,581 | c12=1,545 | c16=1,331 | c20=1,250 | c23=8 | c26=37 | c30=3,294 | c34=2,496 | c37=32",
+        "bank": "COF",
+        "metric": "noninterest_expense",
+        "period": "2024Q2"
+      },
+      {
+        "document_id": "wfc-2025q2-results",
+        "evidence_id": "wfc-2025q2-results:page4:line17",
+        "quote": "Row 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+        "bank": "WFC",
+        "metric": "revenue",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "wfc-2025q2-results",
+        "evidence_id": "wfc-2025q2-results:page4:line17",
+        "quote": "Row 17: c1=Total revenue | c2=9,228 | c3=8,913 | c4=9,006 | c5=4 | c6=2",
+        "bank": "WFC",
+        "metric": "revenue",
+        "period": "2024Q2"
+      },
+      {
+        "document_id": "wfc-2025q2-results",
+        "evidence_id": "wfc-2025q2-results:page4:line19",
+        "quote": "Row 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2",
+        "bank": "WFC",
+        "metric": "noninterest_expense",
+        "period": "2025Q2"
+      },
+      {
+        "document_id": "wfc-2025q2-results",
+        "evidence_id": "wfc-2025q2-results:page4:line19",
+        "quote": "Row 19: c1=Noninterest expense | c2=5,799 | c3=5,928 | c4=5,701 | c5=(2) | c6=2",
+        "bank": "WFC",
+        "metric": "noninterest_expense",
+        "period": "2024Q2"
+      }
+    ],
+    "expected_answer": "BAC 2025Q2 revenue 10813 USD_millions FTE; BAC 2024Q2 revenue 10206 USD_millions FTE; BAC 2025Q2 noninterest_expense 5567 USD_millions FTE; BAC 2024Q2 noninterest_expense 5464 USD_millions FTE; JPM 2025Q2 revenue 18847 USD_millions managed_FTE; JPM 2024Q2 revenue 17701 USD_millions managed_FTE; JPM 2025Q2 noninterest_expense 9858 USD_millions managed_FTE; JPM 2024Q2 noninterest_expense 9425 USD_millions managed_FTE; C 2025Q2 revenue 5119 USD_millions reported; C 2024Q2 revenue 4832 USD_millions reported; C 2025Q2 noninterest_expense 2381 USD_millions reported; C 2024Q2 noninterest_expense 2355 USD_millions reported; COF 2025Q2 revenue 2556 USD_millions GAAP; COF 2024Q2 revenue 2197 USD_millions GAAP; COF 2025Q2 noninterest_expense 1713 USD_millions GAAP; COF 2024Q2 noninterest_expense 1250 USD_millions GAAP; WFC 2025Q2 revenue 9228 USD_millions reported; WFC 2024Q2 revenue 9006 USD_millions reported; WFC 2025Q2 noninterest_expense 5799 USD_millions reported; WFC 2024Q2 noninterest_expense 5701 USD_millions reported",
+    "review_method": "Assistant verified original HTML cells or PDF text-line columns before this expanded-corpus evaluation; not independent human review."
+  }
+}

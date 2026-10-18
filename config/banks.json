@@ -1,0 +1,89 @@
+[
+  {
+    "id": "BAC",
+    "name": "Bank of America",
+    "aliases": [
+      "bank of america",
+      "bofa",
+      "bac"
+    ],
+    "consumer_segment": "Consumer Banking",
+    "onboarding": "reviewed_corpus",
+    "reviewed_basis": "FTE",
+    "consumer_table_markers": [
+      "Consumer Banking"
+    ],
+    "consumer_query_terms": []
+  },
+  {
+    "id": "JPM",
+    "name": "JPMorgan Chase",
+    "aliases": [
+      "jpmorgan",
+      "jp morgan",
+      "jpm",
+      "chase"
+    ],
+    "consumer_segment": "Consumer & Community Banking",
+    "onboarding": "reviewed_corpus",
+    "reviewed_basis": "managed_FTE",
+    "consumer_table_markers": [
+      "Consumer",
+      "CCB"
+    ],
+    "consumer_query_terms": []
+  },
+  {
+    "id": "WFC",
+    "name": "Wells Fargo",
+    "aliases": [
+      "wells fargo",
+      "wells",
+      "wfc"
+    ],
+    "consumer_segment": "Consumer Banking and Lending",
+    "onboarding": "reviewed_consumer_revenue_expense",
+    "reviewed_basis": "reported",
+    "consumer_table_markers": [
+      "Consumer Banking and Lending"
+    ],
+    "consumer_query_terms": []
+  },
+  {
+    "id": "C",
+    "name": "Citi",
+    "aliases": [
+      "citigroup",
+      "citibank",
+      "citi"
+    ],
+    "consumer_segment": "US Personal Banking",
+    "onboarding": "reviewed_consumer_revenue_expense",
+    "reviewed_basis": "reported",
+    "consumer_table_markers": [
+      "USPB",
+      "U.S. Personal Banking",
+      "US Personal Banking"
+    ],
+    "consumer_query_terms": [
+      "USPB",
+      "U.S. Personal Banking"
+    ]
+  },
+  {
+    "id": "COF",
+    "name": "Capital One",
+    "aliases": [
+      "capital one",
+      "capitalone",
+      "cof"
+    ],
+    "consumer_segment": "Consumer Banking",
+    "onboarding": "reviewed_consumer_revenue_expense",
+    "reviewed_basis": "GAAP",
+    "consumer_table_markers": [
+      "Consumer Banking"
+    ],
+    "consumer_query_terms": []
+  }
+]

@@ -1,0 +1,1453 @@
+{
+  "version": "1.0",
+  "scope": "Definitions for the 28 analyst question families. Four reviewed consumer fact types are enabled; catalogued formulas do not enable new calculation routes.",
+  "metrics": [
+    {
+      "id": "revenue",
+      "name": "Reported revenue",
+      "definition": "Reported total revenue for the named business and period.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition"
+      ],
+      "comparison_traps": [
+        "Preserve GAAP, FTE and managed presentation; consumer segment definitions are bank specific."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": true,
+      "reviewed_scopes": [
+        "consumer"
+      ],
+      "allowed_reviewed_bases": [
+        "FTE",
+        "managed_FTE",
+        "reported",
+        "GAAP"
+      ],
+      "retrieval_labels": {
+        "BAC": [
+          "total revenue, net of interest expense"
+        ],
+        "JPM": [
+          "total net revenue"
+        ],
+        "WFC": [
+          "total revenue"
+        ],
+        "C": [
+          "total revenues, net of interest expense"
+        ],
+        "COF": [
+          "total net revenue"
+        ]
+      },
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "noninterest_expense",
+      "name": "Noninterest expense",
+      "definition": "Reported noninterest expense for the named business and period.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition"
+      ],
+      "comparison_traps": [
+        "Retain notable expense items and segment allocations unless a source-backed reconciliation is requested."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": true,
+      "reviewed_scopes": [
+        "consumer"
+      ],
+      "allowed_reviewed_bases": [
+        "FTE",
+        "managed_FTE",
+        "reported",
+        "GAAP"
+      ],
+      "retrieval_labels": {
+        "BAC": [
+          "noninterest expense"
+        ],
+        "JPM": [
+          "total noninterest expense"
+        ],
+        "WFC": [
+          "noninterest expense"
+        ],
+        "C": [
+          "total operating expenses"
+        ],
+        "COF": [
+          "non-interest expense"
+        ]
+      },
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "net_interest_income",
+      "name": "Net interest income",
+      "definition": "Reported net interest income, retaining the business scope and reporting basis.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition"
+      ],
+      "comparison_traps": [
+        "Segment funding allocations can affect NII; do not infer internal transfer rates."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": true,
+      "reviewed_scopes": [
+        "consumer"
+      ],
+      "allowed_reviewed_bases": [
+        "FTE",
+        "managed_FTE",
+        "reported",
+        "GAAP"
+      ],
+      "retrieval_labels": {
+        "BAC": [
+          "net interest income"
+        ],
+        "JPM": [
+          "net interest income"
+        ],
+        "COF": [
+          "net interest income"
+        ]
+      },
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "noninterest_income",
+      "name": "Noninterest income / revenue",
+      "definition": "Reported aggregate noninterest income or revenue.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition"
+      ],
+      "comparison_traps": [
+        "Noninterest income is not synonymous with fees; retain gains and other components."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": true,
+      "reviewed_scopes": [
+        "consumer"
+      ],
+      "allowed_reviewed_bases": [
+        "FTE",
+        "managed_FTE",
+        "reported",
+        "GAAP"
+      ],
+      "retrieval_labels": {
+        "BAC": [
+          "total noninterest income"
+        ],
+        "JPM": [
+          "noninterest revenue"
+        ],
+        "COF": [
+          "non-interest income"
+        ]
+      },
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "net_income",
+      "name": "Net income",
+      "definition": "Reported net income with the attribution population retained.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "income_attribution",
+        "notable_items"
+      ],
+      "comparison_traps": [
+        "Net income and income available to common shareholders are different measures."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "assets",
+      "name": "Total assets",
+      "definition": "Total assets at a specified reporting date.",
+      "unit": "USD_millions",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "balance_convention"
+      ],
+      "comparison_traps": [
+        "Do not substitute average or interest-earning assets."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {
+        "BAC": [
+          "total assets"
+        ],
+        "JPM": [
+          "total assets"
+        ]
+      },
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "average_assets",
+      "name": "Average total assets",
+      "definition": "Bank-reported average total assets over the period.",
+      "unit": "USD_millions",
+      "time_basis": "average",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "averaging_convention"
+      ],
+      "comparison_traps": [
+        "Period-end balances cannot substitute for period averages."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "roa",
+      "name": "Return on assets",
+      "definition": "Bank-reported return on assets under its disclosed annualization and income conventions.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "annualization",
+        "income_attribution",
+        "asset_denominator"
+      ],
+      "comparison_traps": [
+        "ROA is not return on allocated capital."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {
+        "BAC": [
+          "return on average assets"
+        ],
+        "JPM": [
+          "return on assets"
+        ]
+      },
+      "numerator": "Source-defined attributable income, using disclosed annualization",
+      "denominator": "Average total assets under the disclosed convention"
+    },
+    {
+      "id": "rotce",
+      "name": "Return on tangible common equity",
+      "definition": "Bank-reported ROTCE, preserving adjusted or unadjusted presentation.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "annualization",
+        "notable_items",
+        "tangible_equity_definition"
+      ],
+      "comparison_traps": [
+        "Do not subtract a notable dollar amount directly from a percentage; require a reconciliation."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Income available to common shareholders, retaining disclosed adjustments and annualization",
+      "denominator": "Source-defined average tangible common equity"
+    },
+    {
+      "id": "net_interest_margin",
+      "name": "Net interest margin / net yield",
+      "definition": "Reported margin or yield with the bank-specific numerator and interest-earning asset denominator.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "annualization",
+        "markets_inclusion",
+        "earning_asset_denominator"
+      ],
+      "comparison_traps": [
+        "Net yield including Markets and excluding Markets are separate series."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Source-defined net interest income with disclosed annualization",
+      "denominator": "Source-defined average interest-earning assets, with Markets inclusion retained"
+    },
+    {
+      "id": "nii_rate_sensitivity",
+      "name": "NII rate sensitivity",
+      "definition": "Disclosed modeled NII response to a specified rate scenario and horizon.",
+      "unit": "USD_millions",
+      "time_basis": "scenario",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "rate_shock_bp",
+        "shock_path",
+        "horizon",
+        "deposit_beta_assumption",
+        "balance_sheet_assumption",
+        "prepayment_assumption"
+      ],
+      "comparison_traps": [
+        "A common rate shock does not make different bank model assumptions comparable."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "nii_guidance",
+      "name": "NII guidance",
+      "definition": "Management guidance identified by issuance date, forecast horizon, range and business scope.",
+      "unit": "USD_millions",
+      "time_basis": "guidance",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "issued_at",
+        "forecast_horizon",
+        "markets_inclusion"
+      ],
+      "comparison_traps": [
+        "A guidance change requires both dated versions; do not derive guidance from historical NII."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "deposits",
+      "name": "Deposits",
+      "definition": "Reported deposit balance for the specified segment and balance convention.",
+      "unit": "USD_millions",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "balance_convention",
+        "deposit_population"
+      ],
+      "comparison_traps": [
+        "Average and period-end deposits must remain separate."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "noninterest_bearing_deposits",
+      "name": "Noninterest-bearing deposits",
+      "definition": "Reported deposits bearing no interest for a defined deposit population.",
+      "unit": "USD_millions",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "balance_convention",
+        "deposit_population"
+      ],
+      "comparison_traps": [
+        "Use the same population and date for deposit-mix denominators."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "deposit_rate",
+      "name": "Interest-bearing deposit rate",
+      "definition": "Reported cost or rate paid on the specified interest-bearing deposit population.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "annualization",
+        "deposit_population",
+        "averaging_convention"
+      ],
+      "comparison_traps": [
+        "Do not compare a rate on all deposits with a rate on interest-bearing deposits."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Source-defined deposit interest expense with disclosed annualization",
+      "denominator": "Matching average interest-bearing deposits"
+    },
+    {
+      "id": "deposit_beta",
+      "name": "Deposit beta",
+      "definition": "Deposit-rate change relative to a specified reference-rate change and cycle.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "rate_benchmark",
+        "cycle_start",
+        "cycle_end",
+        "deposit_population"
+      ],
+      "comparison_traps": [
+        "Cumulative and marginal betas and different rate cycles are distinct."
+      ],
+      "formula": "Disclosed deposit-rate change / matching benchmark-rate change * 100; not implemented",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Change in the specified deposit rate over the selected cycle",
+      "denominator": "Change in the specified reference rate over the same cycle"
+    },
+    {
+      "id": "loans",
+      "name": "Loans",
+      "definition": "Reported loan balance with allowance, held-for-sale and balance conventions retained.",
+      "unit": "USD_millions",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "balance_convention",
+        "loan_population",
+        "gross_or_net"
+      ],
+      "comparison_traps": [
+        "Loans and leases, held-for-investment loans and total loans may differ."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "loan_to_deposit_ratio",
+      "name": "Loan-to-deposit ratio",
+      "definition": "Loans divided by deposits under a stated matching balance convention.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "balance_convention",
+        "loan_population",
+        "deposit_population"
+      ],
+      "comparison_traps": [
+        "Use consistent dates, populations and gross/net loan conventions."
+      ],
+      "formula": "Matching loans / deposits * 100; not implemented",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Matching reported loans",
+      "denominator": "Matching reported deposits"
+    },
+    {
+      "id": "card_nco_rate",
+      "name": "Credit card net charge-off rate",
+      "definition": "Reported annualized NCO rate for the defined card portfolio.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "portfolio",
+        "annualization",
+        "loan_denominator"
+      ],
+      "comparison_traps": [
+        "Card NCO rates cannot substitute for total-loan NCO rates."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Source-defined card net charge-offs, with disclosed annualization",
+      "denominator": "Source-defined card loan denominator"
+    },
+    {
+      "id": "net_charge_offs",
+      "name": "Net charge-offs",
+      "definition": "Reported net charge-off amount for the defined loan portfolio.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "portfolio"
+      ],
+      "comparison_traps": [
+        "Keep recoveries, card-only amounts and total-loan amounts distinct."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "provision_expense",
+      "name": "Provision for credit losses",
+      "definition": "Reported provision expense with its covered asset populations.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "portfolio",
+        "allowance_scope"
+      ],
+      "comparison_traps": [
+        "Provision can include off-balance-sheet and other credit exposures."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "reserve_change",
+      "name": "Reserve build / release",
+      "definition": "Bank-disclosed reserve build or release and its allowance reconciliation.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "portfolio",
+        "allowance_scope",
+        "reconciliation"
+      ],
+      "comparison_traps": [
+        "Provision minus NCO need not explain every allowance movement."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "cre_exposure",
+      "name": "Commercial real estate exposure",
+      "definition": "Reported CRE exposure under the bank-specific portfolio definition.",
+      "unit": "USD_millions",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "portfolio",
+        "funded_or_committed"
+      ],
+      "comparison_traps": [
+        "CRE, office CRE and construction exposures have different definitions."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "cre_npl",
+      "name": "CRE nonperforming loans",
+      "definition": "Reported nonperforming loans in the disclosed CRE portfolio.",
+      "unit": "USD_millions",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "portfolio",
+        "nonperforming_definition"
+      ],
+      "comparison_traps": [
+        "Preserve nonperforming/nonaccrual definitions and the same CRE population."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "allowance",
+      "name": "Allowance for credit losses",
+      "definition": "Reported allowance for the stated loan and other credit exposure population.",
+      "unit": "USD_millions",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "portfolio",
+        "allowance_scope"
+      ],
+      "comparison_traps": [
+        "Loan-only and total credit-loss allowances cannot be interchanged."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "nonperforming_loans",
+      "name": "Nonperforming loans",
+      "definition": "Reported nonperforming loans under the bank-specific definition.",
+      "unit": "USD_millions",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "portfolio",
+        "nonperforming_definition"
+      ],
+      "comparison_traps": [
+        "Nonaccrual and nonperforming populations may differ."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "allowance_to_loans",
+      "name": "Allowance-to-loans coverage",
+      "definition": "Matching loan allowance divided by matching loans.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "portfolio",
+        "allowance_scope",
+        "gross_or_net"
+      ],
+      "comparison_traps": [
+        "Align the allowance and loan populations."
+      ],
+      "formula": "Matching loan allowance / matching loans * 100; not implemented",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Loan allowance for the matching portfolio",
+      "denominator": "Matching gross/net loan balance as disclosed"
+    },
+    {
+      "id": "allowance_to_npl",
+      "name": "Allowance-to-NPL coverage",
+      "definition": "Matching allowance divided by matching nonperforming loans.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "portfolio",
+        "allowance_scope",
+        "nonperforming_definition"
+      ],
+      "comparison_traps": [
+        "Coverage is sensitive to bank-specific NPL definitions."
+      ],
+      "formula": "Matching allowance / matching NPL * 100; not implemented",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Allowance for the matching portfolio",
+      "denominator": "Matching source-defined nonperforming loans"
+    },
+    {
+      "id": "cet1_ratio",
+      "name": "CET1 ratio",
+      "definition": "Reported CET1 risk-based capital ratio under a named approach.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "regulatory_approach",
+        "transition_basis",
+        "as_of_date"
+      ],
+      "comparison_traps": [
+        "CET1, Tier 1 and total capital ratios are separate measures."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Source-defined CET1 capital",
+      "denominator": "Risk-weighted assets under the named regulatory approach"
+    },
+    {
+      "id": "capital_requirement",
+      "name": "Capital requirement",
+      "definition": "Disclosed requirement for the named bank, capital measure, approach and effective date.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "capital_measure",
+        "regulatory_approach",
+        "effective_date",
+        "buffer_components"
+      ],
+      "comparison_traps": [
+        "A CET1 requirement cannot establish whether total capital is the binding constraint."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "capital_buffer",
+      "name": "Capital buffer",
+      "definition": "Reported capital ratio less its matching applicable requirement.",
+      "unit": "percentage_points",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "capital_measure",
+        "regulatory_approach",
+        "effective_date"
+      ],
+      "comparison_traps": [
+        "Do not assume the same binding measure or requirement across banks."
+      ],
+      "formula": "Matching capital ratio minus matching requirement; not implemented",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "share_repurchases",
+      "name": "Share repurchases",
+      "definition": "Reported repurchase amount, preserving settlement and authorization conventions.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "repurchase_convention"
+      ],
+      "comparison_traps": [
+        "An authorization is not an executed repurchase."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "dividends",
+      "name": "Common dividends",
+      "definition": "Reported common dividends paid or declared under a named convention.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "paid_or_declared",
+        "share_class"
+      ],
+      "comparison_traps": [
+        "Common and preferred dividends are separate."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "payout_ratio",
+      "name": "Total payout ratio",
+      "definition": "Reported or reconciled common distributions relative to the stated earnings measure.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "income_attribution",
+        "distribution_convention",
+        "notable_items"
+      ],
+      "comparison_traps": [
+        "Adjusted and reported earnings produce different payout ratios."
+      ],
+      "formula": "Matching common dividends plus repurchases, divided by matching earnings * 100; not implemented",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Matching common distributions: repurchases plus common dividends",
+      "denominator": "Matching reported or adjusted earnings as specified"
+    },
+    {
+      "id": "regulatory_change_impact",
+      "name": "Regulatory change impact",
+      "definition": "Dated management estimate tied to a specified proposal or final rule.",
+      "unit": "source_defined",
+      "time_basis": "disclosure",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "rule_version",
+        "effective_date",
+        "estimate_date",
+        "scenario"
+      ],
+      "comparison_traps": [
+        "Proposed and final rules and management scenarios must stay distinct."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "efficiency_ratio",
+      "name": "Efficiency / overhead ratio",
+      "definition": "Bank-reported expense-to-revenue ratio with numerator and basis retained.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "expense_definition",
+        "revenue_definition",
+        "notable_items"
+      ],
+      "comparison_traps": [
+        "GAAP, FTE and managed ratios cannot be silently interchanged."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Source-defined noninterest expense",
+      "denominator": "Matching source-defined revenue on the same basis"
+    },
+    {
+      "id": "operating_leverage",
+      "name": "Operating leverage",
+      "definition": "Project definition: revenue YoY growth minus noninterest expense YoY growth.",
+      "unit": "percentage_points",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "growth_window",
+        "revenue_definition",
+        "expense_definition"
+      ],
+      "comparison_traps": [
+        "This project formula need not equal every bank-defined measure."
+      ],
+      "formula": "Revenue YoY growth minus noninterest expense YoY growth; implemented for reviewed consumer inputs only",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "technology_expense",
+      "name": "Technology expense",
+      "definition": "Disclosed technology expenditure or expense under the source definition.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "expense_or_investment",
+        "cost_population"
+      ],
+      "comparison_traps": [
+        "Technology investment and recognized expense are not interchangeable."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "headcount",
+      "name": "Headcount",
+      "definition": "Disclosed employee count with population and averaging convention retained.",
+      "unit": "people",
+      "time_basis": "count",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "employee_population",
+        "balance_convention"
+      ],
+      "comparison_traps": [
+        "Period-end employees, average FTEs and contractors may differ."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "consumer_margin",
+      "name": "Consumer segment margin",
+      "definition": "A specifically defined segment margin; clarification is required if the numerator or denominator is absent.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "margin_definition",
+        "numerator",
+        "denominator"
+      ],
+      "comparison_traps": [
+        "Net interest margin, pretax margin and net income margin are different metrics."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Requires analyst clarification: e.g. pretax income, net income or NII",
+      "denominator": "Requires analyst clarification: e.g. revenue or earning assets"
+    },
+    {
+      "id": "investment_banking_fees",
+      "name": "Investment banking fees",
+      "definition": "Reported investment banking fees with product and segment scope retained.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "product_scope",
+        "revenue_sharing"
+      ],
+      "comparison_traps": [
+        "Advisory, underwriting and total fees can have different coverage."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "ficc_revenue",
+      "name": "FICC trading revenue",
+      "definition": "Reported fixed income, currencies and commodities or source-defined fixed income trading revenue.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "product_scope",
+        "trading_adjustments"
+      ],
+      "comparison_traps": [
+        "Product scope and trading adjustments may differ across banks."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "equities_revenue",
+      "name": "Equities trading revenue",
+      "definition": "Reported equities trading revenue with product scope retained.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "product_scope",
+        "trading_adjustments"
+      ],
+      "comparison_traps": [
+        "Do not mix trading revenue with other equity-related income."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "market_share",
+      "name": "Market share",
+      "definition": "A named activity divided by its matching independently sourced market total.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "market_definition",
+        "provider",
+        "geography",
+        "activity_basis"
+      ],
+      "comparison_traps": [
+        "Two banks alone are not the market denominator."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Named activity within the stated geography and market definition",
+      "denominator": "Matching independently sourced total market activity"
+    },
+    {
+      "id": "client_flows",
+      "name": "Client flows / net new assets",
+      "definition": "Reported client flows with the asset population and flow definition retained.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "asset_population",
+        "flow_definition"
+      ],
+      "comparison_traps": [
+        "Net new assets and net flows may not cover the same populations."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "aum",
+      "name": "Assets under management",
+      "definition": "Reported AUM under the stated asset definition.",
+      "unit": "USD_millions",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "asset_population",
+        "balance_convention"
+      ],
+      "comparison_traps": [
+        "AUM, client assets and assets under supervision are different measures."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "noninterest_revenue_share",
+      "name": "Noninterest revenue share",
+      "definition": "Noninterest income/revenue divided by matching total revenue.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "revenue_definition"
+      ],
+      "comparison_traps": [
+        "A noninterest revenue share is not a pure fee share."
+      ],
+      "formula": "Matching noninterest income / total revenue * 100; not implemented",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Matching noninterest income/revenue",
+      "denominator": "Matching total revenue"
+    },
+    {
+      "id": "card_purchase_volume",
+      "name": "Card purchase volume",
+      "definition": "Reported card purchase volume for the named products.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "card_population",
+        "volume_definition"
+      ],
+      "comparison_traps": [
+        "Sales volume and purchase volume can differ."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "debit_purchase_volume",
+      "name": "Debit purchase volume",
+      "definition": "Reported debit purchase volume for the named products.",
+      "unit": "USD_millions",
+      "time_basis": "flow",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "card_population",
+        "volume_definition"
+      ],
+      "comparison_traps": [
+        "Do not combine debit and credit series without source support."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "new_card_accounts",
+      "name": "New card accounts",
+      "definition": "Reported newly opened card accounts under the bank definition.",
+      "unit": "accounts",
+      "time_basis": "count",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "card_population",
+        "new_account_definition"
+      ],
+      "comparison_traps": [
+        "Account openings and active accounts are different measures."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "card_loans",
+      "name": "Card loans",
+      "definition": "Reported card loan balance with balance and portfolio conventions retained.",
+      "unit": "USD_millions",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "card_population",
+        "balance_convention"
+      ],
+      "comparison_traps": [
+        "Average balances and period-end balances are separate series."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "digital_active_users",
+      "name": "Digital active users",
+      "definition": "Reported active digital users under the bank activity definition.",
+      "unit": "users",
+      "time_basis": "count",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "activity_window",
+        "eligible_population"
+      ],
+      "comparison_traps": [
+        "Enrolled and active users and bank activity windows differ."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "mobile_active_users",
+      "name": "Mobile active users",
+      "definition": "Reported active mobile users under the bank activity definition.",
+      "unit": "users",
+      "time_basis": "count",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "activity_window",
+        "eligible_population"
+      ],
+      "comparison_traps": [
+        "Mobile users can overlap with digital users; do not add them."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "stock_price",
+      "name": "Stock price",
+      "definition": "Observed price with timestamp, listing and adjustment convention.",
+      "unit": "USD_per_share",
+      "time_basis": "market_snapshot",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "price_timestamp",
+        "listing",
+        "price_adjustment"
+      ],
+      "comparison_traps": [
+        "Current prices cannot be labelled as historical quarter-end prices."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "tangible_book_value_per_share",
+      "name": "Tangible book value per share",
+      "definition": "Bank-reported TBV per common share with reconciliation retained.",
+      "unit": "USD_per_share",
+      "time_basis": "period_end",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "tangible_equity_definition",
+        "share_count_convention"
+      ],
+      "comparison_traps": [
+        "Preserve the bank-specific tangible equity definition."
+      ],
+      "formula": null,
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    },
+    {
+      "id": "price_to_tangible_book",
+      "name": "Price to tangible book",
+      "definition": "Dated stock price divided by the selected dated TBV per share.",
+      "unit": "multiple",
+      "time_basis": "market_snapshot",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "price_timestamp",
+        "book_value_date",
+        "price_adjustment"
+      ],
+      "comparison_traps": [
+        "A relative valuation observation is not a demonstrated mispricing conclusion."
+      ],
+      "formula": "Dated price / dated TBV per share; not implemented",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Stock price at the specified timestamp",
+      "denominator": "Selected dated tangible book value per common share"
+    },
+    {
+      "id": "dividend_yield",
+      "name": "Dividend yield",
+      "definition": "Specified annual dividend per share divided by a dated stock price.",
+      "unit": "percent",
+      "time_basis": "market_snapshot",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "price_timestamp",
+        "trailing_or_forward",
+        "dividend_convention"
+      ],
+      "comparison_traps": [
+        "Trailing and indicated forward yields differ."
+      ],
+      "formula": "Specified annual DPS / dated price * 100; not implemented",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": "Specified annual common dividend per share, trailing or indicated forward",
+      "denominator": "Stock price at the specified timestamp"
+    },
+    {
+      "id": "tangible_book_growth",
+      "name": "Tangible book value growth",
+      "definition": "Change in the same tangible book value measure across specified dates.",
+      "unit": "percent",
+      "time_basis": "reported_ratio",
+      "required_dimensions": [
+        "reporting_basis",
+        "segment_definition",
+        "per_share_or_total",
+        "growth_window"
+      ],
+      "comparison_traps": [
+        "Per-share TBV growth differs from total tangible equity growth."
+      ],
+      "formula": "Matching current / prior TBV minus one, times 100; not implemented",
+      "reviewed_fact_enabled": false,
+      "reviewed_scopes": [],
+      "allowed_reviewed_bases": [],
+      "retrieval_labels": {},
+      "numerator": null,
+      "denominator": null
+    }
+  ]
+}

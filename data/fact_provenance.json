@@ -1,0 +1,164 @@
+{
+  "reviewer": "assistant",
+  "checks": [
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r14",
+      "column": 19,
+      "value": "10813",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t21:r18",
+      "column": 16,
+      "value": "10813",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r14",
+      "column": 43,
+      "value": "10206",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t23:r18",
+      "column": 16,
+      "value": "10206",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r18",
+      "column": 19,
+      "value": "5567",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t21:r20",
+      "column": 16,
+      "value": "5567",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r18",
+      "column": 43,
+      "value": "5464",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t23:r20",
+      "column": 16,
+      "value": "5464",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r19",
+      "column": 4,
+      "value": "18847",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t9:r11",
+      "column": 5,
+      "value": "18847",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r19",
+      "column": 28,
+      "value": "17701",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t9:r11",
+      "column": 29,
+      "value": "17701",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r26",
+      "column": 4,
+      "value": "9858",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r26",
+      "column": 28,
+      "value": "9425",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r7",
+      "column": 20,
+      "value": "8726",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r7",
+      "column": 44,
+      "value": "8118",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r13",
+      "column": 19,
+      "value": "2087",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r13",
+      "column": 43,
+      "value": "2088",
+      "source_url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r18",
+      "column": 4,
+      "value": "14395",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r18",
+      "column": 28,
+      "value": "13705",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r17",
+      "column": 4,
+      "value": "4452",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r17",
+      "column": 28,
+      "value": "3996",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+      "review_method": "original HTML expanded cell checked against selected value"
+    }
+  ],
+  "basis_evidence": [
+    "bac-2025q2-supplement:t1:r59",
+    "jpm-2025q2-supplement:t9:r3",
+    "jpm-2025q2-supplement:t9:r10"
+  ]
+}

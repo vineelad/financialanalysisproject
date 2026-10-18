@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-10-18T20:29:50.686790+00:00",
+  "primary_configuration": "D: semantic plus reranking",
+  "selection_reason": "Highest strict development recall, selected before inspecting prospective validation outcomes.",
+  "rule": "Keep prospective questions and labels unchanged after results; any later tuning makes them development data."
+}

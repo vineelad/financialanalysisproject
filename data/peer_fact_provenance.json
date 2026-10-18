@@ -1,0 +1,179 @@
+{
+  "reviewer": "assistant",
+  "checks": [
+    {
+      "bank": "C",
+      "metric": "revenue",
+      "period": "2025Q2",
+      "value": "5119",
+      "evidence_id": "c-2025q2-results:t7:r7",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+      "original_column": 4,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "C",
+      "metric": "revenue",
+      "period": "2024Q2",
+      "value": "4832",
+      "evidence_id": "c-2025q2-results:t7:r7",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+      "original_column": 10,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "C",
+      "metric": "noninterest_expense",
+      "period": "2025Q2",
+      "value": "2381",
+      "evidence_id": "c-2025q2-results:t7:r9",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+      "original_column": 4,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "C",
+      "metric": "noninterest_expense",
+      "period": "2024Q2",
+      "value": "2355",
+      "evidence_id": "c-2025q2-results:t7:r9",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+      "original_column": 10,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "COF",
+      "metric": "revenue",
+      "period": "2025Q2",
+      "value": "2556",
+      "evidence_id": "cof-2025q2-results:t19:r11",
+      "source_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+      "original_column": 4,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "COF",
+      "metric": "revenue",
+      "period": "2024Q2",
+      "value": "2197",
+      "evidence_id": "cof-2025q2-results:t19:r11",
+      "source_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+      "original_column": 20,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "COF",
+      "metric": "noninterest_expense",
+      "period": "2025Q2",
+      "value": "1713",
+      "evidence_id": "cof-2025q2-results:t19:r13",
+      "source_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+      "original_column": 4,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "COF",
+      "metric": "noninterest_expense",
+      "period": "2024Q2",
+      "value": "1250",
+      "evidence_id": "cof-2025q2-results:t19:r13",
+      "source_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+      "original_column": 20,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "COF",
+      "metric": "net_interest_income",
+      "period": "2025Q2",
+      "value": "2162",
+      "evidence_id": "cof-2025q2-results:t19:r9",
+      "source_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+      "original_column": 4,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "COF",
+      "metric": "net_interest_income",
+      "period": "2024Q2",
+      "value": "2025",
+      "evidence_id": "cof-2025q2-results:t19:r9",
+      "source_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+      "original_column": 20,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "COF",
+      "metric": "noninterest_income",
+      "period": "2025Q2",
+      "value": "394",
+      "evidence_id": "cof-2025q2-results:t19:r10",
+      "source_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+      "original_column": 4,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "COF",
+      "metric": "noninterest_income",
+      "period": "2024Q2",
+      "value": "172",
+      "evidence_id": "cof-2025q2-results:t19:r10",
+      "source_url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/#block-nir-pid3354-content",
+      "original_column": 20,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "WFC",
+      "metric": "revenue",
+      "period": "2025Q2",
+      "value": "9228",
+      "evidence_id": "wfc-2025q2-results:page4:line17",
+      "source_url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+      "original_column": 1,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "WFC",
+      "metric": "revenue",
+      "period": "2024Q2",
+      "value": "9006",
+      "evidence_id": "wfc-2025q2-results:page4:line17",
+      "source_url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+      "original_column": 3,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "WFC",
+      "metric": "noninterest_expense",
+      "period": "2025Q2",
+      "value": "5799",
+      "evidence_id": "wfc-2025q2-results:page4:line19",
+      "source_url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+      "original_column": 1,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    },
+    {
+      "bank": "WFC",
+      "metric": "noninterest_expense",
+      "period": "2024Q2",
+      "value": "5701",
+      "evidence_id": "wfc-2025q2-results:page4:line19",
+      "source_url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf#page=4",
+      "original_column": 3,
+      "method": "Original HTML expanded cell or original PDF text-line column checked against assistant-selected value"
+    }
+  ],
+  "basis_notes": {
+    "WFC": "Unadjusted reported segment table; not asserted to be FTE.",
+    "C": "Unadjusted USPB table; not the All Other managed-basis table.",
+    "COF": "Reported GAAP table, not adjusted non-GAAP results."
+  },
+  "caveats": [
+    "Capital One reports Credit Card separately from Consumer Banking.",
+    "Discover results and statistics in this supplement cover May 18 through June 30, 2025; no acquisition normalization is computed."
+  ],
+  "source_hashes": {
+    "c-2025q2-results.html": "72ff4d4eba3abddded6d4fadd263cd899cec31151a684ed27725b4a3ad1d7443",
+    "cof-2025q2-results.html": "ebcde4d7483b2ef1fe18077ff659314677bcc320e1bb23d4cd6cb02b779f89d6",
+    "wfc-2025q2-results.pdf": "aa59f322786dac5a9d0735a8bd7a38138c46be607b1448eeb2adaaab477aa2a1"
+  }
+}

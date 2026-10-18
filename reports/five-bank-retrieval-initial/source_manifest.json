@@ -1,0 +1,98 @@
+[
+  {
+    "document_id": "bac-2025q2-results",
+    "bank": "BAC",
+    "title": "Bank of America Q2 2025 earnings release",
+    "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-16",
+    "sha256": "54d1f1ba829231d80c550299ac17fc44b8ea8fe17ec2e96eab76c656a45b9706",
+    "local_path": "data\\raw\\bac-2025q2-results.html",
+    "blocks": 19,
+    "ingested_at": "2026-10-18T21:52:41.205365+00:00"
+  },
+  {
+    "document_id": "bac-2025q2-supplement",
+    "bank": "BAC",
+    "title": "Bank of America Q2 2025 supplemental information",
+    "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-16",
+    "sha256": "3609ccab4f8708c568735cd68eb91293526bea73615b80ab22710dcf2cbb25e5",
+    "local_path": "data\\raw\\bac-2025q2-supplement.html",
+    "blocks": 1139,
+    "ingested_at": "2026-10-18T21:52:51.071376+00:00"
+  },
+  {
+    "document_id": "jpm-2025q2-supplement",
+    "bank": "JPM",
+    "title": "JPMorgan Chase Q2 2025 financial supplement",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-15",
+    "sha256": "04a163219a535f734eb9eb35d3cc433296fa979ff1e0adfe8b0d6d5794f76f2f",
+    "local_path": "data\\raw\\jpm-2025q2-supplement.html",
+    "blocks": 1005,
+    "ingested_at": "2026-10-18T21:52:55.913631+00:00"
+  },
+  {
+    "document_id": "wfc-2025q2-results",
+    "bank": "WFC",
+    "title": "Wells Fargo Q2 2025 earnings release",
+    "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf",
+    "format": "pdf",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-15",
+    "sha256": "aa59f322786dac5a9d0735a8bd7a38138c46be607b1448eeb2adaaab477aa2a1",
+    "local_path": "data\\raw\\wfc-2025q2-results.pdf",
+    "blocks": 64,
+    "ingested_at": "2026-10-18T21:52:58.814150+00:00"
+  },
+  {
+    "document_id": "c-2025q2-results",
+    "bank": "C",
+    "title": "Citi Q2 2025 earnings release and segment tables",
+    "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-15",
+    "sha256": "72ff4d4eba3abddded6d4fadd263cd899cec31151a684ed27725b4a3ad1d7443",
+    "local_path": "data\\raw\\c-2025q2-results.html",
+    "blocks": 469,
+    "ingested_at": "2026-10-18T21:53:00.889344+00:00"
+  },
+  {
+    "document_id": "cof-2025q2-results",
+    "bank": "COF",
+    "title": "Capital One Q2 2025 earnings release and financial supplement",
+    "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-22",
+    "sha256": "ebcde4d7483b2ef1fe18077ff659314677bcc320e1bb23d4cd6cb02b779f89d6",
+    "local_path": "data\\raw\\cof-2025q2-results.html",
+    "blocks": 774,
+    "ingested_at": "2026-10-18T21:53:07.656417+00:00"
+  }
+]

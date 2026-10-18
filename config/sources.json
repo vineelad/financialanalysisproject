@@ -1,0 +1,74 @@
+[
+  {
+    "document_id": "bac-2025q2-results",
+    "bank": "BAC",
+    "title": "Bank of America Q2 2025 earnings release",
+    "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-16"
+  },
+  {
+    "document_id": "bac-2025q2-supplement",
+    "bank": "BAC",
+    "title": "Bank of America Q2 2025 supplemental information",
+    "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-16"
+  },
+  {
+    "document_id": "jpm-2025q2-supplement",
+    "bank": "JPM",
+    "title": "JPMorgan Chase Q2 2025 financial supplement",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-15"
+  },
+  {
+    "document_id": "wfc-2025q2-results",
+    "bank": "WFC",
+    "title": "Wells Fargo Q2 2025 earnings release",
+    "url": "https://www.wellsfargo.com/assets/pdf/about/investor-relations/earnings/second-quarter-2025-earnings.pdf",
+    "format": "pdf",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-15"
+  },
+  {
+    "document_id": "c-2025q2-results",
+    "bank": "C",
+    "title": "Citi Q2 2025 earnings release and segment tables",
+    "url": "https://www.sec.gov/Archives/edgar/data/831001/000141057825001455/c-20250715xex99d1.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-15"
+  },
+  {
+    "document_id": "cof-2025q2-results",
+    "bank": "COF",
+    "title": "Capital One Q2 2025 earnings release and financial supplement",
+    "url": "https://investor.capitalone.com/news-releases/news-release-details/capital-one-reports-second-quarter-2025-net-loss-43-billion-or/",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-22"
+  }
+]

@@ -1,0 +1,1633 @@
+[
+  {
+    "strategy": "semantic",
+    "reranking": true,
+    "scope": {
+      "banks": [
+        "JPM",
+        "BAC"
+      ],
+      "periods": [
+        "2025Q2"
+      ],
+      "clarification": null,
+      "unsupported": null
+    },
+    "retrieval_policy": "v4-revenue-build-input-coverage",
+    "answer_policy": "v4-revenue-build-and-explicit-peer-bases",
+    "retrieval_queries": [
+      "How does bank of America consumer revenue compare with jp morgan chase for q2 2025"
+    ],
+    "framework": "LangChain + LangGraph",
+    "prompt_hash": "239c0adc2f166a038d398d986e1548dcf684521c38e40732c577f484e037befc",
+    "calculations": [],
+    "candidate_hits": [
+      {
+        "chunk": {
+          "chunk_id": "bb1e4f91429a5318bdcd",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+          "location": "HTML table 13, row 19",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r19"
+          ],
+          "token_count": 289
+        },
+        "score": 0.028309409888357256
+      },
+      {
+        "chunk": {
+          "chunk_id": "ad2f5ad6749f9c5e11f1",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+          "location": "HTML table 27, row 14",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r14"
+          ],
+          "token_count": 253
+        },
+        "score": 0.0315136476426799
+      },
+      {
+        "chunk": {
+          "chunk_id": "d81535736a298786cbd3",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS, CONTINUED\nc1-3=(in millions, except ratio data and where otherwise noted)\nc4-45=QUARTERLY TRENDS | c52-69=SIX MONTHS ENDED JUNE 30,\nc37-45=2Q25 Change | c67-69=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c37-39=1Q25 | c43-45=2Q24 | c52-54=2025 | c58-60=2024 | c67-69=2024\nc1-3=BUSINESS METRICS\nc1-3=Number of:\nRow 37: c1-3=Net revenue rate | c4-5=10.06 | c7-9=% | c10-11=10.38 | c13-15=% | c16-17=10.47 | c19-21=% | c22-23=9.91 | c25-27=% | c28-29=9.61 | c31-33=% | c52-53=10.22 | c55-57=% | c58-59=9.85 | c61-63=%",
+          "location": "HTML table 16, row 37",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t16:r37"
+          ],
+          "token_count": 322
+        },
+        "score": 0.03009207275993712
+      },
+      {
+        "chunk": {
+          "chunk_id": "98136a7b788e5f2bf509",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 17: c1-3=Noninterest revenue | c4-5=4,452 | c10-11=4,171 | c16-17=4,494 | c22-23=4,214 | c28-29=3,996 | c34-35=7 | c40-41=11 | c49-50=8,623 | c55-56=7,941 | c61-62=9",
+          "location": "HTML table 13, row 17",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r17"
+          ],
+          "token_count": 292
+        },
+        "score": 0.02862400327131466
+      },
+      {
+        "chunk": {
+          "chunk_id": "03afecd84aae221d7d7c",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 39: c1-3=Consumer & Community Banking | c4=$ | c5=5,169 | c10=$ | c11=4,425 | c16=$ | c17=4,516 | c22=$ | c23=4,046 | c28=$ | c29=4,210 | c34-35=17 | c40-41=23 | c49=$ | c50=9,594 | c55=$ | c56=9,041 | c61-62=6",
+          "location": "HTML table 9, row 39",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t9:r39"
+          ],
+          "token_count": 313
+        },
+        "score": 0.01639344262295082
+      },
+      {
+        "chunk": {
+          "chunk_id": "3ef2a997af1a8fb984c1",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 18: c1-3=Consumer & Community Banking | c4=$ | c5=9,858 | c10=$ | c11=9,857 | c16=$ | c17=9,728 | c22=$ | c23=9,586 | c28=$ | c29=9,425 | c34-35=— | c40-41=5 | c49=$ | c50=19,715 | c55=$ | c56=18,722 | c61-62=5",
+          "location": "HTML table 9, row 18",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t9:r18"
+          ],
+          "token_count": 315
+        },
+        "score": 0.016129032258064516
+      },
+      {
+        "chunk": {
+          "chunk_id": "7bb7e6d9e6335fb78baf",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 21: c1-3=Provision for credit losses | c4-5=2,082 | c10-11=2,629 | c16-17=2,623 | c22-23=2,795 | c28-29=2,643 | c34-35=(21) | c40-41=(21) | c49-50=4,711 | c55-56=4,556 | c61-62=3",
+          "location": "HTML table 13, row 21",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r21"
+          ],
+          "token_count": 297
+        },
+        "score": 0.016129032258064516
+      },
+      {
+        "chunk": {
+          "chunk_id": "76fabc2c733d5e1a4af1",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 25: c1-3=Consumer & Community Banking | c4=$ | c5=8,989 | c10=$ | c11=8,456 | c16=$ | c17=8,634 | c22=$ | c23=8,205 | c28=$ | c29=8,276 | c34-35=6 | c40-41=9 | c49=$ | c50=17,445 | c55=$ | c56=16,632 | c61-62=5",
+          "location": "HTML table 9, row 25",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t9:r25"
+          ],
+          "token_count": 314
+        },
+        "score": 0.015873015873015872
+      },
+      {
+        "chunk": {
+          "chunk_id": "a81dd758bf74bbab14b0",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 11: c1-3=REVENUE",
+          "location": "HTML table 13, row 11",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r11"
+          ],
+          "token_count": 198
+        },
+        "score": 0.015873015873015872
+      },
+      {
+        "chunk": {
+          "chunk_id": "0c1073223e086560d5f3",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 11: c1-3=Consumer & Community Banking | c4=$ | c5=18,847 | c10=$ | c11=18,313 | c16=$ | c17=18,362 | c22=$ | c23=17,791 | c28=$ | c29=17,701 | c34-35=3 | c36=% | c40-41=6 | c42=% | c49=$ | c50=37,160 | c55=$ | c56=35,354 | c61-62=5 | c63=%",
+          "location": "HTML table 9, row 11",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t9:r11"
+          ],
+          "token_count": 329
+        },
+        "score": 0.015625
+      },
+      {
+        "chunk": {
+          "chunk_id": "3a528c6942de7bcf76c9",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS, CONTINUED\nc1-3=(in millions, except ratio data and where otherwise noted)\nc4-45=QUARTERLY TRENDS | c52-69=SIX MONTHS ENDED JUNE 30,\nc37-45=2Q25 Change | c67-69=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c37-39=1Q25 | c43-45=2Q24 | c52-54=2025 | c58-60=2024 | c67-69=2024\nc1-3=BUSINESS METRICS\nc1-3=Number of:\nRow 11: c1-3=Number of:",
+          "location": "HTML table 16, row 11",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t16:r11"
+          ],
+          "token_count": 209
+        },
+        "score": 0.015625
+      },
+      {
+        "chunk": {
+          "chunk_id": "24560d35a94aa52fcb21",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-42=Bank of America Corporation and Subsidiaries\nc1-42=Quarterly Results by Business Segment and All Other\nc1-3=(Dollars in millions)\nc7-42=Second Quarter 2025\nc7-9=Total Corporation | c16-18=Consumer Banking | c22-24=GWIM | c28-30=Global Banking | c34-36=Global Markets | c40-42=All Other\nRow 18: c1-3=Total revenue, net of interest expense | c7-8=26,608 | c16-17=10,813 | c22-23=5,937 | c28-29=5,690 | c34-35=5,980 | c40-41=(1,812)",
+          "location": "HTML table 21, row 18",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t21:r18"
+          ],
+          "token_count": 176
+        },
+        "score": 0.030117753623188408
+      },
+      {
+        "chunk": {
+          "chunk_id": "440a9149274dfac85d7e",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 23: c1-3=Net interest yield | c4-5=3.49 | c6=% | c10-11=3.30 | c12=% | c19-20=3.51 | c21=% | c25-26=3.48 | c27=% | c31-32=3.42 | c33=% | c37-38=3.35 | c39=% | c43-44=3.29 | c45=%",
+          "location": "HTML table 27, row 23",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r23"
+          ],
+          "token_count": 279
+        },
+        "score": 0.01639344262295082
+      },
+      {
+        "chunk": {
+          "chunk_id": "9e551e0930be896e689a",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "Power for Outstanding Client Satisfaction with Customer Financial Health Support – Banking & Payments(e) • Merrill Edge Self-Directed Best in Class Award for Customer Service (4th consecutive year)(f) See page 11 for Business Leadership sources. 1 Comparisons are to the year-ago quarter unless noted. 2 Revenue, net of interest expense. 3 The consumer credit card portfolio includes Consumer Banking and GWIM. 4 Represents the percentage of consumer checking accounts that are estimated to be the customer’s primary account based on multiple relationship factors (e.g., linked to their direct deposit). 5 End of period. Consumer investment assets includes client brokerage assets, deposit sweep balances, brokered CDs, and AUM in Consumer Banking. 6 As of May 2025. Includes clients in Consumer, Small Business and GWIM. 7 Household adoption represents households with consumer bank login activities in a 90-day period, as of May 2025. 8 Includes Bank of America person-to-person payments sent and received through e-mail or mobile identification. Zelle® users represent 90-day active users. • Net income of $3.0 billion • Revenue of $10.8 billion,2 up 6%, driven primarily by higher NII • Provision for credit losses of $1.3 billion was flat – Net reserve build of $82 million vs.",
+          "location": "HTML image text layer 3 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer3:through:bac-2025q2-results:textlayer3:fragment:9e551e0930be896e689a"
+          ],
+          "token_count": 275
+        },
+        "score": 0.01639344262295082
+      },
+      {
+        "chunk": {
+          "chunk_id": "febfc2557220643fdf9d",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "self-led) of $1.4 billion, down 9% • #3 investment banking fee ranking YTD9 • $603 billion in average deposits, up 15% • 8% growth in Middle Market average loan balances10 • 15% improvement in treasury service charges Global Markets • Net income of $1.5 billion • Sales and trading revenue up 14% to $5.3 billion including net debit valuation adjustment (DVA) losses of $51 million. Excluding net DVA, up 15%.(E) 13th consecutive quarter of year-over-year growth – Fixed Income, Currencies and Commodities (FICC) revenue up 16% to $3.2 billion. Excluding net DVA, up 19%(E) – Equities revenue up 10% to $2.1 billion, including and excluding net DVA(E) Bank of America Reports 2Q25 Net Income of $7.1 Billion and EPS of $0.89 Revenue up 4% YoY to $26.5 Billion,1 Net Interest Income Grew 7% YoY to $14.7 Billion ($14.8 Billion FTE)(A) Ending Deposits up 5% YoY to more than $2 trillion From Chair and CEO Brian Moynihan: “We delivered another solid quarter, with earnings per share up seven percent from last year. Net interest income grew for the fourth straight quarter, reflecting eight consecutive quarters of deposit growth and seven percent year-over-year loan growth. Consumers remained resilient, with healthy spending and asset quality, and commercial borrower utilization rates rose. In addition, we saw good momentum in our markets businesses. So far this year, we have supplied more capital to our businesses and returned 40 percent more capital to shareholders in the first half of this year than last year.” See page 10 for endnotes. Amounts may not total due to rounding. 1 Revenue, net of interest expense.",
+          "location": "HTML image text layer 1 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer1:through:bac-2025q2-results:textlayer1:fragment:febfc2557220643fdf9d"
+          ],
+          "token_count": 399
+        },
+        "score": 0.016129032258064516
+      },
+      {
+        "chunk": {
+          "chunk_id": "db7f2983d95bde7b2156",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "2 From Chief Financial Officer Alastair Borthwick: “We believe our second quarter results underscore the strength of our balance sheet and help demonstrate that we are well-positioned to support the broader economy. Asset quality remained strong, with net charge-offs at $1.5 billion for the sixth consecutive quarter. Consumer delinquencies have been stabilizing, while card net charge-offs improved year-over-year and commercial nonperforming loans declined sequentially. In addition, we delivered strong loan and deposit growth and maintained our disciplined pricing.” Bank of America Financial Highlights ($ in billions, except per share data) 2Q25 1Q25 2Q24 Total revenue, net of interest expense $26.5 $27.4 $25.4 Provision for credit losses 1.6 1.5 1.5 Noninterest expense 17.2 17.8 16.3 Pretax income 7.7 8.1 7.6 Pretax, pre-provision income1(F) 9.3 9.6 9.1 Income tax expense 0.6 0.7 0.7 Net income 7.1 7.4 6.9 Diluted earnings per share $0.89 $0.90 $0.83 1 Pretax, pre-provision income represents a non-GAAP financial measure. For more information, see page 19.",
+          "location": "HTML image text layer 2 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer2:through:bac-2025q2-results:textlayer2:fragment:db7f2983d95bde7b2156"
+          ],
+          "token_count": 286
+        },
+        "score": 0.015873015873015872
+      },
+      {
+        "chunk": {
+          "chunk_id": "efeff4f3fbc2553e3321",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 9: c1-3=Card income | c4-5=2,712 | c10-11=2,633 | c19-20=1,415 | c25-26=1,297 | c31-32=1,397 | c37-38=1,402 | c43-44=1,361",
+          "location": "HTML table 27, row 9",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r9"
+          ],
+          "token_count": 247
+        },
+        "score": 0.015873015873015872
+      },
+      {
+        "chunk": {
+          "chunk_id": "d6c3c937053b52c1435e",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-12=Six Months Ended June 30 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-12=Six Months Ended June 30 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 5: c4-12=Six Months Ended June 30 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024",
+          "location": "HTML table 27, row 5",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r5"
+          ],
+          "token_count": 224
+        },
+        "score": 0.015625
+      },
+      {
+        "chunk": {
+          "chunk_id": "45239a43667a6e46dde3",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 39: c1-3=Total deposits | c4-5=954,373 | c10-11=952,473 | c19-20=954,373 | c25-26=972,064 | c31-32=952,311 | c37-38=944,358 | c43-44=952,473",
+          "location": "HTML table 27, row 39",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r39"
+          ],
+          "token_count": 256
+        },
+        "score": 0.015384615384615385
+      },
+      {
+        "chunk": {
+          "chunk_id": "103d276e41c1c4da4e78",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "The conference call and presentation materials can be accessed on the Bank of America Investor Relations website at https://investor.bankofamerica.com.* For a listen-only connection to the conference call, dial 1.877.200.4456 (U.S.) or 1.785.424.1732 (international). The conference ID is 79795. Please dial in 10 minutes prior to the start of the call. Investors can access replays of the conference call by visiting the Investor Relations website or by calling 1.800.934.4850 (U.S.) or 1.402.220.1178 (international) from noon on July 16 through 11:59 p.m. ET on July 25. Investors May Contact: Lee McEntire, Bank of America Phone: 1.980.388.6780 lee.mcentire@bofa.com Jonathan G. Blum, Bank of America (Fixed Income) Phone: 1.212.449.3112 jonathan.blum@bofa.com Bank of America Bank of America is one of the world’s leading financial institutions, serving individual consumers, small and middle-market businesses and large corporations with a full range of banking, investing, asset management and other financial and risk management products and services. The company provides unmatched convenience in the United States, serving approximately 69 million consumer and small business clients with approximately 3,700 retail financial centers, approximately 15,000 ATMs (automated teller machines) and award-winning digital banking with approximately 59 million verified digital users. Bank of America is a global leader in wealth management, corporate and investment banking and trading across a broad range of asset classes, serving corporations, governments, institutions and individuals around the world. Bank of America offers industry-leading support to approximately 4 million small business households through a suite of innovative, easy-to-use online products and services.",
+          "location": "HTML image text layer 11 (not a parsed table) through HTML image text layer 12 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer11:through:bac-2025q2-results:textlayer12:fragment:103d276e41c1c4da4e78"
+          ],
+          "token_count": 398
+        },
+        "score": 0.015151515151515152
+      }
+    ],
+    "answer": {
+      "question": "How does bank of America consumer revenue compare with jp morgan chase for q2 2025",
+      "status": "answered",
+      "mode": "verified_reported_metrics",
+      "text": "JPMorgan Chase's Consumer & Community Banking reported revenue of $18,847 million in Q2 2025 (managed/FTE basis). [bb1e4f91429a5318bdcd]\n\nBank of America's Consumer Banking reported revenue of $10,813 million in Q2 2025 (FTE basis). [ad2f5ad6749f9c5e11f1]\n\nJPMorgan Chase's reported figure was $8,034 million higher. JPMorgan Chase was 74.3% larger (base: Bank of America); Bank of America was 42.6% smaller (base: JPMorgan Chase). JPMorgan Chase/Bank of America revenue ratio: 1.74×. [bb1e4f91429a5318bdcd] [ad2f5ad6749f9c5e11f1]\n\nThis compares reported consumer segments without peer adjustments; segment scope and internal allocation methods may differ. Retaining each bank's reporting basis does not establish identical accounting conventions.\n\n[bb1e4f91429a5318bdcd] HTML table 13, row 19: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[ad2f5ad6749f9c5e11f1] HTML table 27, row 14: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49\n\n[a81dd758bf74bbab14b0] HTML table 13, row 11: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[98136a7b788e5f2bf509] HTML table 13, row 17: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[7bb7e6d9e6335fb78baf] HTML table 13, row 21: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+      "hits": [
+        {
+          "chunk": {
+            "chunk_id": "bb1e4f91429a5318bdcd",
+            "document_id": "jpm-2025q2-supplement",
+            "bank": "JPM",
+            "strategy": "semantic",
+            "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+            "location": "HTML table 13, row 19",
+            "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "jpm-2025q2-supplement:t13:r19"
+            ],
+            "token_count": 289
+          },
+          "score": 4.785689353942871
+        },
+        {
+          "chunk": {
+            "chunk_id": "ad2f5ad6749f9c5e11f1",
+            "document_id": "bac-2025q2-supplement",
+            "bank": "BAC",
+            "strategy": "semantic",
+            "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+            "location": "HTML table 27, row 14",
+            "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "bac-2025q2-supplement:t27:r14"
+            ],
+            "token_count": 253
+          },
+          "score": 1.5662423372268677
+        },
+        {
+          "chunk": {
+            "chunk_id": "a81dd758bf74bbab14b0",
+            "document_id": "jpm-2025q2-supplement",
+            "bank": "JPM",
+            "strategy": "semantic",
+            "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 11: c1-3=REVENUE",
+            "location": "HTML table 13, row 11",
+            "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "jpm-2025q2-supplement:t13:r11"
+            ],
+            "token_count": 198
+          },
+          "score": 4.9723992347717285
+        },
+        {
+          "chunk": {
+            "chunk_id": "98136a7b788e5f2bf509",
+            "document_id": "jpm-2025q2-supplement",
+            "bank": "JPM",
+            "strategy": "semantic",
+            "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 17: c1-3=Noninterest revenue | c4-5=4,452 | c10-11=4,171 | c16-17=4,494 | c22-23=4,214 | c28-29=3,996 | c34-35=7 | c40-41=11 | c49-50=8,623 | c55-56=7,941 | c61-62=9",
+            "location": "HTML table 13, row 17",
+            "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "jpm-2025q2-supplement:t13:r17"
+            ],
+            "token_count": 292
+          },
+          "score": 4.791923522949219
+        },
+        {
+          "chunk": {
+            "chunk_id": "7bb7e6d9e6335fb78baf",
+            "document_id": "jpm-2025q2-supplement",
+            "bank": "JPM",
+            "strategy": "semantic",
+            "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 21: c1-3=Provision for credit losses | c4-5=2,082 | c10-11=2,629 | c16-17=2,623 | c22-23=2,795 | c28-29=2,643 | c34-35=(21) | c40-41=(21) | c49-50=4,711 | c55-56=4,556 | c61-62=3",
+            "location": "HTML table 13, row 21",
+            "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "jpm-2025q2-supplement:t13:r21"
+            ],
+            "token_count": 297
+          },
+          "score": 4.712812900543213
+        }
+      ],
+      "elapsed_seconds": 32.199,
+      "usage": {}
+    },
+    "timestamp": "2026-10-18T21:13:09.008638+00:00"
+  },
+  {
+    "strategy": "semantic",
+    "reranking": true,
+    "scope": {
+      "banks": [
+        "JPM",
+        "BAC"
+      ],
+      "periods": [
+        "2025Q2"
+      ],
+      "clarification": null,
+      "unsupported": null
+    },
+    "retrieval_policy": "v4-revenue-build-input-coverage",
+    "answer_policy": "v4-revenue-build-and-explicit-peer-bases",
+    "retrieval_queries": [
+      "Explain the consumer revenue build-up for Bank of America and JPMorgan Chase in Q2 2025 and compare them total net revenue",
+      "Explain the consumer revenue build-up for Bank of America and JPMorgan Chase in Q2 2025 and compare them net interest income",
+      "Explain the consumer revenue build-up for Bank of America and JPMorgan Chase in Q2 2025 and compare them total noninterest income noninterest revenue"
+    ],
+    "framework": "LangChain + LangGraph",
+    "prompt_hash": "239c0adc2f166a038d398d986e1548dcf684521c38e40732c577f484e037befc",
+    "calculations": [],
+    "candidate_hits": [
+      {
+        "chunk": {
+          "chunk_id": "bb1e4f91429a5318bdcd",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+          "location": "HTML table 13, row 19",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r19"
+          ],
+          "token_count": 289
+        },
+        "score": 0.09630258101966192
+      },
+      {
+        "chunk": {
+          "chunk_id": "6c70cc22f90a3d27079d",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 18: c1-3=Net interest income | c4-5=14,395 | c10-11=14,142 | c16-17=13,868 | c22-23=13,577 | c28-29=13,705 | c34-35=2 | c40-41=5 | c49-50=28,537 | c55-56=27,413 | c61-62=4",
+          "location": "HTML table 13, row 18",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r18"
+          ],
+          "token_count": 290
+        },
+        "score": 0.07730958525348346
+      },
+      {
+        "chunk": {
+          "chunk_id": "98136a7b788e5f2bf509",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 17: c1-3=Noninterest revenue | c4-5=4,452 | c10-11=4,171 | c16-17=4,494 | c22-23=4,214 | c28-29=3,996 | c34-35=7 | c40-41=11 | c49-50=8,623 | c55-56=7,941 | c61-62=9",
+          "location": "HTML table 13, row 17",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r17"
+          ],
+          "token_count": 292
+        },
+        "score": 0.06530936012691699
+      },
+      {
+        "chunk": {
+          "chunk_id": "ad2f5ad6749f9c5e11f1",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+          "location": "HTML table 27, row 14",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r14"
+          ],
+          "token_count": 253
+        },
+        "score": 0.09086404020202768
+      },
+      {
+        "chunk": {
+          "chunk_id": "d2e82d0df680b2ad8da5",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 7: c1-3=Net interest income | c4=$ | c5=17,231 | c10=$ | c11=16,315 | c19=$ | c20=8,726 | c25=$ | c26=8,505 | c31=$ | c32=8,485 | c37=$ | c38=8,278 | c43=$ | c44=8,118",
+          "location": "HTML table 27, row 7",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r7"
+          ],
+          "token_count": 267
+        },
+        "score": 0.05719543184274323
+      },
+      {
+        "chunk": {
+          "chunk_id": "f968c9f065fdce8caa1c",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 13: c1-3=Total noninterest income | c4-5=4,075 | c10-11=4,057 | c19-20=2,087 | c25-26=1,988 | c31-32=2,161 | c37-38=2,140 | c43-44=2,088",
+          "location": "HTML table 27, row 13",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r13"
+          ],
+          "token_count": 252
+        },
+        "score": 0.04375483671258319
+      },
+      {
+        "chunk": {
+          "chunk_id": "9e551e0930be896e689a",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "Power for Outstanding Client Satisfaction with Customer Financial Health Support – Banking & Payments(e) • Merrill Edge Self-Directed Best in Class Award for Customer Service (4th consecutive year)(f) See page 11 for Business Leadership sources. 1 Comparisons are to the year-ago quarter unless noted. 2 Revenue, net of interest expense. 3 The consumer credit card portfolio includes Consumer Banking and GWIM. 4 Represents the percentage of consumer checking accounts that are estimated to be the customer’s primary account based on multiple relationship factors (e.g., linked to their direct deposit). 5 End of period. Consumer investment assets includes client brokerage assets, deposit sweep balances, brokered CDs, and AUM in Consumer Banking. 6 As of May 2025. Includes clients in Consumer, Small Business and GWIM. 7 Household adoption represents households with consumer bank login activities in a 90-day period, as of May 2025. 8 Includes Bank of America person-to-person payments sent and received through e-mail or mobile identification. Zelle® users represent 90-day active users. • Net income of $3.0 billion • Revenue of $10.8 billion,2 up 6%, driven primarily by higher NII • Provision for credit losses of $1.3 billion was flat – Net reserve build of $82 million vs.",
+          "location": "HTML image text layer 3 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer3:through:bac-2025q2-results:textlayer3:fragment:9e551e0930be896e689a"
+          ],
+          "token_count": 275
+        },
+        "score": 0.0819672131147541
+      },
+      {
+        "chunk": {
+          "chunk_id": "d81535736a298786cbd3",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS, CONTINUED\nc1-3=(in millions, except ratio data and where otherwise noted)\nc4-45=QUARTERLY TRENDS | c52-69=SIX MONTHS ENDED JUNE 30,\nc37-45=2Q25 Change | c67-69=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c37-39=1Q25 | c43-45=2Q24 | c52-54=2025 | c58-60=2024 | c67-69=2024\nc1-3=BUSINESS METRICS\nc1-3=Number of:\nRow 37: c1-3=Net revenue rate | c4-5=10.06 | c7-9=% | c10-11=10.38 | c13-15=% | c16-17=10.47 | c19-21=% | c22-23=9.91 | c25-27=% | c28-29=9.61 | c31-33=% | c52-53=10.22 | c55-57=% | c58-59=9.85 | c61-63=%",
+          "location": "HTML table 16, row 37",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t16:r37"
+          ],
+          "token_count": 322
+        },
+        "score": 0.08987568304787677
+      },
+      {
+        "chunk": {
+          "chunk_id": "a81dd758bf74bbab14b0",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 11: c1-3=REVENUE",
+          "location": "HTML table 13, row 11",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r11"
+          ],
+          "token_count": 198
+        },
+        "score": 0.08632260013636066
+      },
+      {
+        "chunk": {
+          "chunk_id": "754f0f8a2094d814774e",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 30: c1-3=NET INCOME | c4=$ | c5=5,169 | c10=$ | c11=4,425 | c16=$ | c17=4,516 | c22=$ | c23=4,046 | c28=$ | c29=4,210 | c34-35=17 | c40-41=23 | c49=$ | c50=9,594 | c55=$ | c56=9,041 | c61-62=6",
+          "location": "HTML table 13, row 30",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r30"
+          ],
+          "token_count": 309
+        },
+        "score": 0.07415494354484536
+      },
+      {
+        "chunk": {
+          "chunk_id": "4c8932e703b917edb2b2",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 32: c1-3=REVENUE BY BUSINESS",
+          "location": "HTML table 13, row 32",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r32"
+          ],
+          "token_count": 200
+        },
+        "score": 0.0671848164108226
+      },
+      {
+        "chunk": {
+          "chunk_id": "03afecd84aae221d7d7c",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 39: c1-3=Consumer & Community Banking | c4=$ | c5=5,169 | c10=$ | c11=4,425 | c16=$ | c17=4,516 | c22=$ | c23=4,046 | c28=$ | c29=4,210 | c34-35=17 | c40-41=23 | c49=$ | c50=9,594 | c55=$ | c56=9,041 | c61-62=6",
+          "location": "HTML table 9, row 39",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t9:r39"
+          ],
+          "token_count": 313
+        },
+        "score": 0.05860763594038242
+      },
+      {
+        "chunk": {
+          "chunk_id": "0c1073223e086560d5f3",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-9=SEGMENT & CORPORATE RESULTS - MANAGED BASIS\nc1-9=(in millions)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=TOTAL NET REVENUE (fully taxable-equivalent (“FTE”))\nRow 11: c1-3=Consumer & Community Banking | c4=$ | c5=18,847 | c10=$ | c11=18,313 | c16=$ | c17=18,362 | c22=$ | c23=17,791 | c28=$ | c29=17,701 | c34-35=3 | c36=% | c40-41=6 | c42=% | c49=$ | c50=37,160 | c55=$ | c56=35,354 | c61-62=5 | c63=%",
+          "location": "HTML table 9, row 11",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_31",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t9:r11"
+          ],
+          "token_count": 329
+        },
+        "score": 0.056369889226155837
+      },
+      {
+        "chunk": {
+          "chunk_id": "a95f7226a4fef48a07a4",
+          "document_id": "jpm-2025q2-supplement",
+          "bank": "JPM",
+          "strategy": "semantic",
+          "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 37: c1-3=MORTGAGE FEES AND RELATED INCOME DETAILS",
+          "location": "HTML table 13, row 37",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "jpm-2025q2-supplement:t13:r37"
+          ],
+          "token_count": 203
+        },
+        "score": 0.053393963583837
+      },
+      {
+        "chunk": {
+          "chunk_id": "db7f2983d95bde7b2156",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "2 From Chief Financial Officer Alastair Borthwick: “We believe our second quarter results underscore the strength of our balance sheet and help demonstrate that we are well-positioned to support the broader economy. Asset quality remained strong, with net charge-offs at $1.5 billion for the sixth consecutive quarter. Consumer delinquencies have been stabilizing, while card net charge-offs improved year-over-year and commercial nonperforming loans declined sequentially. In addition, we delivered strong loan and deposit growth and maintained our disciplined pricing.” Bank of America Financial Highlights ($ in billions, except per share data) 2Q25 1Q25 2Q24 Total revenue, net of interest expense $26.5 $27.4 $25.4 Provision for credit losses 1.6 1.5 1.5 Noninterest expense 17.2 17.8 16.3 Pretax income 7.7 8.1 7.6 Pretax, pre-provision income1(F) 9.3 9.6 9.1 Income tax expense 0.6 0.7 0.7 Net income 7.1 7.4 6.9 Diluted earnings per share $0.89 $0.90 $0.83 1 Pretax, pre-provision income represents a non-GAAP financial measure. For more information, see page 19.",
+          "location": "HTML image text layer 2 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer2:through:bac-2025q2-results:textlayer2:fragment:db7f2983d95bde7b2156"
+          ],
+          "token_count": 286
+        },
+        "score": 0.07840356328259554
+      },
+      {
+        "chunk": {
+          "chunk_id": "3899cd4dd1ea1cc262f9",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "16 Bank of America Corporation and Subsidiaries Quarterly Results by Business Segment and All Other (Dollars in millions) Second Quarter 2025 Consumer Banking GWIM Global Banking Global Markets All Other Total revenue, net of interest expense $ 10,813 $ 5,937 $ 5,690 $ 5,980 $ (1,812) Provision for credit losses 1,282 20 277 22 (9) Noninterest expense 5,567 4,593 3,070 3,806 147 Net income 2,973 993 1,699 1,528 (77) Return on average allocated capital (1) 27 % 20 % 13 % 13 % n/m Balance Sheet Average Total loans and leases $ 319,142 $ 237,377 $ 387,864 $ 176,368 $ 7,702 Total deposits 951,986 276,825 603,410 38,040 103,500 Allocated capital (1) 44,000 19,750 50,750 49,000 n/m Period end Total loans and leases $ 320,908 $ 241,142 $ 390,691 $ 187,357 $ 6,958 Total deposits 954,373 275,778 643,529 38,232 99,701 First Quarter 2025 Consumer Banking GWIM Global Banking Global Markets All Other Total revenue, net of interest expense $ 10,493 $ 6,016 $ 5,977 $ 6,584 $ (1,559) Provision for credit losses 1,292 14 154 28 (8) Noninterest expense 5,826 4,659 3,184 3,811 290 Net income (loss) 2,531 1,007 1,913 1,949 (4) Return on average allocated capital (1) 23 % 21 % 15 % 16 % n/m Balance Sheet Average Total loans and leases $",
+          "location": "HTML image text layer 16 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer16:through:bac-2025q2-results:textlayer16:fragment:3899cd4dd1ea1cc262f9"
+          ],
+          "token_count": 400
+        },
+        "score": 0.07628078651180056
+      },
+      {
+        "chunk": {
+          "chunk_id": "24560d35a94aa52fcb21",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-42=Bank of America Corporation and Subsidiaries\nc1-42=Quarterly Results by Business Segment and All Other\nc1-3=(Dollars in millions)\nc7-42=Second Quarter 2025\nc7-9=Total Corporation | c16-18=Consumer Banking | c22-24=GWIM | c28-30=Global Banking | c34-36=Global Markets | c40-42=All Other\nRow 18: c1-3=Total revenue, net of interest expense | c7-8=26,608 | c16-17=10,813 | c22-23=5,937 | c28-29=5,690 | c34-35=5,980 | c40-41=(1,812)",
+          "location": "HTML table 21, row 18",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t21:r18"
+          ],
+          "token_count": 176
+        },
+        "score": 0.07577327933553402
+      },
+      {
+        "chunk": {
+          "chunk_id": "a54036fe804a59171f74",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 8: c1-3=Noninterest income:",
+          "location": "HTML table 27, row 8",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r8"
+          ],
+          "token_count": 184
+        },
+        "score": 0.060033550587135276
+      },
+      {
+        "chunk": {
+          "chunk_id": "febfc2557220643fdf9d",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "self-led) of $1.4 billion, down 9% • #3 investment banking fee ranking YTD9 • $603 billion in average deposits, up 15% • 8% growth in Middle Market average loan balances10 • 15% improvement in treasury service charges Global Markets • Net income of $1.5 billion • Sales and trading revenue up 14% to $5.3 billion including net debit valuation adjustment (DVA) losses of $51 million. Excluding net DVA, up 15%.(E) 13th consecutive quarter of year-over-year growth – Fixed Income, Currencies and Commodities (FICC) revenue up 16% to $3.2 billion. Excluding net DVA, up 19%(E) – Equities revenue up 10% to $2.1 billion, including and excluding net DVA(E) Bank of America Reports 2Q25 Net Income of $7.1 Billion and EPS of $0.89 Revenue up 4% YoY to $26.5 Billion,1 Net Interest Income Grew 7% YoY to $14.7 Billion ($14.8 Billion FTE)(A) Ending Deposits up 5% YoY to more than $2 trillion From Chair and CEO Brian Moynihan: “We delivered another solid quarter, with earnings per share up seven percent from last year. Net interest income grew for the fourth straight quarter, reflecting eight consecutive quarters of deposit growth and seven percent year-over-year loan growth. Consumers remained resilient, with healthy spending and asset quality, and commercial borrower utilization rates rose. In addition, we saw good momentum in our markets businesses. So far this year, we have supplied more capital to our businesses and returned 40 percent more capital to shareholders in the first half of this year than last year.” See page 10 for endnotes. Amounts may not total due to rounding. 1 Revenue, net of interest expense.",
+          "location": "HTML image text layer 1 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer1:through:bac-2025q2-results:textlayer1:fragment:febfc2557220643fdf9d"
+          ],
+          "token_count": 399
+        },
+        "score": 0.04838709677419355
+      },
+      {
+        "chunk": {
+          "chunk_id": "1ada101539edd8da8e6d",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "1 2Q25 Financial Highlights2(B) 2Q25 Business Segment Highlights1,2,3(B) Consumer Banking • Net income of $3.0 billion • Revenue of $10.8 billion, up 6% • Average deposits of $952 billion were modestly higher and up 32% from pre-pandemic levels (4Q19) • Average loans and leases of $319 billion, up $7 billion, or 2% • Combined credit / debit card spend of $244 billion, up 4% • Client Highlights – Added ~175,000 net new consumer checking accounts; 26th consecutive quarter of growth – 38.2 million consumer checking accounts; 92% are primary4 – ~4 million small business checking accounts – $540 billion in consumer investment assets, up 13%5 – $1.2 trillion in payments, up 4%6 – 4.1 billion digital logins; 65% of total sales were digitally-enabled Global Wealth and Investment Management • Net income of $1.0 billion • Revenue of $5.9 billion, up 7%. The increase was primarily driven by asset management fees, up 9% to $3.6 billion, on strong AUM flows and higher market levels • Client balances of $4.4 trillion, up 10%, driven by higher market valuations and positive net client flows • Client Highlights – Added ~7,100 net new relationships across Merrill and Private Bank – ~$2.0 trillion of AUM balances, up 13% – 86% of Merrill and Private Bank clients digitally active Global Banking • Net income of $1.7 billion • Total Corporation investment banking fees (excl.",
+          "location": "HTML image text layer 1 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer1:through:bac-2025q2-results:textlayer1:fragment:1ada101539edd8da8e6d"
+          ],
+          "token_count": 342
+        },
+        "score": 0.047619047619047616
+      }
+    ],
+    "answer": {
+      "question": "Explain the consumer revenue build-up for Bank of America and JPMorgan Chase in Q2 2025 and compare them",
+      "status": "answered",
+      "mode": "verified_reported_metrics",
+      "text": "JPMorgan Chase's Consumer & Community Banking reported revenue of $18,847 million in Q2 2025 (managed/FTE basis). [bb1e4f91429a5318bdcd]\n\nBank of America's Consumer Banking reported revenue of $10,813 million in Q2 2025 (FTE basis). [ad2f5ad6749f9c5e11f1]\n\nJPMorgan Chase, Q2 2025: net interest income $14,395 million + noninterest income/revenue $4,452 million = segment revenue $18,847 million. [6c70cc22f90a3d27079d] [98136a7b788e5f2bf509] [bb1e4f91429a5318bdcd]\n\nBank of America, Q2 2025: net interest income $8,726 million + noninterest income/revenue $2,087 million = segment revenue $10,813 million. [d2e82d0df680b2ad8da5] [f968c9f065fdce8caa1c] [ad2f5ad6749f9c5e11f1]\n\nJPMorgan Chase's reported figure was $8,034 million higher. JPMorgan Chase was 74.3% larger (base: Bank of America); Bank of America was 42.6% smaller (base: JPMorgan Chase). JPMorgan Chase/Bank of America revenue ratio: 1.74×. [bb1e4f91429a5318bdcd] [ad2f5ad6749f9c5e11f1]\n\nThis compares reported consumer segments without peer adjustments; segment scope and internal allocation methods may differ. Retaining each bank's reporting basis does not establish identical accounting conventions.\n\n[bb1e4f91429a5318bdcd] HTML table 13, row 19: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[6c70cc22f90a3d27079d] HTML table 13, row 18: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[98136a7b788e5f2bf509] HTML table 13, row 17: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43\n\n[ad2f5ad6749f9c5e11f1] HTML table 27, row 14: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49\n\n[d2e82d0df680b2ad8da5] HTML table 27, row 7: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49\n\n[f968c9f065fdce8caa1c] HTML table 27, row 13: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+      "hits": [
+        {
+          "chunk": {
+            "chunk_id": "bb1e4f91429a5318bdcd",
+            "document_id": "jpm-2025q2-supplement",
+            "bank": "JPM",
+            "strategy": "semantic",
+            "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 19: c1-3=TOTAL NET REVENUE | c4-5=18,847 | c10-11=18,313 | c16-17=18,362 | c22-23=17,791 | c28-29=17,701 | c34-35=3 | c40-41=6 | c49-50=37,160 | c55-56=35,354 | c61-62=5",
+            "location": "HTML table 13, row 19",
+            "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "jpm-2025q2-supplement:t13:r19"
+            ],
+            "token_count": 289
+          },
+          "score": 2.862675666809082
+        },
+        {
+          "chunk": {
+            "chunk_id": "6c70cc22f90a3d27079d",
+            "document_id": "jpm-2025q2-supplement",
+            "bank": "JPM",
+            "strategy": "semantic",
+            "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 18: c1-3=Net interest income | c4-5=14,395 | c10-11=14,142 | c16-17=13,868 | c22-23=13,577 | c28-29=13,705 | c34-35=2 | c40-41=5 | c49-50=28,537 | c55-56=27,413 | c61-62=4",
+            "location": "HTML table 13, row 18",
+            "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "jpm-2025q2-supplement:t13:r18"
+            ],
+            "token_count": 290
+          },
+          "score": 2.7127938270568848
+        },
+        {
+          "chunk": {
+            "chunk_id": "98136a7b788e5f2bf509",
+            "document_id": "jpm-2025q2-supplement",
+            "bank": "JPM",
+            "strategy": "semantic",
+            "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=CONSUMER & COMMUNITY BANKING\nc1-3=FINANCIAL HIGHLIGHTS\nc1-3=(in millions, except ratio data)\nc4-42=QUARTERLY TRENDS | c49-63=SIX MONTHS ENDED JUNE 30,\nc34-42=2Q25 Change | c61-63=2025 Change\nc4-6=2Q25 | c10-12=1Q25 | c16-18=4Q24 | c22-24=3Q24 | c28-30=2Q24 | c34-36=1Q25 | c40-42=2Q24 | c49-51=2025 | c55-57=2024 | c61-63=2024\nc1-3=INCOME STATEMENT\nc1-3=REVENUE\nRow 17: c1-3=Noninterest revenue | c4-5=4,452 | c10-11=4,171 | c16-17=4,494 | c22-23=4,214 | c28-29=3,996 | c34-35=7 | c40-41=11 | c49-50=8,623 | c55-56=7,941 | c61-62=9",
+            "location": "HTML table 13, row 17",
+            "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_43",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "jpm-2025q2-supplement:t13:r17"
+            ],
+            "token_count": 292
+          },
+          "score": 2.7118446826934814
+        },
+        {
+          "chunk": {
+            "chunk_id": "ad2f5ad6749f9c5e11f1",
+            "document_id": "bac-2025q2-supplement",
+            "bank": "BAC",
+            "strategy": "semantic",
+            "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+            "location": "HTML table 27, row 14",
+            "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "bac-2025q2-supplement:t27:r14"
+            ],
+            "token_count": 253
+          },
+          "score": 0.33449703454971313
+        },
+        {
+          "chunk": {
+            "chunk_id": "d2e82d0df680b2ad8da5",
+            "document_id": "bac-2025q2-supplement",
+            "bank": "BAC",
+            "strategy": "semantic",
+            "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 7: c1-3=Net interest income | c4=$ | c5=17,231 | c10=$ | c11=16,315 | c19=$ | c20=8,726 | c25=$ | c26=8,505 | c31=$ | c32=8,485 | c37=$ | c38=8,278 | c43=$ | c44=8,118",
+            "location": "HTML table 27, row 7",
+            "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "bac-2025q2-supplement:t27:r7"
+            ],
+            "token_count": 267
+          },
+          "score": -0.6586871147155762
+        },
+        {
+          "chunk": {
+            "chunk_id": "f968c9f065fdce8caa1c",
+            "document_id": "bac-2025q2-supplement",
+            "bank": "BAC",
+            "strategy": "semantic",
+            "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 13: c1-3=Total noninterest income | c4-5=4,075 | c10-11=4,057 | c19-20=2,087 | c25-26=1,988 | c31-32=2,161 | c37-38=2,140 | c43-44=2,088",
+            "location": "HTML table 27, row 13",
+            "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "bac-2025q2-supplement:t27:r13"
+            ],
+            "token_count": 252
+          },
+          "score": -0.6062778234481812
+        }
+      ],
+      "elapsed_seconds": 5.509,
+      "usage": {}
+    },
+    "timestamp": "2026-10-18T21:13:14.520386+00:00"
+  },
+  {
+    "strategy": "semantic",
+    "reranking": true,
+    "scope": {
+      "banks": [
+        "BAC"
+      ],
+      "periods": [
+        "2024Q2"
+      ],
+      "clarification": null,
+      "unsupported": null
+    },
+    "retrieval_policy": "v4-revenue-build-input-coverage",
+    "answer_policy": "v4-revenue-build-and-explicit-peer-bases",
+    "retrieval_queries": [
+      "How is Bank of America consumer revenue calculated for Q2 2024? total net revenue",
+      "How is Bank of America consumer revenue calculated for Q2 2024? net interest income",
+      "How is Bank of America consumer revenue calculated for Q2 2024? total noninterest income noninterest revenue"
+    ],
+    "framework": "LangChain + LangGraph",
+    "prompt_hash": "239c0adc2f166a038d398d986e1548dcf684521c38e40732c577f484e037befc",
+    "calculations": [],
+    "candidate_hits": [
+      {
+        "chunk": {
+          "chunk_id": "ad2f5ad6749f9c5e11f1",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+          "location": "HTML table 27, row 14",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r14"
+          ],
+          "token_count": 253
+        },
+        "score": 0.09366475952873476
+      },
+      {
+        "chunk": {
+          "chunk_id": "d2e82d0df680b2ad8da5",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 7: c1-3=Net interest income | c4=$ | c5=17,231 | c10=$ | c11=16,315 | c19=$ | c20=8,726 | c25=$ | c26=8,505 | c31=$ | c32=8,485 | c37=$ | c38=8,278 | c43=$ | c44=8,118",
+          "location": "HTML table 27, row 7",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r7"
+          ],
+          "token_count": 267
+        },
+        "score": 0.04501587087188492
+      },
+      {
+        "chunk": {
+          "chunk_id": "f968c9f065fdce8caa1c",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 13: c1-3=Total noninterest income | c4-5=4,075 | c10-11=4,057 | c19-20=2,087 | c25-26=1,988 | c31-32=2,161 | c37-38=2,140 | c43-44=2,088",
+          "location": "HTML table 27, row 13",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r13"
+          ],
+          "token_count": 252
+        },
+        "score": 0.04479406092309318
+      },
+      {
+        "chunk": {
+          "chunk_id": "3899cd4dd1ea1cc262f9",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "16 Bank of America Corporation and Subsidiaries Quarterly Results by Business Segment and All Other (Dollars in millions) Second Quarter 2025 Consumer Banking GWIM Global Banking Global Markets All Other Total revenue, net of interest expense $ 10,813 $ 5,937 $ 5,690 $ 5,980 $ (1,812) Provision for credit losses 1,282 20 277 22 (9) Noninterest expense 5,567 4,593 3,070 3,806 147 Net income 2,973 993 1,699 1,528 (77) Return on average allocated capital (1) 27 % 20 % 13 % 13 % n/m Balance Sheet Average Total loans and leases $ 319,142 $ 237,377 $ 387,864 $ 176,368 $ 7,702 Total deposits 951,986 276,825 603,410 38,040 103,500 Allocated capital (1) 44,000 19,750 50,750 49,000 n/m Period end Total loans and leases $ 320,908 $ 241,142 $ 390,691 $ 187,357 $ 6,958 Total deposits 954,373 275,778 643,529 38,232 99,701 First Quarter 2025 Consumer Banking GWIM Global Banking Global Markets All Other Total revenue, net of interest expense $ 10,493 $ 6,016 $ 5,977 $ 6,584 $ (1,559) Provision for credit losses 1,292 14 154 28 (8) Noninterest expense 5,826 4,659 3,184 3,811 290 Net income (loss) 2,531 1,007 1,913 1,949 (4) Return on average allocated capital (1) 23 % 21 % 15 % 16 % n/m Balance Sheet Average Total loans and leases $",
+          "location": "HTML image text layer 16 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer16:through:bac-2025q2-results:textlayer16:fragment:3899cd4dd1ea1cc262f9"
+          ],
+          "token_count": 400
+        },
+        "score": 0.09232247966082542
+      },
+      {
+        "chunk": {
+          "chunk_id": "db7f2983d95bde7b2156",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "2 From Chief Financial Officer Alastair Borthwick: “We believe our second quarter results underscore the strength of our balance sheet and help demonstrate that we are well-positioned to support the broader economy. Asset quality remained strong, with net charge-offs at $1.5 billion for the sixth consecutive quarter. Consumer delinquencies have been stabilizing, while card net charge-offs improved year-over-year and commercial nonperforming loans declined sequentially. In addition, we delivered strong loan and deposit growth and maintained our disciplined pricing.” Bank of America Financial Highlights ($ in billions, except per share data) 2Q25 1Q25 2Q24 Total revenue, net of interest expense $26.5 $27.4 $25.4 Provision for credit losses 1.6 1.5 1.5 Noninterest expense 17.2 17.8 16.3 Pretax income 7.7 8.1 7.6 Pretax, pre-provision income1(F) 9.3 9.6 9.1 Income tax expense 0.6 0.7 0.7 Net income 7.1 7.4 6.9 Diluted earnings per share $0.89 $0.90 $0.83 1 Pretax, pre-provision income represents a non-GAAP financial measure. For more information, see page 19.",
+          "location": "HTML image text layer 2 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer2:through:bac-2025q2-results:textlayer2:fragment:db7f2983d95bde7b2156"
+          ],
+          "token_count": 286
+        },
+        "score": 0.09095130095690024
+      },
+      {
+        "chunk": {
+          "chunk_id": "fd25028a171f5bae44d6",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-42=Bank of America Corporation and Subsidiaries\nc1-42=Quarterly Results by Business Segment and All Other (continued)\nc1-3=(Dollars in millions)\nc7-42=Second Quarter 2024\nc7-9=Total Corporation | c16-18=Consumer Banking | c22-24=GWIM | c28-30=Global Banking | c34-36=Global Markets | c40-42=All Other\nRow 18: c1-3=Total revenue, net of interest expense | c7-8=25,537 | c16-17=10,206 | c22-23=5,574 | c28-29=6,053 | c34-35=5,459 | c40-41=(1,755)",
+          "location": "HTML table 23, row 18",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t23:r18"
+          ],
+          "token_count": 180
+        },
+        "score": 0.06243318916672962
+      },
+      {
+        "chunk": {
+          "chunk_id": "a54036fe804a59171f74",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 8: c1-3=Noninterest income:",
+          "location": "HTML table 27, row 8",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r8"
+          ],
+          "token_count": 184
+        },
+        "score": 0.06153996276947096
+      },
+      {
+        "chunk": {
+          "chunk_id": "acb0ce1764d20add533c",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "17 Bank of America Corporation and Subsidiaries Year-to-Date by Business Segment and All Other (Dollars in millions) Six Months Ended June 30, 2025 Consumer Banking GWIM Global Banking Global Markets All Other Total revenue, net of interest expense $ 21,306 $ 11,953 $ 11,667 $ 12,564 $ (3,371) Provision for credit losses 2,574 34 431 50 (17) Noninterest expense 11,393 9,252 6,254 7,617 437 Net income (loss) 5,504 2,000 3,612 3,477 (81) Return on average allocated capital (1) 25 % 21 % 14 % 14 % n/m Balance Sheet Average Total loans and leases $ 317,101 $ 234,866 $ 383,324 $ 168,043 $ 7,857 Total deposits 949,780 281,586 589,375 38,423 106,925 Allocated capital (1) 44,000 19,750 50,750 49,000 n/m Period end Total loans and leases $ 320,908 $ 241,142 $ 390,691 $ 187,357 $ 6,958 Total deposits 954,373 275,778 643,529 38,232 99,701 Six Months Ended June 30, 2024 Consumer Banking GWIM Global Banking Global Markets All Other Total revenue, net of interest expense $ 20,372 $ 11,165 $ 12,033 $ 11,342 $ (3,399) Provision for credit losses 2,431 (6) 464 (49) (13) Noninterest expense 10,939 8,463 5,911 6,978 1,255 Net income 5,251 2,031 4,102 3,133 (946) Return on average allocated capital (1) 24 %",
+          "location": "HTML image text layer 17 (not a parsed table) through HTML image text layer 18 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer17:through:bac-2025q2-results:textlayer18:fragment:acb0ce1764d20add533c"
+          ],
+          "token_count": 400
+        },
+        "score": 0.059510199517453885
+      },
+      {
+        "chunk": {
+          "chunk_id": "fd934750611c8b72c32b",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "315,038 $ 232,326 $ 378,733 $ 159,625 $ 8,016 Total deposits 947,550 286,399 575,185 38,809 110,389 Allocated capital (1) 44,000 19,750 50,750 49,000 n/m Period end Total loans and leases $ 318,337 $ 234,304 $ 384,208 $ 166,348 $ 7,428 Total deposits 972,064 285,063 591,619 38,268 102,550 Second Quarter 2024 Consumer Banking GWIM Global Banking Global Markets All Other Total revenue, net of interest expense $ 10,206 $ 5,574 $ 6,053 $ 5,459 $ (1,755) Provision for credit losses 1,281 7 235 (13) (2) Noninterest expense 5,464 4,199 2,899 3,486 261 Net income 2,595 1,026 2,116 1,410 (250) Return on average allocated capital (1) 24 % 22 % 17 % 13 % n/m Balance Sheet Average Total loans and leases $ 312,254 $ 222,776 $ 372,738 $ 135,106 $ 8,598 Total deposits 949,180 287,678 525,357 31,944 115,766 Allocated capital (1) 43,250 18,500 49,250 45,500 n/m Period end Total loans and leases $ 312,801 $ 224,837 $ 372,421 $ 138,441 $ 8,285 Total deposits 952,473 281,283 522,525 33,151 121,059 (1) Return on average allocated capital is calculated as net income, adjusted for cost of funds and earnings credits and certain expenses related to intangibles, divided by average allocated capital.",
+          "location": "HTML image text layer 16 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer16:through:bac-2025q2-results:textlayer16:fragment:fd934750611c8b72c32b"
+          ],
+          "token_count": 398
+        },
+        "score": 0.04640914640914641
+      },
+      {
+        "chunk": {
+          "chunk_id": "bcf8feb25958a1d56426",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 19: c1-3=Income before income taxes | c4-5=7,339 | c10-11=7,002 | c19-20=3,964 | c25-26=3,375 | c31-32=3,761 | c37-38=3,582 | c43-44=3,461",
+          "location": "HTML table 27, row 19",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r19"
+          ],
+          "token_count": 250
+        },
+        "score": 0.045582522915269395
+      },
+      {
+        "chunk": {
+          "chunk_id": "febfc2557220643fdf9d",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "self-led) of $1.4 billion, down 9% • #3 investment banking fee ranking YTD9 • $603 billion in average deposits, up 15% • 8% growth in Middle Market average loan balances10 • 15% improvement in treasury service charges Global Markets • Net income of $1.5 billion • Sales and trading revenue up 14% to $5.3 billion including net debit valuation adjustment (DVA) losses of $51 million. Excluding net DVA, up 15%.(E) 13th consecutive quarter of year-over-year growth – Fixed Income, Currencies and Commodities (FICC) revenue up 16% to $3.2 billion. Excluding net DVA, up 19%(E) – Equities revenue up 10% to $2.1 billion, including and excluding net DVA(E) Bank of America Reports 2Q25 Net Income of $7.1 Billion and EPS of $0.89 Revenue up 4% YoY to $26.5 Billion,1 Net Interest Income Grew 7% YoY to $14.7 Billion ($14.8 Billion FTE)(A) Ending Deposits up 5% YoY to more than $2 trillion From Chair and CEO Brian Moynihan: “We delivered another solid quarter, with earnings per share up seven percent from last year. Net interest income grew for the fourth straight quarter, reflecting eight consecutive quarters of deposit growth and seven percent year-over-year loan growth. Consumers remained resilient, with healthy spending and asset quality, and commercial borrower utilization rates rose. In addition, we saw good momentum in our markets businesses. So far this year, we have supplied more capital to our businesses and returned 40 percent more capital to shareholders in the first half of this year than last year.” See page 10 for endnotes. Amounts may not total due to rounding. 1 Revenue, net of interest expense.",
+          "location": "HTML image text layer 1 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer1:through:bac-2025q2-results:textlayer1:fragment:febfc2557220643fdf9d"
+          ],
+          "token_count": 399
+        },
+        "score": 0.04534213829988478
+      },
+      {
+        "chunk": {
+          "chunk_id": "ad9171c84513296114f2",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "8 Credit Quality1 Highlights Three months ended ($ in millions) 6/30/2025 3/31/2025 6/30/2024 Provision for credit losses $1,592 $1,480 $1,508 Net charge-offs 1,525 1,452 1,533 Net charge-off ratio2 0.55 % 0.54 % 0.59 % At period-end Nonperforming loans and leases $5,981 $6,083 $5,473 Nonperforming loans and leases ratio 0.52 % 0.55 % 0.52 % Allowance for credit losses 14,434 14,366 14,342 Allowance for loan and lease losses 13,291 13,256 13,238 Allowance for loan and lease losses ratio3 1.17 % 1.20 % 1.26 % 1 Comparisons are to the year-ago quarter unless noted. 2 Net charge-off ratio is calculated as annualized net charge-offs divided by average outstanding loans and leases during the period. 3 Allowance for loan and lease losses ratio is calculated as allowance for loan and lease losses divided by loans and leases outstanding at the end of the period. Note: Ratios do not include loans accounted for under the fair value option. Charge-offs • Total net charge-offs of $1.5 billion increased $73 million from 1Q25 – Consumer net charge-offs of $1.1 billion decreased $60 million from 1Q25, driven by lower credit card losses – Credit card loss rate of 3.82% vs.",
+          "location": "HTML image text layer 8 (not a parsed table) through HTML image text layer 9 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer8:through:bac-2025q2-results:textlayer9:fragment:ad9171c84513296114f2"
+          ],
+          "token_count": 324
+        },
+        "score": 0.045011529386529386
+      },
+      {
+        "chunk": {
+          "chunk_id": "9e551e0930be896e689a",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "Power for Outstanding Client Satisfaction with Customer Financial Health Support – Banking & Payments(e) • Merrill Edge Self-Directed Best in Class Award for Customer Service (4th consecutive year)(f) See page 11 for Business Leadership sources. 1 Comparisons are to the year-ago quarter unless noted. 2 Revenue, net of interest expense. 3 The consumer credit card portfolio includes Consumer Banking and GWIM. 4 Represents the percentage of consumer checking accounts that are estimated to be the customer’s primary account based on multiple relationship factors (e.g., linked to their direct deposit). 5 End of period. Consumer investment assets includes client brokerage assets, deposit sweep balances, brokered CDs, and AUM in Consumer Banking. 6 As of May 2025. Includes clients in Consumer, Small Business and GWIM. 7 Household adoption represents households with consumer bank login activities in a 90-day period, as of May 2025. 8 Includes Bank of America person-to-person payments sent and received through e-mail or mobile identification. Zelle® users represent 90-day active users. • Net income of $3.0 billion • Revenue of $10.8 billion,2 up 6%, driven primarily by higher NII • Provision for credit losses of $1.3 billion was flat – Net reserve build of $82 million vs.",
+          "location": "HTML image text layer 3 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer3:through:bac-2025q2-results:textlayer3:fragment:9e551e0930be896e689a"
+          ],
+          "token_count": 275
+        },
+        "score": 0.04466540404040404
+      },
+      {
+        "chunk": {
+          "chunk_id": "af8d26baf5a73533d341",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-60=Bank of America Corporation and Subsidiaries\nc1-60=Quarterly Net Charge-offs and Net Charge-off Ratios (1)\nc1-60=(Dollars in millions)\nc4-12=Second Quarter 2025 | c16-24=First Quarter 2025 | c28-36=Fourth Quarter 2024 | c40-48=Third Quarter 2024 | c52-60=Second Quarter 2024\nc4-6=Amount | c10-12=Percent | c16-18=Amount | c22-24=Percent | c28-30=Amount | c34-36=Percent | c40-42=Amount | c46-48=Percent | c52-54=Amount | c58-60=Percent\nc1-3=Net Charge-offs\nRow 14: c1-3=Total consumer | c4-5=1,059 | c10-11=0.90 | c16-17=1,119 | c22-23=0.98 | c28-29=1,107 | c34-35=0.96 | c40-41=1,044 | c46-47=0.91 | c52-53=1,059 | c58-59=0.93",
+          "location": "HTML table 55, row 14",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_97",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t55:r14"
+          ],
+          "token_count": 279
+        },
+        "score": 0.04286438199481678
+      },
+      {
+        "chunk": {
+          "chunk_id": "1ada101539edd8da8e6d",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "1 2Q25 Financial Highlights2(B) 2Q25 Business Segment Highlights1,2,3(B) Consumer Banking • Net income of $3.0 billion • Revenue of $10.8 billion, up 6% • Average deposits of $952 billion were modestly higher and up 32% from pre-pandemic levels (4Q19) • Average loans and leases of $319 billion, up $7 billion, or 2% • Combined credit / debit card spend of $244 billion, up 4% • Client Highlights – Added ~175,000 net new consumer checking accounts; 26th consecutive quarter of growth – 38.2 million consumer checking accounts; 92% are primary4 – ~4 million small business checking accounts – $540 billion in consumer investment assets, up 13%5 – $1.2 trillion in payments, up 4%6 – 4.1 billion digital logins; 65% of total sales were digitally-enabled Global Wealth and Investment Management • Net income of $1.0 billion • Revenue of $5.9 billion, up 7%. The increase was primarily driven by asset management fees, up 9% to $3.6 billion, on strong AUM flows and higher market levels • Client balances of $4.4 trillion, up 10%, driven by higher market valuations and positive net client flows • Client Highlights – Added ~7,100 net new relationships across Merrill and Private Bank – ~$2.0 trillion of AUM balances, up 13% – 86% of Merrill and Private Bank clients digitally active Global Banking • Net income of $1.7 billion • Total Corporation investment banking fees (excl.",
+          "location": "HTML image text layer 1 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer1:through:bac-2025q2-results:textlayer1:fragment:1ada101539edd8da8e6d"
+          ],
+          "token_count": 342
+        },
+        "score": 0.04117839674718769
+      },
+      {
+        "chunk": {
+          "chunk_id": "b92a6d9c1e1ba16494e4",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Key Indicators\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc1-3=Average deposit balances\nRow 51: c1-3=Consumer Banking:",
+          "location": "HTML table 29, row 51",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_52",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t29:r51"
+          ],
+          "token_count": 189
+        },
+        "score": 0.04114223915954269
+      },
+      {
+        "chunk": {
+          "chunk_id": "318675cd83c6c1c79277",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 21: c1-3=Net income | c4=$ | c5=5,504 | c10=$ | c11=5,251 | c19=$ | c20=2,973 | c25=$ | c26=2,531 | c31=$ | c32=2,821 | c37=$ | c38=2,687 | c43=$ | c44=2,595",
+          "location": "HTML table 27, row 21",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t27:r21"
+          ],
+          "token_count": 270
+        },
+        "score": 0.04075591529260914
+      },
+      {
+        "chunk": {
+          "chunk_id": "7cb9653a13bd7afcf516",
+          "document_id": "bac-2025q2-supplement",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Key Indicators\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc1-3=Average deposit balances\nRow 42: c1-3=Gross interest yield | c4-5=12.09 | c6=% | c10-11=12.28 | c12=% | c19-20=12.06 | c21=% | c25-26=12.12 | c27=% | c31-32=12.15 | c33=% | c37-38=12.49 | c39=% | c43-44=12.32 | c45=%",
+          "location": "HTML table 29, row 42",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_52",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-supplement:t29:r42"
+          ],
+          "token_count": 287
+        },
+        "score": 0.04041238612134135
+      },
+      {
+        "chunk": {
+          "chunk_id": "103d276e41c1c4da4e78",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "The conference call and presentation materials can be accessed on the Bank of America Investor Relations website at https://investor.bankofamerica.com.* For a listen-only connection to the conference call, dial 1.877.200.4456 (U.S.) or 1.785.424.1732 (international). The conference ID is 79795. Please dial in 10 minutes prior to the start of the call. Investors can access replays of the conference call by visiting the Investor Relations website or by calling 1.800.934.4850 (U.S.) or 1.402.220.1178 (international) from noon on July 16 through 11:59 p.m. ET on July 25. Investors May Contact: Lee McEntire, Bank of America Phone: 1.980.388.6780 lee.mcentire@bofa.com Jonathan G. Blum, Bank of America (Fixed Income) Phone: 1.212.449.3112 jonathan.blum@bofa.com Bank of America Bank of America is one of the world’s leading financial institutions, serving individual consumers, small and middle-market businesses and large corporations with a full range of banking, investing, asset management and other financial and risk management products and services. The company provides unmatched convenience in the United States, serving approximately 69 million consumer and small business clients with approximately 3,700 retail financial centers, approximately 15,000 ATMs (automated teller machines) and award-winning digital banking with approximately 59 million verified digital users. Bank of America is a global leader in wealth management, corporate and investment banking and trading across a broad range of asset classes, serving corporations, governments, institutions and individuals around the world. Bank of America offers industry-leading support to approximately 4 million small business households through a suite of innovative, easy-to-use online products and services.",
+          "location": "HTML image text layer 11 (not a parsed table) through HTML image text layer 12 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer11:through:bac-2025q2-results:textlayer12:fragment:103d276e41c1c4da4e78"
+          ],
+          "token_count": 398
+        },
+        "score": 0.040238353196099676
+      },
+      {
+        "chunk": {
+          "chunk_id": "8359bb8b5499bdcf7a16",
+          "document_id": "bac-2025q2-results",
+          "bank": "BAC",
+          "strategy": "semantic",
+          "text": "(3) Balances do not include past due consumer credit card loans, consumer loans secured by real estate where repayments are insured by the Federal Housing Administration and individually insured long-term stand-by agreements (fully-insured home loans), and in general, other consumer and commercial loans not secured by real estate, and nonperforming loans held-for-sale or accounted for under the fair value option. (4) Regulatory capital ratios at June 30, 2025 are preliminary. Bank of America Corporation reports regulatory capital ratios under both the Standardized and Advanced approaches. Capital adequacy is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. The Corporation’s binding ratio was the Total capital ratio under the Standardized approach at June 30, 2025 and June 30, 2024, and the Tier 1 capital ratio under the Standardized approach at March 31, 2025. (5) Tangible equity ratio equals period-end tangible shareholders’ equity divided by period-end tangible assets. Tangible common equity ratio equals period-end tangible common shareholders’ equity divided by period-end tangible assets. Tangible shareholders’ equity and tangible assets are non-GAAP financial measures. We believe the use of ratios that utilize tangible equity provides additional useful information because they present measures of those assets that can generate income. See Reconciliations to GAAP Financial Measures on page 19.",
+          "location": "HTML image text layer 15 (not a parsed table)",
+          "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+          "periods": [
+            "2025Q2",
+            "2024Q2"
+          ],
+          "evidence_ids": [
+            "bac-2025q2-results:textlayer15:through:bac-2025q2-results:textlayer15:fragment:8359bb8b5499bdcf7a16"
+          ],
+          "token_count": 284
+        },
+        "score": 0.03885685798508756
+      }
+    ],
+    "answer": {
+      "question": "How is Bank of America consumer revenue calculated for Q2 2024?",
+      "status": "answered",
+      "mode": "verified_reported_metrics",
+      "text": "Bank of America's Consumer Banking reported revenue of $10,206 million in Q2 2024 (FTE basis). [ad2f5ad6749f9c5e11f1]\n\nBank of America, Q2 2024: net interest income $8,118 million + noninterest income/revenue $2,088 million = segment revenue $10,206 million. [d2e82d0df680b2ad8da5] [f968c9f065fdce8caa1c] [ad2f5ad6749f9c5e11f1]\n\n[fd25028a171f5bae44d6] HTML table 23, row 18: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43\n\n[d2e82d0df680b2ad8da5] HTML table 27, row 7: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49\n\n[f968c9f065fdce8caa1c] HTML table 27, row 13: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49\n\n[ad2f5ad6749f9c5e11f1] HTML table 27, row 14: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49\n\n[b92a6d9c1e1ba16494e4] HTML table 29, row 51: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_52",
+      "hits": [
+        {
+          "chunk": {
+            "chunk_id": "fd25028a171f5bae44d6",
+            "document_id": "bac-2025q2-supplement",
+            "bank": "BAC",
+            "strategy": "semantic",
+            "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-42=Bank of America Corporation and Subsidiaries\nc1-42=Quarterly Results by Business Segment and All Other (continued)\nc1-3=(Dollars in millions)\nc7-42=Second Quarter 2024\nc7-9=Total Corporation | c16-18=Consumer Banking | c22-24=GWIM | c28-30=Global Banking | c34-36=Global Markets | c40-42=All Other\nRow 18: c1-3=Total revenue, net of interest expense | c7-8=25,537 | c16-17=10,206 | c22-23=5,574 | c28-29=6,053 | c34-35=5,459 | c40-41=(1,755)",
+            "location": "HTML table 23, row 18",
+            "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "bac-2025q2-supplement:t23:r18"
+            ],
+            "token_count": 180
+          },
+          "score": 4.882887363433838
+        },
+        {
+          "chunk": {
+            "chunk_id": "d2e82d0df680b2ad8da5",
+            "document_id": "bac-2025q2-supplement",
+            "bank": "BAC",
+            "strategy": "semantic",
+            "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 7: c1-3=Net interest income | c4=$ | c5=17,231 | c10=$ | c11=16,315 | c19=$ | c20=8,726 | c25=$ | c26=8,505 | c31=$ | c32=8,485 | c37=$ | c38=8,278 | c43=$ | c44=8,118",
+            "location": "HTML table 27, row 7",
+            "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "bac-2025q2-supplement:t27:r7"
+            ],
+            "token_count": 267
+          },
+          "score": 3.916403293609619
+        },
+        {
+          "chunk": {
+            "chunk_id": "f968c9f065fdce8caa1c",
+            "document_id": "bac-2025q2-supplement",
+            "bank": "BAC",
+            "strategy": "semantic",
+            "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 13: c1-3=Total noninterest income | c4-5=4,075 | c10-11=4,057 | c19-20=2,087 | c25-26=1,988 | c31-32=2,161 | c37-38=2,140 | c43-44=2,088",
+            "location": "HTML table 27, row 13",
+            "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "bac-2025q2-supplement:t27:r13"
+            ],
+            "token_count": 252
+          },
+          "score": 4.277622699737549
+        },
+        {
+          "chunk": {
+            "chunk_id": "ad2f5ad6749f9c5e11f1",
+            "document_id": "bac-2025q2-supplement",
+            "bank": "BAC",
+            "strategy": "semantic",
+            "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Segment Results\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nRow 14: c1-3=Total revenue, net of interest expense | c4-5=21,306 | c10-11=20,372 | c19-20=10,813 | c25-26=10,493 | c31-32=10,646 | c37-38=10,418 | c43-44=10,206",
+            "location": "HTML table 27, row 14",
+            "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "bac-2025q2-supplement:t27:r14"
+            ],
+            "token_count": 253
+          },
+          "score": 4.8291096687316895
+        },
+        {
+          "chunk": {
+            "chunk_id": "b92a6d9c1e1ba16494e4",
+            "document_id": "bac-2025q2-supplement",
+            "bank": "BAC",
+            "strategy": "semantic",
+            "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-45=Bank of America Corporation and Subsidiaries\nc1-45=Consumer Banking Key Indicators\nc1-45=(Dollars in millions)\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc4-6=2025 | c10-12=2024 | c19-21=Second Quarter 2025 | c25-27=First Quarter 2025 | c31-33=Fourth Quarter 2024 | c37-39=Third Quarter 2024 | c43-45=Second Quarter 2024\nc1-3=Average deposit balances\nRow 51: c1-3=Consumer Banking:",
+            "location": "HTML table 29, row 51",
+            "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_52",
+            "periods": [
+              "2025Q2",
+              "2024Q2"
+            ],
+            "evidence_ids": [
+              "bac-2025q2-supplement:t29:r51"
+            ],
+            "token_count": 189
+          },
+          "score": 4.322967529296875
+        }
+      ],
+      "elapsed_seconds": 3.68,
+      "usage": {}
+    },
+    "timestamp": "2026-10-18T21:13:18.203459+00:00"
+  }
+]

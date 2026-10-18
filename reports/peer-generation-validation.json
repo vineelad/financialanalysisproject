@@ -1,0 +1,198 @@
+{
+  "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "prompt_hash": "d5d9e13a5d77a4fb0e670a77ee0a580076e83c8ef9f10d28b088029b37391376",
+  "retrieval_policy": "v2-peer-overviews-bank-and-metric-coverage",
+  "scope": "Five development checks with mixed retrieval configurations; not a comparative answer-quality benchmark.",
+  "timing_note": "First query includes embedding initialization; first reranked query includes reranker initialization. No warm p95 claim.",
+  "cases": [
+    {
+      "id": "peer-segments",
+      "strategy": "fixed",
+      "reranking": false,
+      "answer": {
+        "question": "Which corporate banking segment names do JPMorgan and Bank of America report in Q2 2025, and why should comparisons be qualified?",
+        "status": "answered",
+        "mode": "source_summary",
+        "text": "JPM: reported segment labels shown in the retrieved overview are Commercial & Investment Bank. [129d59aa4e4d7c2d3939]\n\nBAC: reported segment labels shown in the retrieved overview are Consumer Banking; GWIM; Global Banking; Global Markets. [13f74ef536fb4cbbb00f] [29011e49681d062050fb]\n\nSegment labels are shown directly from the retrieved overviews. They do not establish equivalent business scope; compare the source definitions before treating the segments as comparable. The displayed labels are limited to the retrieved passages.\n\n[6457dedfab2feb6f7bb5] HTML table 1, row 16: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[13f74ef536fb4cbbb00f] HTML table 21, row 3: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43\n\n[5df79d221d7d55e1a9a6] HTML table 1, row 12: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[129d59aa4e4d7c2d3939] HTML table 1, row 18: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[29011e49681d062050fb] HTML table 21, row 8: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+        "hits": [
+          {
+            "chunk": {
+              "chunk_id": "6457dedfab2feb6f7bb5",
+              "document_id": "jpm-2025q2-supplement",
+              "bank": "JPM",
+              "strategy": "fixed",
+              "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=TABLE OF CONTENTS\nc22-24=Page(s)\nc1-3=Consolidated Results\nc1-3=Consolidated Financial Highlights | c22-24=2\u20133\nRow 16: c1-3=Business Segment & Corporate Results",
+              "location": "HTML table 1, row 16",
+              "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7",
+              "periods": [
+                "2025Q2",
+                "2024Q2"
+              ],
+              "evidence_ids": [
+                "jpm-2025q2-supplement:t1:r16"
+              ],
+              "token_count": 78
+            },
+            "score": 0.06530936012691697
+          },
+          {
+            "chunk": {
+              "chunk_id": "13f74ef536fb4cbbb00f",
+              "document_id": "bac-2025q2-supplement",
+              "bank": "BAC",
+              "strategy": "fixed",
+              "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-42=Bank of America Corporation and Subsidiaries\nc1-42=Quarterly Results by Business Segment and All Other\nc1-3=(Dollars in millions)\nc7-42=Second Quarter 2025\nc7-9=Total Corporation | c16-18=Consumer Banking | c22-24=GWIM | c28-30=Global Banking | c34-36=Global Markets | c40-42=All Other\nRow 3: c1-42=Quarterly Results by Business Segment and All Other",
+              "location": "HTML table 21, row 3",
+              "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+              "periods": [
+                "2025Q2",
+                "2024Q2"
+              ],
+              "evidence_ids": [
+                "bac-2025q2-supplement:t21:r3"
+              ],
+              "token_count": 117
+            },
+            "score": 0.06006426202321725
+          },
+          {
+            "chunk": {
+              "chunk_id": "5df79d221d7d55e1a9a6",
+              "document_id": "jpm-2025q2-supplement",
+              "bank": "JPM",
+              "strategy": "fixed",
+              "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=TABLE OF CONTENTS\nc22-24=Page(s)\nc1-3=Consolidated Results\nc1-3=Consolidated Financial Highlights | c22-24=2\u20133\nRow 12: c1-3=Segment & Corporate Results - Managed Basis | c22-24=8",
+              "location": "HTML table 1, row 12",
+              "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7",
+              "periods": [
+                "2025Q2",
+                "2024Q2"
+              ],
+              "evidence_ids": [
+                "jpm-2025q2-supplement:t1:r12"
+              ],
+              "token_count": 87
+            },
+            "score": 0.06350006400409626
+          },
+          {
+            "chunk": {
+              "chunk_id": "129d59aa4e4d7c2d3939",
+              "document_id": "jpm-2025q2-supplement",
+              "bank": "JPM",
+              "strategy": "fixed",
+              "text": "JPM | JPMorgan Chase Q2 2025 financial supplement\nTable header context:\nc1-3=JPMORGAN CHASE & CO.\nc1-3=TABLE OF CONTENTS\nc22-24=Page(s)\nc1-3=Consolidated Results\nc1-3=Consolidated Financial Highlights | c22-24=2\u20133\nRow 18: c1-3=Commercial & Investment Bank (\u201cCIB\u201d) | c22-24=16\u201319",
+              "location": "HTML table 1, row 18",
+              "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7",
+              "periods": [
+                "2025Q2",
+                "2024Q2"
+              ],
+              "evidence_ids": [
+                "jpm-2025q2-supplement:t1:r18"
+              ],
+              "token_count": 92
+            },
+            "score": 0.061096295134258904
+          },
+          {
+            "chunk": {
+              "chunk_id": "29011e49681d062050fb",
+              "document_id": "bac-2025q2-supplement",
+              "bank": "BAC",
+              "strategy": "fixed",
+              "text": "BAC | Published on July 16, 2025\nTable header context:\nc1-42=Bank of America Corporation and Subsidiaries\nc1-42=Quarterly Results by Business Segment and All Other\nc1-3=(Dollars in millions)\nc7-42=Second Quarter 2025\nc7-9=Total Corporation | c16-18=Consumer Banking | c22-24=GWIM | c28-30=Global Banking | c34-36=Global Markets | c40-42=All Other\nRow 8: c1-3=Noninterest income",
+              "location": "HTML table 21, row 8",
+              "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43",
+              "periods": [
+                "2025Q2",
+                "2024Q2"
+              ],
+              "evidence_ids": [
+                "bac-2025q2-supplement:t21:r8"
+              ],
+              "token_count": 114
+            },
+            "score": 0.05497709804588899
+          }
+        ],
+        "elapsed_seconds": 27.389,
+        "usage": {
+          "input_tokens": 2140,
+          "output_tokens": 411,
+          "total_tokens": 2551,
+          "input_token_details": {
+            "cache_read": 2128
+          },
+          "output_token_details": {}
+        }
+      },
+      "calculations": []
+    }
+  ],
+  "assistant_review": {
+    "outcome": "pass_with_source_summary_fallback",
+    "reviewer": "coding assistant; not independent human audit",
+    "notes": "Literal labels and citations checked against retrieved overviews. Model-written attempts omitted Global Markets; the final application answer uses a source-backed summary and does not infer equivalent scope."
+  },
+  "earlier_attempts": [
+    {
+      "prompt_hash": "aae20f7679b7e9e46bc0890c758089780199164c0dfb56b5d18723c42658a70a",
+      "usage": {
+        "input_tokens": 1737,
+        "output_tokens": 233,
+        "total_tokens": 1970,
+        "input_token_details": {},
+        "output_token_details": {}
+      },
+      "review": "Incomplete: omitted separately reported Global Markets label.",
+      "answer_text": "JPMorgan Chase reports the 'Commercial & Investment Bank (CIB)' segment in Q2 2025. [129d59aa4e4d7c2d3939]\n\nBank of America reports the 'Global Banking' segment in Q2 2025. [13f74ef536fb4cbbb00f]\n\nComparisons between JPMorgan and Bank of America should be qualified due to differences in segment naming and reporting structure, which may affect the comparability of financial performance metrics. [13f74ef536fb4cbbb00f] [129d59aa4e4d7c2d3939]\n\n[6457dedfab2feb6f7bb5] HTML table 1, row 16: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[13f74ef536fb4cbbb00f] HTML table 21, row 3: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43\n\n[5df79d221d7d55e1a9a6] HTML table 1, row 12: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[129d59aa4e4d7c2d3939] HTML table 1, row 18: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[29011e49681d062050fb] HTML table 21, row 8: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43"
+    },
+    {
+      "prompt_hash": "b95239d6175745f04c1814c852f389f2fd5b55d5afed221e0edcdb588bb1a726",
+      "usage": {
+        "input_tokens": 1778,
+        "output_tokens": 259,
+        "total_tokens": 2037,
+        "input_token_details": {},
+        "output_token_details": {}
+      },
+      "review": "Incomplete: omitted separately reported Global Markets label.",
+      "answer_text": "JPMorgan Chase reports the 'Commercial & Investment Bank (CIB)' segment in Q2 2025. [129d59aa4e4d7c2d3939]\n\nBank of America reports the 'Global Banking' segment in Q2 2025. [13f74ef536fb4cbbb00f]\n\nComparisons between JPMorgan and Bank of America's corporate banking segments should be qualified because the segment names and reporting structures differ: JPMorgan uses 'Commercial & Investment Bank (CIB)', while Bank of America uses 'Global Banking', and the scope and composition of these segments are not equivalent. [129d59aa4e4d7c2d3939] [13f74ef536fb4cbbb00f]\n\n[6457dedfab2feb6f7bb5] HTML table 1, row 16: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[13f74ef536fb4cbbb00f] HTML table 21, row 3: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43\n\n[5df79d221d7d55e1a9a6] HTML table 1, row 12: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[129d59aa4e4d7c2d3939] HTML table 1, row 18: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[29011e49681d062050fb] HTML table 21, row 8: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43"
+    },
+    {
+      "prompt_hash": "a5dd3e1f052d6dbb26fca66fda69e3c8a07efa1f51354b5dd6351fa92683b873",
+      "usage": {
+        "input_tokens": 1821,
+        "output_tokens": 251,
+        "total_tokens": 2072,
+        "input_token_details": {
+          "cache_read": 128
+        },
+        "output_token_details": {}
+      },
+      "review": "Incomplete: omitted separately reported Global Markets label.",
+      "answer_text": "JPMorgan Chase reports the 'Commercial & Investment Bank (CIB)' segment in Q2 2025. [129d59aa4e4d7c2d3939]\n\nBank of America reports the 'Global Banking' segment in Q2 2025. [13f74ef536fb4cbbb00f]\n\nComparisons between JPMorgan's Commercial & Investment Bank (CIB) and Bank of America's Global Banking segment should be qualified because the segment definitions and reporting scopes differ between the two banks, and the evidence does not establish equivalent business scope or reporting boundaries. [129d59aa4e4d7c2d3939] [13f74ef536fb4cbbb00f]\n\n[6457dedfab2feb6f7bb5] HTML table 1, row 16: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[13f74ef536fb4cbbb00f] HTML table 21, row 3: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43\n\n[5df79d221d7d55e1a9a6] HTML table 1, row 12: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[129d59aa4e4d7c2d3939] HTML table 1, row 18: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[29011e49681d062050fb] HTML table 21, row 8: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43"
+    },
+    {
+      "prompt_hash": "d5d9e13a5d77a4fb0e670a77ee0a580076e83c8ef9f10d28b088029b37391376",
+      "usage": {
+        "input_tokens": 2140,
+        "output_tokens": 270,
+        "total_tokens": 2410,
+        "input_token_details": {
+          "cache_read": 176
+        },
+        "output_token_details": {}
+      },
+      "review": "Incomplete: omitted separately reported Global Markets label.",
+      "answer_text": "JPMorgan Chase reports the 'Commercial & Investment Bank' segment in Q2 2025. [129d59aa4e4d7c2d3939]\n\nBank of America reports the 'Global Banking' segment in Q2 2025. [13f74ef536fb4cbbb00f] [29011e49681d062050fb]\n\nComparisons between JPMorgan's 'Commercial & Investment Bank' and Bank of America's 'Global Banking' segment should be qualified because the segment definitions and reporting scopes differ between the two banks, and the evidence does not establish equivalent business scope or operational alignment. [129d59aa4e4d7c2d3939] [13f74ef536fb4cbbb00f]\n\n[6457dedfab2feb6f7bb5] HTML table 1, row 16: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[13f74ef536fb4cbbb00f] HTML table 21, row 3: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43\n\n[5df79d221d7d55e1a9a6] HTML table 1, row 12: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[129d59aa4e4d7c2d3939] HTML table 1, row 18: https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm#i676ccab9b50f4a4d9d558fe222a86212_7\n\n[29011e49681d062050fb] HTML table 21, row 8: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43"
+    }
+  ],
+  "usage_this_development_iteration": {
+    "input_tokens": 9616,
+    "output_tokens": 1424,
+    "total_tokens": 11040
+  },
+  "usage_limitations": "Includes the five live peer attempts in this improvement iteration; excludes all earlier project calls."
+}

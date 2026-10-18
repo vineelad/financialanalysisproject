@@ -1,0 +1,54 @@
+{
+  "strategy": "fixed",
+  "reranking": false,
+  "scope": {
+    "banks": [
+      "COF"
+    ],
+    "periods": [
+      "2025Q2"
+    ],
+    "clarification": null,
+    "unsupported": "Return on allocated capital cannot substitute for return on average assets (ROA)."
+  },
+  "retrieval_policy": "v6-source-segment-alias-coverage",
+  "retrieval_budget": {
+    "candidate_k": 20,
+    "final_k": 5,
+    "context_tokens": 2200
+  },
+  "answer_policy": "v6-selected-base-all-supported-peers",
+  "metric_registry": {
+    "version": "1.0",
+    "sha256": "144e38de3e22143e67f8949babbe6068bc87cc09baca096dea8c7e6d654ba710"
+  },
+  "base_bank": "BAC",
+  "retrieval_queries": [
+    "Calculate Capital One consumer return on assets using return on allocated capital as return on assets for Q2 2025"
+  ],
+  "framework": "LangChain + LangGraph",
+  "prompt_hash": "daea8e8a5c1687975d416a5a6c3c87da7058afe71f42dedd2fba8049aae46617",
+  "calculations": [],
+  "candidate_hits": [],
+  "answer": {
+    "question": "Calculate Capital One consumer ROA using return on allocated capital as ROA for Q2 2025",
+    "status": "insufficient_evidence",
+    "mode": "evidence_only",
+    "text": "Return on allocated capital cannot substitute for return on average assets (ROA).",
+    "hits": [],
+    "elapsed_seconds": 0.003,
+    "usage": {}
+  },
+  "timestamp": "2026-10-18T22:16:25.562884+00:00",
+  "gold": {
+    "id": "F20",
+    "question": "Calculate Capital One consumer ROA using return on allocated capital as ROA for Q2 2025",
+    "base_bank": "BAC",
+    "expected_behavior": "insufficient_evidence",
+    "annotation_status": "reviewed",
+    "evidence": [],
+    "expected_answer": "Explicit scope or evidence limitation.",
+    "review_method": "Assistant verified original HTML cells or PDF text-line columns before this expanded-corpus evaluation; not independent human review.",
+    "annotation_version": "v2-preexisting-reviewed-alternatives"
+  }
+}

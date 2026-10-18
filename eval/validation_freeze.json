@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-10-18T20:28:36.697274+00:00",
+  "question_hash": "d0b87b1dbbcc205e450ebd622ec2bdab64c31269dfac0ea3e5e3987a2be1cbfb",
+  "source_checks": [
+    {
+      "evidence_id": "jpm-2025q2-supplement:t2:r15",
+      "column": 4,
+      "value": "14987"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t2:r15",
+      "column": 28,
+      "value": "18149"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r21",
+      "column": 20,
+      "value": "2973"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r21",
+      "column": 44,
+      "value": "2595"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r30",
+      "column": 29,
+      "value": "4210"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r7",
+      "column": 20,
+      "value": "8726"
+    },
+    {
+      "evidence_id": "bac-2025q2-supplement:t27:r7",
+      "column": 44,
+      "value": "8118"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r18",
+      "column": 4,
+      "value": "14395"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r18",
+      "column": 28,
+      "value": "13705"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t2:r38",
+      "column": 4,
+      "value": "18"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t2:r38",
+      "column": 28,
+      "value": "23"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t2:r39",
+      "column": 4,
+      "value": "21"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t2:r39",
+      "column": 28,
+      "value": "28"
+    },
+    {
+      "evidence_id": "jpm-2025q2-supplement:t13:r19",
+      "column": 28,
+      "value": "17701"
+    }
+  ],
+  "scope": "Prospective same-corpus validation: new metrics plus a revenue paraphrase, frozen after v3 implementation and before running these questions. Assistant-authored, not independent external evaluation. Do not tune to the results and retain the held-out label."
+}

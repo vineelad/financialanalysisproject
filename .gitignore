@@ -1,0 +1,24 @@
+# Credentials (including the existing Pinecone key file)
+.env
+.env.*
+*.env
+!.env.example
+pineconekey
+*key.pem
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+# External reference documents are not project-authored deliverables.
+docs/Week 2 Project Handout*.docx
+Investor Relations Assistant.docx
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+data/raw/
+data/processed/
+data/indexes/
+data/snapshots/
+artifacts/
+runs/
+*.egg-info/

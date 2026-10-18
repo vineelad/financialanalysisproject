@@ -1,0 +1,50 @@
+[
+  {
+    "document_id": "bac-2025q2-results",
+    "bank": "BAC",
+    "title": "Bank of America Q2 2025 earnings release",
+    "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-16",
+    "sha256": "54d1f1ba829231d80c550299ac17fc44b8ea8fe17ec2e96eab76c656a45b9706",
+    "local_path": "data\\raw\\bac-2025q2-results.html",
+    "blocks": 19,
+    "ingested_at": "2026-10-18T18:36:24.241636+00:00"
+  },
+  {
+    "document_id": "bac-2025q2-supplement",
+    "bank": "BAC",
+    "title": "Bank of America Q2 2025 supplemental information",
+    "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-16",
+    "sha256": "3609ccab4f8708c568735cd68eb91293526bea73615b80ab22710dcf2cbb25e5",
+    "local_path": "data\\raw\\bac-2025q2-supplement.html",
+    "blocks": 1139,
+    "ingested_at": "2026-10-18T18:36:30.209797+00:00"
+  },
+  {
+    "document_id": "jpm-2025q2-supplement",
+    "bank": "JPM",
+    "title": "JPMorgan Chase Q2 2025 financial supplement",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000518/a2q25erfex992supplement.htm",
+    "format": "html",
+    "periods": [
+      "2025Q2",
+      "2024Q2"
+    ],
+    "publication_date": "2025-07-15",
+    "sha256": "04a163219a535f734eb9eb35d3cc433296fa979ff1e0adfe8b0d6d5794f76f2f",
+    "local_path": "data\\raw\\jpm-2025q2-supplement.html",
+    "blocks": 1005,
+    "ingested_at": "2026-10-18T18:36:34.982149+00:00"
+  }
+]

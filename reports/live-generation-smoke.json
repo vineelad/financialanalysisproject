@@ -1,0 +1,20 @@
+{
+  "question": "What was Bank of America consumer revenue in Q2 2025?",
+  "status": "answered",
+  "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "strategy": "fixed",
+  "reranking": false,
+  "timestamp": "2026-10-18T19:51:33.132868+00:00",
+  "elapsed_seconds": 19.788,
+  "usage": {
+    "input_tokens": 3109,
+    "output_tokens": 155,
+    "total_tokens": 3264,
+    "input_token_details": {},
+    "output_token_details": {}
+  },
+  "answer_text": "Bank of America consumer revenue in Q2 2025 was $10,813 million, or $10.8 billion. [133730d62332d8c47460] [bbb715c1157751b96bd0] [10f8cac7799eb8828c0d] [732cd36447719d5a7481]\n\n[133730d62332d8c47460] HTML table 27, row 14: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_49\n\n[bbb715c1157751b96bd0] HTML table 21, row 18: https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac-06302025ex993.htm#i7857a1a6cb884c9c813aa94812739b9a_43\n\n[10f8cac7799eb8828c0d] HTML image text layer 16 (not a parsed table): https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm\n\n[732cd36447719d5a7481] HTML image text layer 3 (not a parsed table): https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm\n\n[d73963aadd20736de31a] HTML image text layer 2 (not a parsed table): https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000254/bac063025ex991.htm",
+  "prompt_hash": "6dc648d89af0aacf0e1b8a042eccfa75896d3299d5346994d290ed252b72ab7c",
+  "check": "Returned USD 10,813 million agrees with source-reviewed BAC consumer revenue for 2025Q2; cited chunk IDs were validated by the application.",
+  "limitations": "One live lookup only. No full faithfulness benchmark or warm latency measurement. Earlier sandbox attempts failed to connect."
+}

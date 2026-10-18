@@ -1,0 +1,398 @@
+[
+  {
+    "bank": "BAC",
+    "segment": "consumer",
+    "metric": "revenue",
+    "period": "2025Q2",
+    "value": "10813",
+    "unit": "USD_millions",
+    "basis": "FTE",
+    "evidence_id": "bac-2025q2-supplement:t27:r14",
+    "period_type": "quarter",
+    "alternative_evidence_ids": [
+      "bac-2025q2-supplement:t21:r18"
+    ]
+  },
+  {
+    "bank": "BAC",
+    "segment": "consumer",
+    "metric": "revenue",
+    "period": "2024Q2",
+    "value": "10206",
+    "unit": "USD_millions",
+    "basis": "FTE",
+    "evidence_id": "bac-2025q2-supplement:t27:r14",
+    "period_type": "quarter",
+    "alternative_evidence_ids": [
+      "bac-2025q2-supplement:t23:r18"
+    ]
+  },
+  {
+    "bank": "BAC",
+    "segment": "consumer",
+    "metric": "noninterest_expense",
+    "period": "2025Q2",
+    "value": "5567",
+    "unit": "USD_millions",
+    "basis": "FTE",
+    "evidence_id": "bac-2025q2-supplement:t27:r18",
+    "period_type": "quarter",
+    "alternative_evidence_ids": [
+      "bac-2025q2-supplement:t21:r20"
+    ]
+  },
+  {
+    "bank": "BAC",
+    "segment": "consumer",
+    "metric": "noninterest_expense",
+    "period": "2024Q2",
+    "value": "5464",
+    "unit": "USD_millions",
+    "basis": "FTE",
+    "evidence_id": "bac-2025q2-supplement:t27:r18",
+    "period_type": "quarter",
+    "alternative_evidence_ids": [
+      "bac-2025q2-supplement:t23:r20"
+    ]
+  },
+  {
+    "bank": "JPM",
+    "segment": "consumer",
+    "metric": "revenue",
+    "period": "2025Q2",
+    "value": "18847",
+    "unit": "USD_millions",
+    "basis": "managed_FTE",
+    "evidence_id": "jpm-2025q2-supplement:t13:r19",
+    "period_type": "quarter",
+    "alternative_evidence_ids": [
+      "jpm-2025q2-supplement:t9:r11"
+    ]
+  },
+  {
+    "bank": "JPM",
+    "segment": "consumer",
+    "metric": "revenue",
+    "period": "2024Q2",
+    "value": "17701",
+    "unit": "USD_millions",
+    "basis": "managed_FTE",
+    "evidence_id": "jpm-2025q2-supplement:t13:r19",
+    "period_type": "quarter",
+    "alternative_evidence_ids": [
+      "jpm-2025q2-supplement:t9:r11"
+    ]
+  },
+  {
+    "bank": "JPM",
+    "segment": "consumer",
+    "metric": "noninterest_expense",
+    "period": "2025Q2",
+    "value": "9858",
+    "unit": "USD_millions",
+    "basis": "managed_FTE",
+    "evidence_id": "jpm-2025q2-supplement:t13:r26",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "JPM",
+    "segment": "consumer",
+    "metric": "noninterest_expense",
+    "period": "2024Q2",
+    "value": "9425",
+    "unit": "USD_millions",
+    "basis": "managed_FTE",
+    "evidence_id": "jpm-2025q2-supplement:t13:r26",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "BAC",
+    "segment": "consumer",
+    "metric": "net_interest_income",
+    "period": "2025Q2",
+    "value": "8726",
+    "unit": "USD_millions",
+    "basis": "FTE",
+    "evidence_id": "bac-2025q2-supplement:t27:r7",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "BAC",
+    "segment": "consumer",
+    "metric": "net_interest_income",
+    "period": "2024Q2",
+    "value": "8118",
+    "unit": "USD_millions",
+    "basis": "FTE",
+    "evidence_id": "bac-2025q2-supplement:t27:r7",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "BAC",
+    "segment": "consumer",
+    "metric": "noninterest_income",
+    "period": "2025Q2",
+    "value": "2087",
+    "unit": "USD_millions",
+    "basis": "FTE",
+    "evidence_id": "bac-2025q2-supplement:t27:r13",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "BAC",
+    "segment": "consumer",
+    "metric": "noninterest_income",
+    "period": "2024Q2",
+    "value": "2088",
+    "unit": "USD_millions",
+    "basis": "FTE",
+    "evidence_id": "bac-2025q2-supplement:t27:r13",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "JPM",
+    "segment": "consumer",
+    "metric": "net_interest_income",
+    "period": "2025Q2",
+    "value": "14395",
+    "unit": "USD_millions",
+    "basis": "managed_FTE",
+    "evidence_id": "jpm-2025q2-supplement:t13:r18",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "JPM",
+    "segment": "consumer",
+    "metric": "net_interest_income",
+    "period": "2024Q2",
+    "value": "13705",
+    "unit": "USD_millions",
+    "basis": "managed_FTE",
+    "evidence_id": "jpm-2025q2-supplement:t13:r18",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "JPM",
+    "segment": "consumer",
+    "metric": "noninterest_income",
+    "period": "2025Q2",
+    "value": "4452",
+    "unit": "USD_millions",
+    "basis": "managed_FTE",
+    "evidence_id": "jpm-2025q2-supplement:t13:r17",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "JPM",
+    "segment": "consumer",
+    "metric": "noninterest_income",
+    "period": "2024Q2",
+    "value": "3996",
+    "unit": "USD_millions",
+    "basis": "managed_FTE",
+    "evidence_id": "jpm-2025q2-supplement:t13:r17",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "C",
+    "segment": "consumer",
+    "metric": "revenue",
+    "period": "2025Q2",
+    "value": "5119",
+    "unit": "USD_millions",
+    "basis": "reported",
+    "evidence_id": "c-2025q2-results:t7:r7",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "C",
+    "segment": "consumer",
+    "metric": "revenue",
+    "period": "2024Q2",
+    "value": "4832",
+    "unit": "USD_millions",
+    "basis": "reported",
+    "evidence_id": "c-2025q2-results:t7:r7",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "C",
+    "segment": "consumer",
+    "metric": "noninterest_expense",
+    "period": "2025Q2",
+    "value": "2381",
+    "unit": "USD_millions",
+    "basis": "reported",
+    "evidence_id": "c-2025q2-results:t7:r9",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "C",
+    "segment": "consumer",
+    "metric": "noninterest_expense",
+    "period": "2024Q2",
+    "value": "2355",
+    "unit": "USD_millions",
+    "basis": "reported",
+    "evidence_id": "c-2025q2-results:t7:r9",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "COF",
+    "segment": "consumer",
+    "metric": "revenue",
+    "period": "2025Q2",
+    "value": "2556",
+    "unit": "USD_millions",
+    "basis": "GAAP",
+    "evidence_id": "cof-2025q2-results:t19:r11",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "COF",
+    "segment": "consumer",
+    "metric": "revenue",
+    "period": "2024Q2",
+    "value": "2197",
+    "unit": "USD_millions",
+    "basis": "GAAP",
+    "evidence_id": "cof-2025q2-results:t19:r11",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "COF",
+    "segment": "consumer",
+    "metric": "noninterest_expense",
+    "period": "2025Q2",
+    "value": "1713",
+    "unit": "USD_millions",
+    "basis": "GAAP",
+    "evidence_id": "cof-2025q2-results:t19:r13",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "COF",
+    "segment": "consumer",
+    "metric": "noninterest_expense",
+    "period": "2024Q2",
+    "value": "1250",
+    "unit": "USD_millions",
+    "basis": "GAAP",
+    "evidence_id": "cof-2025q2-results:t19:r13",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "COF",
+    "segment": "consumer",
+    "metric": "net_interest_income",
+    "period": "2025Q2",
+    "value": "2162",
+    "unit": "USD_millions",
+    "basis": "GAAP",
+    "evidence_id": "cof-2025q2-results:t19:r9",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "COF",
+    "segment": "consumer",
+    "metric": "net_interest_income",
+    "period": "2024Q2",
+    "value": "2025",
+    "unit": "USD_millions",
+    "basis": "GAAP",
+    "evidence_id": "cof-2025q2-results:t19:r9",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "COF",
+    "segment": "consumer",
+    "metric": "noninterest_income",
+    "period": "2025Q2",
+    "value": "394",
+    "unit": "USD_millions",
+    "basis": "GAAP",
+    "evidence_id": "cof-2025q2-results:t19:r10",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "COF",
+    "segment": "consumer",
+    "metric": "noninterest_income",
+    "period": "2024Q2",
+    "value": "172",
+    "unit": "USD_millions",
+    "basis": "GAAP",
+    "evidence_id": "cof-2025q2-results:t19:r10",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "WFC",
+    "segment": "consumer",
+    "metric": "revenue",
+    "period": "2025Q2",
+    "value": "9228",
+    "unit": "USD_millions",
+    "basis": "reported",
+    "evidence_id": "wfc-2025q2-results:page4:line17",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "WFC",
+    "segment": "consumer",
+    "metric": "revenue",
+    "period": "2024Q2",
+    "value": "9006",
+    "unit": "USD_millions",
+    "basis": "reported",
+    "evidence_id": "wfc-2025q2-results:page4:line17",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "WFC",
+    "segment": "consumer",
+    "metric": "noninterest_expense",
+    "period": "2025Q2",
+    "value": "5799",
+    "unit": "USD_millions",
+    "basis": "reported",
+    "evidence_id": "wfc-2025q2-results:page4:line19",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  },
+  {
+    "bank": "WFC",
+    "segment": "consumer",
+    "metric": "noninterest_expense",
+    "period": "2024Q2",
+    "value": "5701",
+    "unit": "USD_millions",
+    "basis": "reported",
+    "evidence_id": "wfc-2025q2-results:page4:line19",
+    "period_type": "quarter",
+    "alternative_evidence_ids": []
+  }
+]

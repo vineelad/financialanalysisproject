@@ -1,0 +1,50 @@
+[
+  {
+    "run": "A",
+    "questions": 10,
+    "evidence_recall_at_5": 0.875,
+    "evidence_recall_at_5_denominator": 8,
+    "retrieval_precision_at_5": 0.17500000000000002,
+    "retrieval_precision_at_5_denominator": 8,
+    "candidate_recall_at_20": 0.875,
+    "candidate_recall_at_20_denominator": 8,
+    "behavior_correct": 1.0,
+    "behavior_correct_denominator": 2
+  },
+  {
+    "run": "B",
+    "questions": 10,
+    "evidence_recall_at_5": 0.875,
+    "evidence_recall_at_5_denominator": 8,
+    "retrieval_precision_at_5": 0.17500000000000002,
+    "retrieval_precision_at_5_denominator": 8,
+    "candidate_recall_at_20": 0.875,
+    "candidate_recall_at_20_denominator": 8,
+    "behavior_correct": 1.0,
+    "behavior_correct_denominator": 2
+  },
+  {
+    "run": "C",
+    "questions": 10,
+    "evidence_recall_at_5": 0.75,
+    "evidence_recall_at_5_denominator": 8,
+    "retrieval_precision_at_5": 0.15000000000000002,
+    "retrieval_precision_at_5_denominator": 8,
+    "candidate_recall_at_20": 0.875,
+    "candidate_recall_at_20_denominator": 8,
+    "behavior_correct": 1.0,
+    "behavior_correct_denominator": 2
+  },
+  {
+    "run": "D",
+    "questions": 10,
+    "evidence_recall_at_5": 0.75,
+    "evidence_recall_at_5_denominator": 8,
+    "retrieval_precision_at_5": 0.15000000000000002,
+    "retrieval_precision_at_5_denominator": 8,
+    "candidate_recall_at_20": 0.875,
+    "candidate_recall_at_20_denominator": 8,
+    "behavior_correct": 1.0,
+    "behavior_correct_denominator": 2
+  }
+]
